@@ -1,0 +1,15 @@
+// Mem file initialization records.
+//
+// Release 2013.2 -  HEAD, build April 01, 2013
+// Copyright (c) 1995-2016 Xilinx, Inc.  All rights reserved.
+// Created on Monday August 01, 2016 - 04:21:18 pm, from:
+//
+//     Map file     - /home/tage/DegreeProject/Zedboard/NoC2xD/NoC2x2_10KHz_AltenDemo_c1_D/NoC2x2_10KHz_AltenDemo_c1_D.srcs/sources_1/bd/BD/BD.bmm
+//     Data file(s) - /home/tage/DegreeProject/Zedboard/NoC2xD/NoC2x2_10KHz_AltenDemo_c1_D/NoC2x2_10KHz_AltenDemo_c1_D.srcs/sources_1/bd/BD/ip/BD_cpu_0_0_0/data/mb_bootloop_le.elf, /home/tage/DegreeProject/Zedboard/NoC2xD/NoC2x2_10KHz_AltenDemo_c1_D/NoC2x2_10KHz_AltenDemo_c1_D.srcs/sources_1/bd/BD/ip/BD_microblaze_0_0/data/mb_bootloop_le.elf, /home/tage/DegreeProject/Zedboard/NoC2xD/NoC2x2_10KHz_AltenDemo_c1_D/NoC2x2_10KHz_AltenDemo_c1_D.srcs/sources_1/bd/BD/ip/BD_cpu_0_1_0/data/mb_bootloop_le.elf, /home/tage/DegreeProject/Zedboard/NoC2xD/NoC2x2_10KHz_AltenDemo_c1_D/NoC2x2_10KHz_AltenDemo_c1_D.srcs/sources_1/bd/BD/ip/BD_cpu_1_0_0/data/mb_bootloop_le.elf
+//
+// Address space 'BD_i_cpu_0_1.BD_i_cpu_0_1_local_memory_lmb_bram_ADDR_SPACE', bit lane [31:0].
+//
+// Bus width = 32 bits, number of bus blocks = 1.
+
+@00000000
+    B8000000

@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2016.3 (64-bit)
+# SW Build 1682563 on Mon Oct 10 19:07:26 MDT 2016
+# IP Build 1681267 on Mon Oct 10 21:28:31 MDT 2016
+# Start of session at: Mon May 22 11:37:25 2017
+# Process ID: 6007
+# Current directory: /home/tage/git/NoC/programmableCh/dfs/project/project.runs/BD_microblaze_2_0_synth_1
+# Command line: vivado -log BD_microblaze_2_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source BD_microblaze_2_0.tcl
+# Log file: /home/tage/git/NoC/programmableCh/dfs/project/project.runs/BD_microblaze_2_0_synth_1/BD_microblaze_2_0.vds
+# Journal file: /home/tage/git/NoC/programmableCh/dfs/project/project.runs/BD_microblaze_2_0_synth_1/vivado.jou
+#-----------------------------------------------------------
+source BD_microblaze_2_0.tcl -notrace
+INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP BD_microblaze_2_0, cache-ID = 6697bd952ec0b713.

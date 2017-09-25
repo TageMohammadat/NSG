@@ -1,0 +1,20 @@
+Contributors: Tage (mtme@kth.se), Johnny Öberg (johnnyob@kth.se), Ingo Sander (ingo@kth.se).
+Release: Zero release (2016 Oct 11).
+License/Distribution: Only for the use within Safepower consortium.
+
+
+
+About the release:
+-This release contains Nostrum Network-on-Chip (NoC) with source code, documentation and design example that instantiates processing nodes to showcase the functionality.
+-The contains a 2 dimensional 2x2 mesh topology employing Nostrum protocol (x-y routing and deflective routing) that communicate a 32-bit word at a time. 4 nodes are made available. The node contains set of modules, usually with a processor as a master device, that shares a bus. In our example the nodes are: the dual-core ARM processing System (as one node) let's refer to it as the PS, and the others are Microblazes. The network interface of the processing system node, the NoC itself and the Microblazes are residing in the programmable logic.
+-It has been demonstrated that 8 processors can communicates in most energy-efficient manner when they employ a NoC as opposed to bus with shared memory and point-to-point communication. Since power consumption is a major concern in SAFEPOWER, 8 processors have been included in the example. Four of them are never used and their presence be neglected.
+-The nodes do not share memory.
+-The nodes can be assumed to take, in the worst case, 24 clock cylces to deliver a 32-bit word. (early characterisation on timing, area, power are included in the documentation).
+-Certain APIs and drivers are used to initiate, inquire about some aspects of the NoC status, read and write to the NoC buffers are included in the documentation.
+-We introduced a notion of master and non-master nodes with implications on how nodes can communicate. The master node (the PS in this case) can send messages to every other nodes. The nodes can communicate with all nodes. Non-master node can not arbitrarily communicate with other non-master nodes unless it is required by the design.
+-Processes on each node can be classified as functional or 'Process handlers'. Process handlers can be thought as the OS that controls whether the processes within the node should run or not. This can be replaced with an RTOS and/or used to implement adaptive services for example. The process hander within the master node is called NoC daemon. Process handlers can communicate with the NoC daemon and vice versa for synchronisation, process control and monitoring.
+-Due to limitation on the Trustzone security feature leveraged by the hypervisor to realise isoloation, the entire system has to be either (secure or non-secure) critical or non-critical. For that matter, a process within the ARM should be used to relay information.The implication of which on the VP for example could be that the non-secure processes access to the address range of the NoC should produce error if the NoC is configured as a secure resource. 
+-Due to the limitation of the microblazes CPU architecture, the microblazes can only have single level of criticality.
+-To allow It is envisaged that processes let's call them NoC proxies could be used to relay messages from/from microblazes to/from  the non-critical zone of the ARM via shared-memory communication and/or to/from off-chip commincation peripherals such as ethernet/CAN/UART/IIS.
+
+

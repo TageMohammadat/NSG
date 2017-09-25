@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7z020clg484-1" LaunchTime="1495445487">
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <File Type="BG-DRC" Name="BD_wrapper.drc"/>
+  <File Type="BG-BGN" Name="BD_wrapper.bgn"/>
+  <File Type="BITSTR-SYSDEF" Name="BD_wrapper.sysdef"/>
+  <File Type="BITSTR-MMI" Name="BD_wrapper.mmi"/>
+  <File Type="BITSTR-BMM" Name="BD_wrapper_bd.bmm"/>
+  <File Type="BITSTR-NKY" Name="BD_wrapper.nky"/>
+  <File Type="BITSTR-RBT" Name="BD_wrapper.rbt"/>
+  <File Type="BITSTR-MSK" Name="BD_wrapper.msk"/>
+  <File Type="BG-BIN" Name="BD_wrapper.bin"/>
+  <File Type="BG-BIT" Name="BD_wrapper.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="BD_wrapper_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="BD_wrapper_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="BD_wrapper_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="BD_wrapper_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="BD_wrapper_postroute_physopt.dcp"/>
+  <File Type="ROUTE-CLK" Name="BD_wrapper_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-SIMILARITY" Name="BD_wrapper_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-TIMING-RPX" Name="BD_wrapper_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-TIMING-PB" Name="BD_wrapper_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="BD_wrapper_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="BD_wrapper_route_status.pb"/>
+  <File Type="ROUTE-STATUS" Name="BD_wrapper_route_status.rpt"/>
+  <File Type="PLACE-CTRL" Name="BD_wrapper_control_sets_placed.rpt"/>
+  <File Type="PLACE-IO" Name="BD_wrapper_io_placed.rpt"/>
+  <File Type="PWROPT-TIMING" Name="BD_wrapper_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="BD_wrapper_placed.dcp"/>
+  <File Type="PLACE-UTIL-PB" Name="BD_wrapper_utilization_placed.pb"/>
+  <File Type="PHYSOPT-TIMING" Name="BD_wrapper_timing_summary_physopted.rpt"/>
+  <File Type="PWROPT-DRC" Name="BD_wrapper_drc_pwropted.rpt"/>
+  <File Type="PWROPT-DCP" Name="BD_wrapper_pwropt.dcp"/>
+  <File Type="PLACE-UTIL" Name="BD_wrapper_utilization_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="BD_wrapper_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="OPT-TIMING" Name="BD_wrapper_timing_summary_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="BD_wrapper.hwdef"/>
+  <File Type="PLACE-CLK" Name="BD_wrapper_clock_utilization_placed.rpt"/>
+  <File Type="RDI-RDI" Name="BD_wrapper.vdi"/>
+  <File Type="PLACE-TIMING" Name="BD_wrapper_timing_summary_placed.rpt"/>
+  <File Type="INIT-TIMING" Name="BD_wrapper_timing_summary_init.rpt"/>
+  <File Type="OPT-DRC" Name="BD_wrapper_drc_opted.rpt"/>
+  <File Type="OPT-DCP" Name="BD_wrapper_opt.dcp"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="BD_wrapper_methodology_drc_opted.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="BD_wrapper_incremental_reuse_pre_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="BD_wrapper_incremental_reuse_placed.rpt"/>
+  <File Type="PA-TCL" Name="BD_wrapper.tcl"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="BD_wrapper_postplace_pwropt.dcp"/>
+  <File Type="PHYSOPT-DCP" Name="BD_wrapper_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="BD_wrapper_drc_physopted.rpt"/>
+  <File Type="ROUTE-ERROR-DCP" Name="BD_wrapper_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="BD_wrapper_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="BD_wrapper_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="BD_wrapper_drc_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="BD_wrapper_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="BD_wrapper_drc_routed.pb"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="BD_wrapper_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-DRC-RPX" Name="BD_wrapper_drc_routed.rpx"/>
+  <File Type="ROUTE-PWR" Name="BD_wrapper_power_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="BD_wrapper_methodology_drc_routed.rpx"/>
+  <File Type="ROUTE-PWR-SUM" Name="BD_wrapper_power_summary_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="BD_wrapper_power_routed.rpx"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/bd/BD/BD.bd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/bd/BD/hdl/BD_wrapper.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/sw/microblaze_1/Debug/microblaze_1.elf">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="ScopedToRef" Val="BD"/>
+        <Attr Name="ScopedToCell" Val="microblaze_1"/>
+        <Attr Name="IsVisible" Val="1"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/sw/microblaze_2/Debug/microblaze_2.elf">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="ScopedToRef" Val="BD"/>
+        <Attr Name="ScopedToCell" Val="microblaze_2"/>
+        <Attr Name="IsVisible" Val="1"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/sw/microblaze_3/Debug/microblaze_3.elf">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="ScopedToRef" Val="BD"/>
+        <Attr Name="ScopedToCell" Val="microblaze_3"/>
+        <Attr Name="IsVisible" Val="1"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="BD_wrapper"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/imports/dfs/constraints.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../constraints.xdc"/>
+        <Attr Name="ImportTime" Val="1493759079"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="BD_lmb_bram_2"/>
+  <BlockFileSet Type="BlockSrcs" Name="BD_ilmb_bram_if_cntlr_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="BD_mdm_1_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="BD_microblaze_2_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="BD_microblaze_1_xlconcat_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="BD_ilmb_v10_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="BD_dlmb_bram_if_cntlr_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="BD_dlmb_v10_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="BD_ilmb_v10_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="BD_ilmb_bram_if_cntlr_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="BD_microblaze_2_axi_intc_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="BD_ilmb_v10_2"/>
+  <BlockFileSet Type="BlockSrcs" Name="BD_ilmb_bram_if_cntlr_2"/>
+  <BlockFileSet Type="BlockSrcs" Name="BD_axi_clock_converter_ni1_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="BD_axi_timer_1_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="BD_kth_axi_Mesh_2D_Nostrum_2x2x1_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="BD_xbar_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="BD_axi_perf_mon_1_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="BD_axi_pwm_pause_2_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="BD_xbar_2"/>
+  <BlockFileSet Type="BlockSrcs" Name="BD_auto_pc_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="BD_axi_clock_converter_mdm_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="BD_dlmb_bram_if_cntlr_2"/>
+  <BlockFileSet Type="BlockSrcs" Name="BD_microblaze_3_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="BD_axi_timer_2_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="BD_axi_perf_mon_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="BD_rst_clk_wiz_0_100M_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="BD_axi_timer_3_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="BD_m00_data_fifo_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="BD_dlmb_bram_if_cntlr_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="BD_dlmb_v10_2"/>
+  <BlockFileSet Type="BlockSrcs" Name="BD_axi_protocol_converter_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="BD_auto_pc_2"/>
+  <BlockFileSet Type="BlockSrcs" Name="BD_axi_gpio_3_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="BD_s03_data_fifo_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="BD_lmb_bram_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="BD_util_vector_logic_1_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="BD_lmb_bram_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="BD_util_vector_logic_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="BD_auto_pc_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="BD_axi_pwm_pause_1_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="BD_xbar_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="BD_axi_clock_converter_ni3_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="BD_xbar_4"/>
+  <BlockFileSet Type="BlockSrcs" Name="BD_s02_data_fifo_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="BD_processing_system7_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="BD_auto_pc_3"/>
+  <BlockFileSet Type="BlockSrcs" Name="BD_axi_clock_converter_ni2_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="BD_axi_clock_converter_ni0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="BD_microblaze_3_xlconcat_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="BD_microblaze_1_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="BD_axi_timer_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="BD_dlmb_v10_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="BD_microblaze_1_axi_intc_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="BD_xbar_3"/>
+  <BlockFileSet Type="BlockSrcs" Name="BD_axi_pwm_pause_3_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="BD_microblaze_2_xlconcat_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="BD_axi_gpio_1_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="BD_axi_gpio_2_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="BD_s00_data_fifo_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="BD_axi_perf_mon_3_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="BD_microblaze_3_axi_intc_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="BD_s01_data_fifo_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="BD_axi_perf_mon_2_0"/>
+</GenRun>

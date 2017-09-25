@@ -1,0 +1,38 @@
+#-----------------------------------------------------------
+# Vivado v2016.3 (64-bit)
+# SW Build 1682563 on Mon Oct 10 19:07:26 MDT 2016
+# IP Build 1681267 on Mon Oct 10 21:28:31 MDT 2016
+# Start of session at: Mon May 22 11:47:52 2017
+# Process ID: 11131
+# Current directory: /home/tage/git/NoC/programmableCh/dfs
+# Command line: vivado -mode tcl
+# Log file: /home/tage/git/NoC/programmableCh/dfs/vivado.log
+# Journal file: /home/tage/git/NoC/programmableCh/dfs/vivado.jou
+#-----------------------------------------------------------
+## *1* Set up working directory
+#################################################################################################################################################################################################################################################################################################################
+set WORKDIR "."
+.
+set PROJECTFOLDER project
+project
+#This IPREPOFOLDER does not propagate in the script. It has to be manually fixed in line: set_property  ip_repo_paths..
+set IPREPOFOLDER ip_repo
+ip_repo
+set SWREPOFOLDER sw_repo
+sw_repo
+set BOARDCONSTFIL constraints.xdc
+constraints.xdc
+set PROJECTNAME project
+project
+set PROJDIR [file normalize "$WORKDIR/$PROJECTFOLDER"]
+/home/tage/git/NoC/programmableCh/dfs/project
+# Design parameters
+set HEARTBEATTIMERCONST 50000000
+50000000
+set DESIGNFREQMHz 50
+50
+cd $PROJECTFOLDER/sw
+xsdb
+WARNING: [Common 17-259] Unknown Tcl command 'xsdb' sending command to the OS shell for execution. It is recommended to use 'exec' to send the command to the OS shell.
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon May 22 11:54:50 2017...

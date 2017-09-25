@@ -1,0 +1,839 @@
+#-----------------------------------------------------------
+# Vivado v2016.3 (64-bit)
+# SW Build 1682563 on Mon Oct 10 19:07:26 MDT 2016
+# IP Build 1681267 on Mon Oct 10 21:28:31 MDT 2016
+# Start of session at: Mon Oct 31 17:12:49 2016
+# Process ID: 22195
+# Current directory: /home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.runs/BD_kth_axi_rni_static_2_0_synth_1
+# Command line: vivado -log BD_kth_axi_rni_static_2_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source BD_kth_axi_rni_static_2_0.tcl
+# Log file: /home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.runs/BD_kth_axi_rni_static_2_0_synth_1/BD_kth_axi_rni_static_2_0.vds
+# Journal file: /home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.runs/BD_kth_axi_rni_static_2_0_synth_1/vivado.jou
+#-----------------------------------------------------------
+source BD_kth_axi_rni_static_2_0.tcl -notrace
+Command: synth_design -top BD_kth_axi_rni_static_2_0 -part xc7z020clg484-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 22417 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 1107.523 ; gain = 188.301 ; free physical = 2640 ; free virtual = 125307
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'BD_kth_axi_rni_static_2_0' [/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.srcs/sources_1/bd/BD/ip/BD_kth_axi_rni_static_2_0/synth/BD_kth_axi_rni_static_2_0.vhd:93]
+	Parameter rni_number bound to: 3 - type: integer 
+	Parameter use_64bit bound to: 0 - type: integer 
+	Parameter C_S_AXI_MIN_SIZE bound to: 32'b00000000000000100000000000000000 
+	Parameter C_USE_WSTRB bound to: 0 - type: integer 
+	Parameter C_DPHASE_TIMEOUT bound to: 8 - type: integer 
+	Parameter C_BASEADDR bound to: 32'b01110000000000100000000000000000 
+	Parameter C_HIGHADDR bound to: 32'b01110000000000111111111111111111 
+	Parameter C_FAMILY bound to: zynq - type: string 
+	Parameter C_NUM_REG bound to: 1 - type: integer 
+	Parameter C_NUM_MEM bound to: 1 - type: integer 
+	Parameter C_SLV_AWIDTH bound to: 32 - type: integer 
+	Parameter C_SLV_DWIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'kth_axi_rni_static_c1_v1_0' declared at '/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.srcs/sources_1/bd/BD/ipshared/e92d/hdl/kth_axi_rni_static_v1_0.vhd:8' bound to instance 'U0' of component 'kth_axi_rni_static_c1_v1_0' [/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.srcs/sources_1/bd/BD/ip/BD_kth_axi_rni_static_2_0/synth/BD_kth_axi_rni_static_2_0.vhd:175]
+INFO: [Synth 8-638] synthesizing module 'kth_axi_rni_static_c1_v1_0' [/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.srcs/sources_1/bd/BD/ipshared/e92d/hdl/kth_axi_rni_static_v1_0.vhd:73]
+	Parameter rni_number bound to: 3 - type: integer 
+	Parameter use_64bit bound to: 0 - type: integer 
+	Parameter C_S_AXI_MIN_SIZE bound to: 131072 - type: integer 
+	Parameter C_USE_WSTRB bound to: 0 - type: integer 
+	Parameter C_DPHASE_TIMEOUT bound to: 8 - type: integer 
+	Parameter C_BASEADDR bound to: 1879179264 - type: integer 
+	Parameter C_HIGHADDR bound to: 1879310335 - type: integer 
+	Parameter C_FAMILY bound to: zynq - type: string 
+	Parameter C_NUM_REG bound to: 1 - type: integer 
+	Parameter C_NUM_MEM bound to: 1 - type: integer 
+	Parameter C_SLV_AWIDTH bound to: 32 - type: integer 
+	Parameter C_SLV_DWIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter RNI_NUMBER bound to: 3 - type: integer 
+	Parameter USE_64BIT bound to: 0 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_MIN_SIZE bound to: 131072 - type: integer 
+	Parameter C_USE_WSTRB bound to: 0 - type: integer 
+	Parameter C_DPHASE_TIMEOUT bound to: 8 - type: integer 
+	Parameter C_BASEADDR bound to: 1879179264 - type: integer 
+	Parameter C_HIGHADDR bound to: 1879310335 - type: integer 
+	Parameter C_FAMILY bound to: zynq - type: string 
+	Parameter C_NUM_REG bound to: 1 - type: integer 
+	Parameter C_NUM_MEM bound to: 1 - type: integer 
+	Parameter C_SLV_AWIDTH bound to: 32 - type: integer 
+	Parameter C_SLV_DWIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'kth_axi_rni_static' declared at '/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.srcs/sources_1/bd/BD/ipshared/e92d/hdl/kth_axi_rni_static.vhd:115' bound to instance 'kth_axi_rni_static_0' of component 'kth_axi_rni_static' [/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.srcs/sources_1/bd/BD/ipshared/e92d/hdl/kth_axi_rni_static_v1_0.vhd:129]
+INFO: [Synth 8-638] synthesizing module 'kth_axi_rni_static' [/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.srcs/sources_1/bd/BD/ipshared/e92d/hdl/kth_axi_rni_static.vhd:195]
+	Parameter rni_number bound to: 3 - type: integer 
+	Parameter use_64bit bound to: 0 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_MIN_SIZE bound to: 131072 - type: integer 
+	Parameter C_USE_WSTRB bound to: 0 - type: integer 
+	Parameter C_DPHASE_TIMEOUT bound to: 8 - type: integer 
+	Parameter C_BASEADDR bound to: 1879179264 - type: integer 
+	Parameter C_HIGHADDR bound to: 1879310335 - type: integer 
+	Parameter C_FAMILY bound to: zynq - type: string 
+	Parameter C_NUM_REG bound to: 1 - type: integer 
+	Parameter C_NUM_MEM bound to: 1 - type: integer 
+	Parameter C_SLV_AWIDTH bound to: 32 - type: integer 
+	Parameter C_SLV_DWIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-5534] Detected attribute (* max_fanout = "10000" *) [/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.srcs/sources_1/bd/BD/ipshared/e92d/hdl/kth_axi_rni_static.vhd:161]
+INFO: [Synth 8-5534] Detected attribute (* max_fanout = "10000" *) [/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.srcs/sources_1/bd/BD/ipshared/e92d/hdl/kth_axi_rni_static.vhd:162]
+INFO: [Synth 8-638] synthesizing module 'axi_lite_ipif' [/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.srcs/sources_1/bd/BD/ipshared/e92d/hdl/axi_lite_ipif.vhd:246]
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_MIN_SIZE bound to: 131072 - type: integer 
+	Parameter C_USE_WSTRB bound to: 0 - type: integer 
+	Parameter C_DPHASE_TIMEOUT bound to: 8 - type: integer 
+	Parameter C_ARD_ADDR_RANGE_ARRAY bound to: 128'b00000000000000000000000000000000011100000000001000000000000000000000000000000000000000000000000001110000000000111111111111111111 
+	Parameter C_ARD_NUM_CE_ARRAY bound to: 32'b00000000000000000000000000000001 
+	Parameter C_FAMILY bound to: zynq - type: string 
+INFO: [Synth 8-638] synthesizing module 'slave_attachment' [/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.srcs/sources_1/bd/BD/ipshared/e92d/hdl/slave_attachment.vhd:236]
+	Parameter C_ARD_ADDR_RANGE_ARRAY bound to: 128'b00000000000000000000000000000000011100000000001000000000000000000000000000000000000000000000000001110000000000111111111111111111 
+	Parameter C_ARD_NUM_CE_ARRAY bound to: 32'b00000000000000000000000000000001 
+	Parameter C_IPIF_ABUS_WIDTH bound to: 32 - type: integer 
+	Parameter C_IPIF_DBUS_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_MIN_SIZE bound to: 131072 - type: integer 
+	Parameter C_USE_WSTRB bound to: 0 - type: integer 
+	Parameter C_DPHASE_TIMEOUT bound to: 8 - type: integer 
+	Parameter C_FAMILY bound to: zynq - type: string 
+INFO: [Synth 8-638] synthesizing module 'address_decoder' [/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.srcs/sources_1/bd/BD/ipshared/e92d/hdl/address_decoder.vhd:181]
+	Parameter C_BUS_AWIDTH bound to: 18 - type: integer 
+	Parameter C_S_AXI_MIN_SIZE bound to: 131072 - type: integer 
+	Parameter C_ARD_ADDR_RANGE_ARRAY bound to: 128'b00000000000000000000000000000000011100000000001000000000000000000000000000000000000000000000000001110000000000111111111111111111 
+	Parameter C_ARD_NUM_CE_ARRAY bound to: 32'b00000000000000000000000000000001 
+	Parameter C_FAMILY bound to: artix7 - type: string 
+INFO: [Synth 8-256] done synthesizing module 'address_decoder' (1#1) [/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.srcs/sources_1/bd/BD/ipshared/e92d/hdl/address_decoder.vhd:181]
+INFO: [Synth 8-226] default block is never used [/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.srcs/sources_1/bd/BD/ipshared/e92d/hdl/slave_attachment.vhd:389]
+INFO: [Synth 8-256] done synthesizing module 'slave_attachment' (2#1) [/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.srcs/sources_1/bd/BD/ipshared/e92d/hdl/slave_attachment.vhd:236]
+INFO: [Synth 8-256] done synthesizing module 'axi_lite_ipif' (3#1) [/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.srcs/sources_1/bd/BD/ipshared/e92d/hdl/axi_lite_ipif.vhd:246]
+INFO: [Synth 8-638] synthesizing module 'kth_generic_rni_static' [/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.srcs/sources_1/bd/BD/ipshared/e92d/hdl/kth_generic_rni_static.vhd:81]
+	Parameter rni_pos bound to: 3 - type: integer 
+	Parameter use_64bit bound to: 0 - type: integer 
+	Parameter C_NUM_REG bound to: 1 - type: integer 
+	Parameter C_SLV_DWIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'rni_memory' [/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.srcs/sources_1/bd/BD/ipshared/e92d/hdl/rni_memory.vhd:84]
+	Parameter width bound to: 4 - type: integer 
+	Parameter width bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'rams_16b' declared at '/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.srcs/sources_1/bd/BD/ipshared/e92d/hdl/rni_memory.vhd:11' bound to instance 'LW' of component 'rams_16b' [/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.srcs/sources_1/bd/BD/ipshared/e92d/hdl/rni_memory.vhd:110]
+INFO: [Synth 8-638] synthesizing module 'rams_16b' [/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.srcs/sources_1/bd/BD/ipshared/e92d/hdl/rni_memory.vhd:27]
+	Parameter width bound to: 4 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'rams_16b' (4#1) [/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.srcs/sources_1/bd/BD/ipshared/e92d/hdl/rni_memory.vhd:27]
+	Parameter width bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'rams_16b' declared at '/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.srcs/sources_1/bd/BD/ipshared/e92d/hdl/rni_memory.vhd:11' bound to instance 'HW' of component 'rams_16b' [/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.srcs/sources_1/bd/BD/ipshared/e92d/hdl/rni_memory.vhd:124]
+INFO: [Synth 8-256] done synthesizing module 'rni_memory' (5#1) [/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.srcs/sources_1/bd/BD/ipshared/e92d/hdl/rni_memory.vhd:84]
+INFO: [Synth 8-638] synthesizing module 'rni_memory__parameterized0' [/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.srcs/sources_1/bd/BD/ipshared/e92d/hdl/rni_memory.vhd:84]
+	Parameter width bound to: 5 - type: integer 
+	Parameter width bound to: 5 - type: integer 
+INFO: [Synth 8-3491] module 'rams_16b' declared at '/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.srcs/sources_1/bd/BD/ipshared/e92d/hdl/rni_memory.vhd:11' bound to instance 'LW' of component 'rams_16b' [/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.srcs/sources_1/bd/BD/ipshared/e92d/hdl/rni_memory.vhd:110]
+INFO: [Synth 8-638] synthesizing module 'rams_16b__parameterized2' [/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.srcs/sources_1/bd/BD/ipshared/e92d/hdl/rni_memory.vhd:27]
+	Parameter width bound to: 5 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'rams_16b__parameterized2' (5#1) [/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.srcs/sources_1/bd/BD/ipshared/e92d/hdl/rni_memory.vhd:27]
+	Parameter width bound to: 5 - type: integer 
+INFO: [Synth 8-3491] module 'rams_16b' declared at '/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.srcs/sources_1/bd/BD/ipshared/e92d/hdl/rni_memory.vhd:11' bound to instance 'HW' of component 'rams_16b' [/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.srcs/sources_1/bd/BD/ipshared/e92d/hdl/rni_memory.vhd:124]
+INFO: [Synth 8-638] synthesizing module 'rams_16b__parameterized4' [/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.srcs/sources_1/bd/BD/ipshared/e92d/hdl/rni_memory.vhd:27]
+	Parameter width bound to: 5 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'rams_16b__parameterized4' (5#1) [/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.srcs/sources_1/bd/BD/ipshared/e92d/hdl/rni_memory.vhd:27]
+INFO: [Synth 8-256] done synthesizing module 'rni_memory__parameterized0' (5#1) [/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.srcs/sources_1/bd/BD/ipshared/e92d/hdl/rni_memory.vhd:84]
+	Parameter rni_pos bound to: 3 - type: integer 
+	Parameter channel_size bound to: 2 - type: integer 
+	Parameter nr_of_recv_channels_size bound to: 2 - type: integer 
+	Parameter nr_of_send_channels_size bound to: 2 - type: integer 
+INFO: [Synth 8-3491] module 'generic_nios_to_3D_noc' declared at '/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.srcs/sources_1/bd/BD/ipshared/e92d/hdl/generic_interface_to_noc_static.vhd:21' bound to instance 'interface' of component 'generic_nios_to_3D_noc' [/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.srcs/sources_1/bd/BD/ipshared/e92d/hdl/kth_generic_rni_static.vhd:505]
+INFO: [Synth 8-638] synthesizing module 'generic_nios_to_3D_noc' [/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.srcs/sources_1/bd/BD/ipshared/e92d/hdl/generic_interface_to_noc_static.vhd:94]
+	Parameter rni_pos bound to: 3 - type: integer 
+	Parameter channel_size bound to: 2 - type: integer 
+	Parameter nr_of_recv_channels_size bound to: 2 - type: integer 
+	Parameter nr_of_send_channels_size bound to: 2 - type: integer 
+WARNING: [Synth 8-614] signal 'synchronize_flag' is read in the process but is not in the sensitivity list [/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.srcs/sources_1/bd/BD/ipshared/e92d/hdl/generic_interface_to_noc_static.vhd:346]
+WARNING: [Synth 8-614] signal 'toggle_bit' is read in the process but is not in the sensitivity list [/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.srcs/sources_1/bd/BD/ipshared/e92d/hdl/generic_interface_to_noc_static.vhd:346]
+INFO: [Synth 8-256] done synthesizing module 'generic_nios_to_3D_noc' (6#1) [/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.srcs/sources_1/bd/BD/ipshared/e92d/hdl/generic_interface_to_noc_static.vhd:94]
+WARNING: [Synth 8-3936] Found unconnected internal register 'internal_writedata_reg' and it is trimmed from '64' to '32' bits. [/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.srcs/sources_1/bd/BD/ipshared/e92d/hdl/kth_generic_rni_static.vhd:308]
+INFO: [Synth 8-256] done synthesizing module 'kth_generic_rni_static' (7#1) [/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.srcs/sources_1/bd/BD/ipshared/e92d/hdl/kth_generic_rni_static.vhd:81]
+INFO: [Synth 8-256] done synthesizing module 'kth_axi_rni_static' (8#1) [/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.srcs/sources_1/bd/BD/ipshared/e92d/hdl/kth_axi_rni_static.vhd:195]
+INFO: [Synth 8-256] done synthesizing module 'kth_axi_rni_static_c1_v1_0' (9#1) [/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.srcs/sources_1/bd/BD/ipshared/e92d/hdl/kth_axi_rni_static_v1_0.vhd:73]
+INFO: [Synth 8-256] done synthesizing module 'BD_kth_axi_rni_static_2_0' (10#1) [/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.srcs/sources_1/bd/BD/ip/BD_kth_axi_rni_static_2_0/synth/BD_kth_axi_rni_static_2_0.vhd:93]
+WARNING: [Synth 8-3331] design rni_memory__parameterized0 has unconnected port byteenable1[3]
+WARNING: [Synth 8-3331] design rni_memory__parameterized0 has unconnected port byteenable1[2]
+WARNING: [Synth 8-3331] design rni_memory__parameterized0 has unconnected port byteenable1[1]
+WARNING: [Synth 8-3331] design rni_memory__parameterized0 has unconnected port byteenable1[0]
+WARNING: [Synth 8-3331] design rni_memory__parameterized0 has unconnected port byteenable2[3]
+WARNING: [Synth 8-3331] design rni_memory__parameterized0 has unconnected port byteenable2[2]
+WARNING: [Synth 8-3331] design rni_memory__parameterized0 has unconnected port byteenable2[1]
+WARNING: [Synth 8-3331] design rni_memory__parameterized0 has unconnected port byteenable2[0]
+WARNING: [Synth 8-3331] design rni_memory__parameterized0 has unconnected port clken1
+WARNING: [Synth 8-3331] design rni_memory__parameterized0 has unconnected port clken2
+WARNING: [Synth 8-3331] design rni_memory has unconnected port byteenable1[3]
+WARNING: [Synth 8-3331] design rni_memory has unconnected port byteenable1[2]
+WARNING: [Synth 8-3331] design rni_memory has unconnected port byteenable1[1]
+WARNING: [Synth 8-3331] design rni_memory has unconnected port byteenable1[0]
+WARNING: [Synth 8-3331] design rni_memory has unconnected port byteenable2[3]
+WARNING: [Synth 8-3331] design rni_memory has unconnected port byteenable2[2]
+WARNING: [Synth 8-3331] design rni_memory has unconnected port byteenable2[1]
+WARNING: [Synth 8-3331] design rni_memory has unconnected port byteenable2[0]
+WARNING: [Synth 8-3331] design rni_memory has unconnected port clken1
+WARNING: [Synth 8-3331] design rni_memory has unconnected port clken2
+WARNING: [Synth 8-3331] design generic_nios_to_3D_noc has unconnected port recv_buffer_readdata[31]
+WARNING: [Synth 8-3331] design generic_nios_to_3D_noc has unconnected port recv_buffer_readdata[30]
+WARNING: [Synth 8-3331] design generic_nios_to_3D_noc has unconnected port recv_buffer_readdata[29]
+WARNING: [Synth 8-3331] design generic_nios_to_3D_noc has unconnected port recv_buffer_readdata[28]
+WARNING: [Synth 8-3331] design generic_nios_to_3D_noc has unconnected port recv_buffer_readdata[27]
+WARNING: [Synth 8-3331] design generic_nios_to_3D_noc has unconnected port recv_buffer_readdata[26]
+WARNING: [Synth 8-3331] design generic_nios_to_3D_noc has unconnected port recv_buffer_readdata[25]
+WARNING: [Synth 8-3331] design generic_nios_to_3D_noc has unconnected port recv_buffer_readdata[24]
+WARNING: [Synth 8-3331] design generic_nios_to_3D_noc has unconnected port recv_buffer_readdata[23]
+WARNING: [Synth 8-3331] design generic_nios_to_3D_noc has unconnected port recv_buffer_readdata[22]
+WARNING: [Synth 8-3331] design generic_nios_to_3D_noc has unconnected port recv_buffer_readdata[21]
+WARNING: [Synth 8-3331] design generic_nios_to_3D_noc has unconnected port recv_buffer_readdata[20]
+WARNING: [Synth 8-3331] design generic_nios_to_3D_noc has unconnected port recv_buffer_readdata[19]
+WARNING: [Synth 8-3331] design generic_nios_to_3D_noc has unconnected port recv_buffer_readdata[18]
+WARNING: [Synth 8-3331] design generic_nios_to_3D_noc has unconnected port recv_buffer_readdata[17]
+WARNING: [Synth 8-3331] design generic_nios_to_3D_noc has unconnected port recv_buffer_readdata[16]
+WARNING: [Synth 8-3331] design generic_nios_to_3D_noc has unconnected port recv_buffer_readdata[15]
+WARNING: [Synth 8-3331] design generic_nios_to_3D_noc has unconnected port recv_buffer_readdata[14]
+WARNING: [Synth 8-3331] design generic_nios_to_3D_noc has unconnected port recv_buffer_readdata[13]
+WARNING: [Synth 8-3331] design generic_nios_to_3D_noc has unconnected port recv_buffer_readdata[12]
+WARNING: [Synth 8-3331] design generic_nios_to_3D_noc has unconnected port recv_buffer_readdata[11]
+WARNING: [Synth 8-3331] design generic_nios_to_3D_noc has unconnected port recv_buffer_readdata[10]
+WARNING: [Synth 8-3331] design generic_nios_to_3D_noc has unconnected port recv_buffer_readdata[9]
+WARNING: [Synth 8-3331] design generic_nios_to_3D_noc has unconnected port recv_buffer_readdata[8]
+WARNING: [Synth 8-3331] design generic_nios_to_3D_noc has unconnected port recv_buffer_readdata[7]
+WARNING: [Synth 8-3331] design generic_nios_to_3D_noc has unconnected port recv_buffer_readdata[6]
+WARNING: [Synth 8-3331] design generic_nios_to_3D_noc has unconnected port recv_buffer_readdata[5]
+WARNING: [Synth 8-3331] design generic_nios_to_3D_noc has unconnected port recv_buffer_readdata[4]
+WARNING: [Synth 8-3331] design generic_nios_to_3D_noc has unconnected port recv_buffer_readdata[3]
+WARNING: [Synth 8-3331] design generic_nios_to_3D_noc has unconnected port recv_buffer_readdata[2]
+WARNING: [Synth 8-3331] design generic_nios_to_3D_noc has unconnected port recv_buffer_readdata[1]
+WARNING: [Synth 8-3331] design generic_nios_to_3D_noc has unconnected port recv_buffer_readdata[0]
+WARNING: [Synth 8-3331] design generic_nios_to_3D_noc has unconnected port slave_clk
+WARNING: [Synth 8-3331] design generic_nios_to_3D_noc has unconnected port slave_reset
+WARNING: [Synth 8-3331] design generic_nios_to_3D_noc has unconnected port inport[43]
+WARNING: [Synth 8-3331] design generic_nios_to_3D_noc has unconnected port inport[42]
+WARNING: [Synth 8-3331] design generic_nios_to_3D_noc has unconnected port inport[41]
+WARNING: [Synth 8-3331] design generic_nios_to_3D_noc has unconnected port inport[40]
+WARNING: [Synth 8-3331] design generic_nios_to_3D_noc has unconnected port inport[39]
+WARNING: [Synth 8-3331] design generic_nios_to_3D_noc has unconnected port inport[38]
+WARNING: [Synth 8-3331] design generic_nios_to_3D_noc has unconnected port inport[37]
+WARNING: [Synth 8-3331] design generic_nios_to_3D_noc has unconnected port inport[36]
+WARNING: [Synth 8-3331] design generic_nios_to_3D_noc has unconnected port inport[35]
+WARNING: [Synth 8-3331] design generic_nios_to_3D_noc has unconnected port inport[34]
+WARNING: [Synth 8-3331] design generic_nios_to_3D_noc has unconnected port inport[33]
+WARNING: [Synth 8-3331] design generic_nios_to_3D_noc has unconnected port inport[32]
+WARNING: [Synth 8-3331] design kth_generic_rni_static has unconnected port dap_writedata[63]
+WARNING: [Synth 8-3331] design kth_generic_rni_static has unconnected port dap_writedata[62]
+WARNING: [Synth 8-3331] design kth_generic_rni_static has unconnected port dap_writedata[61]
+WARNING: [Synth 8-3331] design kth_generic_rni_static has unconnected port dap_writedata[60]
+WARNING: [Synth 8-3331] design kth_generic_rni_static has unconnected port dap_writedata[59]
+WARNING: [Synth 8-3331] design kth_generic_rni_static has unconnected port dap_writedata[58]
+WARNING: [Synth 8-3331] design kth_generic_rni_static has unconnected port dap_writedata[57]
+WARNING: [Synth 8-3331] design kth_generic_rni_static has unconnected port dap_writedata[56]
+WARNING: [Synth 8-3331] design kth_generic_rni_static has unconnected port dap_writedata[55]
+WARNING: [Synth 8-3331] design kth_generic_rni_static has unconnected port dap_writedata[54]
+WARNING: [Synth 8-3331] design kth_generic_rni_static has unconnected port dap_writedata[53]
+WARNING: [Synth 8-3331] design kth_generic_rni_static has unconnected port dap_writedata[52]
+WARNING: [Synth 8-3331] design kth_generic_rni_static has unconnected port dap_writedata[51]
+WARNING: [Synth 8-3331] design kth_generic_rni_static has unconnected port dap_writedata[50]
+WARNING: [Synth 8-3331] design kth_generic_rni_static has unconnected port dap_writedata[49]
+WARNING: [Synth 8-3331] design kth_generic_rni_static has unconnected port dap_writedata[48]
+WARNING: [Synth 8-3331] design kth_generic_rni_static has unconnected port dap_writedata[47]
+WARNING: [Synth 8-3331] design kth_generic_rni_static has unconnected port dap_writedata[46]
+WARNING: [Synth 8-3331] design kth_generic_rni_static has unconnected port dap_writedata[45]
+WARNING: [Synth 8-3331] design kth_generic_rni_static has unconnected port dap_writedata[44]
+WARNING: [Synth 8-3331] design kth_generic_rni_static has unconnected port dap_writedata[43]
+WARNING: [Synth 8-3331] design kth_generic_rni_static has unconnected port dap_writedata[42]
+WARNING: [Synth 8-3331] design kth_generic_rni_static has unconnected port dap_writedata[41]
+WARNING: [Synth 8-3331] design kth_generic_rni_static has unconnected port dap_writedata[40]
+WARNING: [Synth 8-3331] design kth_generic_rni_static has unconnected port dap_writedata[39]
+WARNING: [Synth 8-3331] design kth_generic_rni_static has unconnected port dap_writedata[38]
+WARNING: [Synth 8-3331] design kth_generic_rni_static has unconnected port dap_writedata[37]
+WARNING: [Synth 8-3331] design kth_generic_rni_static has unconnected port dap_writedata[36]
+WARNING: [Synth 8-3331] design kth_generic_rni_static has unconnected port dap_writedata[35]
+WARNING: [Synth 8-3331] design kth_generic_rni_static has unconnected port dap_writedata[34]
+WARNING: [Synth 8-3331] design kth_generic_rni_static has unconnected port dap_writedata[33]
+WARNING: [Synth 8-3331] design kth_generic_rni_static has unconnected port dap_writedata[32]
+WARNING: [Synth 8-3331] design kth_generic_rni_static has unconnected port Bus2IP_Addr[0]
+WARNING: [Synth 8-3331] design kth_generic_rni_static has unconnected port Bus2IP_Addr[1]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1154.992 ; gain = 235.770 ; free physical = 2339 ; free virtual = 125007
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 1154.992 ; gain = 235.770 ; free physical = 2325 ; free virtual = 124992
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.06 ; elapsed = 00:00:00.05 . Memory (MB): peak = 1531.578 ; gain = 0.000 ; free physical = 2124 ; free virtual = 124791
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:22 ; elapsed = 00:00:25 . Memory (MB): peak = 1531.578 ; gain = 612.355 ; free physical = 1897 ; free virtual = 124563
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:22 ; elapsed = 00:00:25 . Memory (MB): peak = 1531.578 ; gain = 612.355 ; free physical = 1897 ; free virtual = 124563
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:22 ; elapsed = 00:00:25 . Memory (MB): peak = 1531.578 ; gain = 612.355 ; free physical = 1896 ; free virtual = 124562
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5544] ROM "s_axi_rresp_i" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "s_axi_rresp_i" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "s_axi_bresp_i" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "s_axi_bresp_i" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-4471] merging register 'old_heartbeat_reg' into 'old_GlobalSync_reg' [/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.srcs/sources_1/bd/BD/ipshared/e92d/hdl/generic_interface_to_noc_static.vhd:719]
+INFO: [Synth 8-802] inferred FSM for state register 'xmit_state_reg' in module 'generic_nios_to_3D_noc'
+INFO: [Synth 8-5546] ROM "xmit_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "delay" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "recv_counter[0]" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "recv_counter[1]" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "recv_counter[2]" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "recv_counter[3]" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "channel_status[7]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "channel_status[6]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "channel_status[5]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "channel_status[4]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "channel_status[3]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "channel_status[2]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "channel_status[1]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "channel_status[0]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "channel_status[3]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "channel_status[2]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "channel_status[1]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "channel_status[0]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "recv_counter[0]" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "recv_counter[1]" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "recv_counter[2]" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "recv_counter[3]" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "write_status_reg" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "xmit_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                              000 |                              000
+              read_input |                              001 |                              001
+         wait_for_read_r |                              010 |                              011
+             delay_state |                              011 |                              100
+             read_memory |                              100 |                              010
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'xmit_state_reg' using encoding 'sequential' in module 'generic_nios_to_3D_noc'
+INFO: [Synth 8-3971] The signal RAM_reg was recognized as a true dual port RAM template.
+INFO: [Synth 8-3971] The signal RAM_reg was recognized as a true dual port RAM template.
+INFO: [Synth 8-3971] The signal RAM_reg was recognized as a true dual port RAM template.
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 1531.578 ; gain = 612.355 ; free physical = 1791 ; free virtual = 124457
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 7     
++---XORs : 
+	   2 Input      5 Bit         XORs := 1     
++---Registers : 
+	               56 Bit    Registers := 1     
+	               32 Bit    Registers := 4     
+	               16 Bit    Registers := 8     
+	                6 Bit    Registers := 1     
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 24    
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 29    
+	                1 Bit    Registers := 20    
++---RAMs : 
+	              512 Bit         RAMs := 2     
+	              256 Bit         RAMs := 2     
++---Muxes : 
+	   2 Input     64 Bit        Muxes := 3     
+	   5 Input     56 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 12    
+	   3 Input     32 Bit        Muxes := 2     
+	  10 Input     32 Bit        Muxes := 1     
+	   2 Input     18 Bit        Muxes := 1     
+	   2 Input     15 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 1     
+	   5 Input      5 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 10    
+	   4 Input      4 Bit        Muxes := 1     
+	   6 Input      3 Bit        Muxes := 1     
+	   7 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   5 Input      2 Bit        Muxes := 2     
+	   6 Input      2 Bit        Muxes := 5     
+	  27 Input      2 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 5     
+	   2 Input      1 Bit        Muxes := 53    
+	   6 Input      1 Bit        Muxes := 3     
+	  16 Input      1 Bit        Muxes := 2     
+	   5 Input      1 Bit        Muxes := 8     
+	   4 Input      1 Bit        Muxes := 24    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module address_decoder 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 3     
+Module slave_attachment 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                2 Bit    Registers := 3     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input     18 Bit        Muxes := 1     
+	   7 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 7     
+Module generic_nios_to_3D_noc 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 7     
++---Registers : 
+	               56 Bit    Registers := 1     
+	               32 Bit    Registers := 2     
+	                6 Bit    Registers := 1     
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 23    
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 26    
+	                1 Bit    Registers := 10    
++---Muxes : 
+	   5 Input     56 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 6     
+	   3 Input     32 Bit        Muxes := 2     
+	  10 Input     32 Bit        Muxes := 1     
+	   5 Input      5 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 6     
+	   4 Input      4 Bit        Muxes := 1     
+	   6 Input      3 Bit        Muxes := 1     
+	   5 Input      2 Bit        Muxes := 2     
+	   6 Input      2 Bit        Muxes := 5     
+	  27 Input      2 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 5     
+	   2 Input      1 Bit        Muxes := 42    
+	   6 Input      1 Bit        Muxes := 3     
+	  16 Input      1 Bit        Muxes := 2     
+	   5 Input      1 Bit        Muxes := 8     
+	   4 Input      1 Bit        Muxes := 24    
+Module rams_16b 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 2     
++---RAMs : 
+	              256 Bit         RAMs := 1     
+Module rams_16b__parameterized2 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 2     
++---RAMs : 
+	              512 Bit         RAMs := 1     
+Module rams_16b__parameterized4 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 2     
++---RAMs : 
+	              512 Bit         RAMs := 1     
+Module kth_generic_rni_static 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      5 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input     64 Bit        Muxes := 3     
+	   2 Input     32 Bit        Muxes := 6     
+	   2 Input     15 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 4     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3917] design BD_kth_axi_rni_static_2_0 has port dap_readdata[63] driven by constant 0
+INFO: [Synth 8-3917] design BD_kth_axi_rni_static_2_0 has port dap_readdata[62] driven by constant 0
+INFO: [Synth 8-3917] design BD_kth_axi_rni_static_2_0 has port dap_readdata[61] driven by constant 0
+INFO: [Synth 8-3917] design BD_kth_axi_rni_static_2_0 has port dap_readdata[60] driven by constant 0
+INFO: [Synth 8-3917] design BD_kth_axi_rni_static_2_0 has port dap_readdata[59] driven by constant 0
+INFO: [Synth 8-3917] design BD_kth_axi_rni_static_2_0 has port dap_readdata[58] driven by constant 0
+INFO: [Synth 8-3917] design BD_kth_axi_rni_static_2_0 has port dap_readdata[57] driven by constant 0
+INFO: [Synth 8-3917] design BD_kth_axi_rni_static_2_0 has port dap_readdata[56] driven by constant 0
+INFO: [Synth 8-3917] design BD_kth_axi_rni_static_2_0 has port dap_readdata[55] driven by constant 0
+INFO: [Synth 8-3917] design BD_kth_axi_rni_static_2_0 has port dap_readdata[54] driven by constant 0
+INFO: [Synth 8-3917] design BD_kth_axi_rni_static_2_0 has port dap_readdata[53] driven by constant 0
+INFO: [Synth 8-3917] design BD_kth_axi_rni_static_2_0 has port dap_readdata[52] driven by constant 0
+INFO: [Synth 8-3917] design BD_kth_axi_rni_static_2_0 has port dap_readdata[51] driven by constant 0
+INFO: [Synth 8-3917] design BD_kth_axi_rni_static_2_0 has port dap_readdata[50] driven by constant 0
+INFO: [Synth 8-3917] design BD_kth_axi_rni_static_2_0 has port dap_readdata[49] driven by constant 0
+INFO: [Synth 8-3917] design BD_kth_axi_rni_static_2_0 has port dap_readdata[48] driven by constant 0
+INFO: [Synth 8-3917] design BD_kth_axi_rni_static_2_0 has port dap_readdata[47] driven by constant 0
+INFO: [Synth 8-3917] design BD_kth_axi_rni_static_2_0 has port dap_readdata[46] driven by constant 0
+INFO: [Synth 8-3917] design BD_kth_axi_rni_static_2_0 has port dap_readdata[45] driven by constant 0
+INFO: [Synth 8-3917] design BD_kth_axi_rni_static_2_0 has port dap_readdata[44] driven by constant 0
+INFO: [Synth 8-3917] design BD_kth_axi_rni_static_2_0 has port dap_readdata[43] driven by constant 0
+INFO: [Synth 8-3917] design BD_kth_axi_rni_static_2_0 has port dap_readdata[42] driven by constant 0
+INFO: [Synth 8-3917] design BD_kth_axi_rni_static_2_0 has port dap_readdata[41] driven by constant 0
+INFO: [Synth 8-3917] design BD_kth_axi_rni_static_2_0 has port dap_readdata[40] driven by constant 0
+INFO: [Synth 8-3917] design BD_kth_axi_rni_static_2_0 has port dap_readdata[39] driven by constant 0
+INFO: [Synth 8-3917] design BD_kth_axi_rni_static_2_0 has port dap_readdata[38] driven by constant 0
+INFO: [Synth 8-3917] design BD_kth_axi_rni_static_2_0 has port dap_readdata[37] driven by constant 0
+INFO: [Synth 8-3917] design BD_kth_axi_rni_static_2_0 has port dap_readdata[36] driven by constant 0
+INFO: [Synth 8-3917] design BD_kth_axi_rni_static_2_0 has port dap_readdata[35] driven by constant 0
+INFO: [Synth 8-3917] design BD_kth_axi_rni_static_2_0 has port dap_readdata[34] driven by constant 0
+INFO: [Synth 8-3917] design BD_kth_axi_rni_static_2_0 has port dap_readdata[33] driven by constant 0
+INFO: [Synth 8-3917] design BD_kth_axi_rni_static_2_0 has port dap_readdata[32] driven by constant 0
+INFO: [Synth 8-3971] The signal U0/kth_axi_rni_static_0/USER_LOGIC_I/G0.send_buffer/LW/RAM_reg was recognized as a true dual port RAM template.
+INFO: [Synth 8-3971] The signal U0/kth_axi_rni_static_0/USER_LOGIC_I/G0.send_buffer/HW/RAM_reg was recognized as a true dual port RAM template.
+INFO: [Synth 8-3971] The signal U0/kth_axi_rni_static_0/USER_LOGIC_I/G0.recv_buffer/LW/RAM_reg was recognized as a true dual port RAM template.
+INFO: [Synth 8-3971] The signal U0/kth_axi_rni_static_0/USER_LOGIC_I/G0.recv_buffer/HW/RAM_reg was recognized as a true dual port RAM template.
+INFO: [Synth 8-3886] merging instance 'U0/kth_axi_rni_static_0/USER_LOGIC_I/interface/channel_selected_reg[1]' (FDE) to 'U0/kth_axi_rni_static_0/USER_LOGIC_I/interface/channel_nr_reg[1]'
+INFO: [Synth 8-3886] merging instance 'U0/kth_axi_rni_static_0/USER_LOGIC_I/interface/channel_selected_reg[0]' (FDE) to 'U0/kth_axi_rni_static_0/USER_LOGIC_I/interface/channel_nr_reg[0]'
+INFO: [Synth 8-3886] merging instance 'U0/kth_axi_rni_static_0/USER_LOGIC_I/interface/channel_nr_reg[1]' (FDE) to 'U0/kth_axi_rni_static_0/USER_LOGIC_I/interface/mem_address_reg[3]'
+INFO: [Synth 8-3886] merging instance 'U0/kth_axi_rni_static_0/USER_LOGIC_I/interface/channel_nr_reg[0]' (FDE) to 'U0/kth_axi_rni_static_0/USER_LOGIC_I/interface/mem_address_reg[2]'
+INFO: [Synth 8-3886] merging instance 'U0/kth_axi_rni_static_0/USER_LOGIC_I/interface/dest_layer_reg[0]' (FDE) to 'U0/kth_axi_rni_static_0/USER_LOGIC_I/interface/priority_reg[0]'
+INFO: [Synth 8-3886] merging instance 'U0/kth_axi_rni_static_0/USER_LOGIC_I/interface/dest_layer_reg[1]' (FDE) to 'U0/kth_axi_rni_static_0/USER_LOGIC_I/interface/priority_reg[0]'
+INFO: [Synth 8-3886] merging instance 'U0/kth_axi_rni_static_0/USER_LOGIC_I/interface/priority_reg[0]' (FDE) to 'U0/kth_axi_rni_static_0/USER_LOGIC_I/interface/priority_reg[1]'
+INFO: [Synth 8-3886] merging instance 'U0/kth_axi_rni_static_0/USER_LOGIC_I/interface/priority_reg[1]' (FDE) to 'U0/kth_axi_rni_static_0/USER_LOGIC_I/interface/priority_reg[2]'
+INFO: [Synth 8-3886] merging instance 'U0/kth_axi_rni_static_0/USER_LOGIC_I/interface/priority_reg[2]' (FDE) to 'U0/kth_axi_rni_static_0/USER_LOGIC_I/interface/priority_reg[3]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/kth_axi_rni_static_0/USER_LOGIC_I/interface/priority_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/kth_axi_rni_static_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rresp_i_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/kth_axi_rni_static_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_bresp_i_reg[1] )
+INFO: [Synth 8-3886] merging instance 'U0/kth_axi_rni_static_0/USER_LOGIC_I/interface/outport_reg[35]' (FDRE) to 'U0/kth_axi_rni_static_0/USER_LOGIC_I/interface/outport_reg[37]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/kth_axi_rni_static_0/USER_LOGIC_I/interface/outport_reg[37] )
+INFO: [Synth 8-3332] Sequential element (U0/kth_axi_rni_static_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_bresp_i_reg[1]) is unused and will be removed from module BD_kth_axi_rni_static_2_0.
+INFO: [Synth 8-3332] Sequential element (U0/kth_axi_rni_static_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rresp_i_reg[1]) is unused and will be removed from module BD_kth_axi_rni_static_2_0.
+INFO: [Synth 8-3332] Sequential element (U0/kth_axi_rni_static_0/USER_LOGIC_I/interface/command_reg_reg[31]) is unused and will be removed from module BD_kth_axi_rni_static_2_0.
+INFO: [Synth 8-3332] Sequential element (U0/kth_axi_rni_static_0/USER_LOGIC_I/interface/command_reg_reg[30]) is unused and will be removed from module BD_kth_axi_rni_static_2_0.
+INFO: [Synth 8-3332] Sequential element (U0/kth_axi_rni_static_0/USER_LOGIC_I/interface/command_reg_reg[29]) is unused and will be removed from module BD_kth_axi_rni_static_2_0.
+INFO: [Synth 8-3332] Sequential element (U0/kth_axi_rni_static_0/USER_LOGIC_I/interface/command_reg_reg[28]) is unused and will be removed from module BD_kth_axi_rni_static_2_0.
+INFO: [Synth 8-3332] Sequential element (U0/kth_axi_rni_static_0/USER_LOGIC_I/interface/command_reg_reg[27]) is unused and will be removed from module BD_kth_axi_rni_static_2_0.
+INFO: [Synth 8-3332] Sequential element (U0/kth_axi_rni_static_0/USER_LOGIC_I/interface/command_reg_reg[26]) is unused and will be removed from module BD_kth_axi_rni_static_2_0.
+INFO: [Synth 8-3332] Sequential element (U0/kth_axi_rni_static_0/USER_LOGIC_I/interface/command_reg_reg[25]) is unused and will be removed from module BD_kth_axi_rni_static_2_0.
+INFO: [Synth 8-3332] Sequential element (U0/kth_axi_rni_static_0/USER_LOGIC_I/interface/command_reg_reg[24]) is unused and will be removed from module BD_kth_axi_rni_static_2_0.
+INFO: [Synth 8-3332] Sequential element (U0/kth_axi_rni_static_0/USER_LOGIC_I/interface/command_reg_reg[23]) is unused and will be removed from module BD_kth_axi_rni_static_2_0.
+INFO: [Synth 8-3332] Sequential element (U0/kth_axi_rni_static_0/USER_LOGIC_I/interface/command_reg_reg[22]) is unused and will be removed from module BD_kth_axi_rni_static_2_0.
+INFO: [Synth 8-3332] Sequential element (U0/kth_axi_rni_static_0/USER_LOGIC_I/interface/command_reg_reg[21]) is unused and will be removed from module BD_kth_axi_rni_static_2_0.
+INFO: [Synth 8-3332] Sequential element (U0/kth_axi_rni_static_0/USER_LOGIC_I/interface/command_reg_reg[20]) is unused and will be removed from module BD_kth_axi_rni_static_2_0.
+INFO: [Synth 8-3332] Sequential element (U0/kth_axi_rni_static_0/USER_LOGIC_I/interface/command_reg_reg[19]) is unused and will be removed from module BD_kth_axi_rni_static_2_0.
+INFO: [Synth 8-3332] Sequential element (U0/kth_axi_rni_static_0/USER_LOGIC_I/interface/command_reg_reg[18]) is unused and will be removed from module BD_kth_axi_rni_static_2_0.
+INFO: [Synth 8-3332] Sequential element (U0/kth_axi_rni_static_0/USER_LOGIC_I/interface/command_reg_reg[17]) is unused and will be removed from module BD_kth_axi_rni_static_2_0.
+INFO: [Synth 8-3332] Sequential element (U0/kth_axi_rni_static_0/USER_LOGIC_I/interface/command_reg_reg[16]) is unused and will be removed from module BD_kth_axi_rni_static_2_0.
+INFO: [Synth 8-3332] Sequential element (U0/kth_axi_rni_static_0/USER_LOGIC_I/interface/command_reg_reg[15]) is unused and will be removed from module BD_kth_axi_rni_static_2_0.
+INFO: [Synth 8-3332] Sequential element (U0/kth_axi_rni_static_0/USER_LOGIC_I/interface/command_reg_reg[14]) is unused and will be removed from module BD_kth_axi_rni_static_2_0.
+INFO: [Synth 8-3332] Sequential element (U0/kth_axi_rni_static_0/USER_LOGIC_I/interface/outport_reg[41]) is unused and will be removed from module BD_kth_axi_rni_static_2_0.
+INFO: [Synth 8-3332] Sequential element (U0/kth_axi_rni_static_0/USER_LOGIC_I/interface/outport_reg[40]) is unused and will be removed from module BD_kth_axi_rni_static_2_0.
+INFO: [Synth 8-3332] Sequential element (U0/kth_axi_rni_static_0/USER_LOGIC_I/interface/outport_reg[39]) is unused and will be removed from module BD_kth_axi_rni_static_2_0.
+INFO: [Synth 8-3332] Sequential element (U0/kth_axi_rni_static_0/USER_LOGIC_I/interface/outport_reg[38]) is unused and will be removed from module BD_kth_axi_rni_static_2_0.
+INFO: [Synth 8-3332] Sequential element (U0/kth_axi_rni_static_0/USER_LOGIC_I/interface/outport_reg[37]) is unused and will be removed from module BD_kth_axi_rni_static_2_0.
+INFO: [Synth 8-3332] Sequential element (U0/kth_axi_rni_static_0/USER_LOGIC_I/interface/outport_reg[33]) is unused and will be removed from module BD_kth_axi_rni_static_2_0.
+INFO: [Synth 8-3332] Sequential element (U0/kth_axi_rni_static_0/USER_LOGIC_I/interface/outport_reg[32]) is unused and will be removed from module BD_kth_axi_rni_static_2_0.
+INFO: [Synth 8-3332] Sequential element (U0/kth_axi_rni_static_0/USER_LOGIC_I/interface/interrupt_reg[3]) is unused and will be removed from module BD_kth_axi_rni_static_2_0.
+INFO: [Synth 8-3332] Sequential element (U0/kth_axi_rni_static_0/USER_LOGIC_I/interface/interrupt_reg[2]) is unused and will be removed from module BD_kth_axi_rni_static_2_0.
+INFO: [Synth 8-3332] Sequential element (U0/kth_axi_rni_static_0/USER_LOGIC_I/interface/priority_reg[3]) is unused and will be removed from module BD_kth_axi_rni_static_2_0.
+INFO: [Synth 8-3886] merging instance 'U0/kth_axi_rni_static_0/USER_LOGIC_I/interface/msg_length_reg_reg[7][0]' (FDCE) to 'U0/kth_axi_rni_static_0/USER_LOGIC_I/interface/msg_length_reg_reg[3][0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/kth_axi_rni_static_0/USER_LOGIC_I/interface/msg_length_reg_reg[3][0] )
+INFO: [Synth 8-3886] merging instance 'U0/kth_axi_rni_static_0/USER_LOGIC_I/interface/msg_length_reg_reg[3][1]' (FDCE) to 'U0/kth_axi_rni_static_0/USER_LOGIC_I/interface/msg_length_reg_reg[7][1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/kth_axi_rni_static_0/USER_LOGIC_I/interface/msg_length_reg_reg[7][1] )
+INFO: [Synth 8-3886] merging instance 'U0/kth_axi_rni_static_0/USER_LOGIC_I/interface/d_pid_reg[7][0]' (FDCE) to 'U0/kth_axi_rni_static_0/USER_LOGIC_I/interface/d_pid_reg[3][0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/kth_axi_rni_static_0/USER_LOGIC_I/interface/d_pid_reg[3][0] )
+INFO: [Synth 8-3886] merging instance 'U0/kth_axi_rni_static_0/USER_LOGIC_I/interface/d_pid_reg[7][1]' (FDCE) to 'U0/kth_axi_rni_static_0/USER_LOGIC_I/interface/d_pid_reg[3][1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/kth_axi_rni_static_0/USER_LOGIC_I/interface/d_pid_reg[3][1] )
+INFO: [Synth 8-3886] merging instance 'U0/kth_axi_rni_static_0/USER_LOGIC_I/interface/d_pid_reg[3][2]' (FDCE) to 'U0/kth_axi_rni_static_0/USER_LOGIC_I/interface/d_pid_reg[7][2]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/kth_axi_rni_static_0/USER_LOGIC_I/interface/d_pid_reg[7][2] )
+INFO: [Synth 8-3886] merging instance 'U0/kth_axi_rni_static_0/USER_LOGIC_I/interface/d_pid_reg[3][3]' (FDCE) to 'U0/kth_axi_rni_static_0/USER_LOGIC_I/interface/d_pid_reg[7][3]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/kth_axi_rni_static_0/USER_LOGIC_I/interface/d_pid_reg[7][3] )
+INFO: [Synth 8-3886] merging instance 'U0/kth_axi_rni_static_0/USER_LOGIC_I/interface/s_pid_reg[3][0]' (FDCE) to 'U0/kth_axi_rni_static_0/USER_LOGIC_I/interface/s_pid_reg[7][0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/kth_axi_rni_static_0/USER_LOGIC_I/interface/s_pid_reg[7][0] )
+INFO: [Synth 8-3886] merging instance 'U0/kth_axi_rni_static_0/USER_LOGIC_I/interface/s_pid_reg[3][1]' (FDCE) to 'U0/kth_axi_rni_static_0/USER_LOGIC_I/interface/s_pid_reg[7][1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/kth_axi_rni_static_0/USER_LOGIC_I/interface/s_pid_reg[7][1] )
+INFO: [Synth 8-3886] merging instance 'U0/kth_axi_rni_static_0/USER_LOGIC_I/interface/s_pid_reg[3][2]' (FDCE) to 'U0/kth_axi_rni_static_0/USER_LOGIC_I/interface/s_pid_reg[7][2]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/kth_axi_rni_static_0/USER_LOGIC_I/interface/s_pid_reg[7][2] )
+INFO: [Synth 8-3886] merging instance 'U0/kth_axi_rni_static_0/USER_LOGIC_I/interface/s_pid_reg[3][3]' (FDCE) to 'U0/kth_axi_rni_static_0/USER_LOGIC_I/interface/s_pid_reg[7][3]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/kth_axi_rni_static_0/USER_LOGIC_I/interface/s_pid_reg[7][3] )
+INFO: [Synth 8-3332] Sequential element (U0/kth_axi_rni_static_0/USER_LOGIC_I/interface/msg_length_reg_reg[3][0]) is unused and will be removed from module BD_kth_axi_rni_static_2_0.
+INFO: [Synth 8-3332] Sequential element (U0/kth_axi_rni_static_0/USER_LOGIC_I/interface/msg_length_reg_reg[7][1]) is unused and will be removed from module BD_kth_axi_rni_static_2_0.
+INFO: [Synth 8-3332] Sequential element (U0/kth_axi_rni_static_0/USER_LOGIC_I/interface/d_pid_reg[3][0]) is unused and will be removed from module BD_kth_axi_rni_static_2_0.
+INFO: [Synth 8-3332] Sequential element (U0/kth_axi_rni_static_0/USER_LOGIC_I/interface/d_pid_reg[3][1]) is unused and will be removed from module BD_kth_axi_rni_static_2_0.
+INFO: [Synth 8-3332] Sequential element (U0/kth_axi_rni_static_0/USER_LOGIC_I/interface/d_pid_reg[7][2]) is unused and will be removed from module BD_kth_axi_rni_static_2_0.
+INFO: [Synth 8-3332] Sequential element (U0/kth_axi_rni_static_0/USER_LOGIC_I/interface/d_pid_reg[7][3]) is unused and will be removed from module BD_kth_axi_rni_static_2_0.
+INFO: [Synth 8-3332] Sequential element (U0/kth_axi_rni_static_0/USER_LOGIC_I/interface/s_pid_reg[7][0]) is unused and will be removed from module BD_kth_axi_rni_static_2_0.
+INFO: [Synth 8-3332] Sequential element (U0/kth_axi_rni_static_0/USER_LOGIC_I/interface/s_pid_reg[7][1]) is unused and will be removed from module BD_kth_axi_rni_static_2_0.
+INFO: [Synth 8-3332] Sequential element (U0/kth_axi_rni_static_0/USER_LOGIC_I/interface/s_pid_reg[7][2]) is unused and will be removed from module BD_kth_axi_rni_static_2_0.
+INFO: [Synth 8-3332] Sequential element (U0/kth_axi_rni_static_0/USER_LOGIC_I/interface/s_pid_reg[7][3]) is unused and will be removed from module BD_kth_axi_rni_static_2_0.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:25 ; elapsed = 00:00:28 . Memory (MB): peak = 1531.578 ; gain = 612.355 ; free physical = 2210 ; free virtual = 124876
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Preliminary Mapping  Report (see note below)
++------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name | RTL Object | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|rams_16b    | RAM_reg    | 16 x 16(READ_FIRST)    | W | R | 16 x 16(READ_FIRST)    | W | R | Port A and B     | 1      | 0      | 
+|rams_16b    | RAM_reg    | 16 x 16(READ_FIRST)    | W | R | 16 x 16(READ_FIRST)    | W | R | Port A and B     | 1      | 0      | 
+|rams_16b    | RAM_reg    | 32 x 16(READ_FIRST)    | W | R | 32 x 16(READ_FIRST)    | W | R | Port A and B     | 1      | 0      | 
+|rams_16b    | RAM_reg    | 32 x 16(READ_FIRST)    | W | R | 32 x 16(READ_FIRST)    | W | R | Port A and B     | 1      | 0      | 
++------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:35 ; elapsed = 00:00:39 . Memory (MB): peak = 1531.578 ; gain = 612.355 ; free physical = 1991 ; free virtual = 124665
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:35 ; elapsed = 00:00:40 . Memory (MB): peak = 1531.578 ; gain = 612.355 ; free physical = 1990 ; free virtual = 124663
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3332] Sequential element (U0/kth_axi_rni_static_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_bresp_i_reg[0]) is unused and will be removed from module BD_kth_axi_rni_static_2_0.
+INFO: [Synth 8-3332] Sequential element (U0/kth_axi_rni_static_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rresp_i_reg[0]) is unused and will be removed from module BD_kth_axi_rni_static_2_0.
+INFO: [Synth 8-4480] The timing for the instance U0/kth_axi_rni_static_0/USER_LOGIC_I/G0.send_buffer/LW/RAM_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance U0/kth_axi_rni_static_0/USER_LOGIC_I/G0.send_buffer/LW/RAM_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance U0/kth_axi_rni_static_0/USER_LOGIC_I/G0.send_buffer/HW/RAM_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance U0/kth_axi_rni_static_0/USER_LOGIC_I/G0.send_buffer/HW/RAM_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance U0/kth_axi_rni_static_0/USER_LOGIC_I/G0.recv_buffer/LW/RAM_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance U0/kth_axi_rni_static_0/USER_LOGIC_I/G0.recv_buffer/HW/RAM_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:36 ; elapsed = 00:00:40 . Memory (MB): peak = 1531.578 ; gain = 612.355 ; free physical = 1952 ; free virtual = 124626
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+CRITICAL WARNING: [Synth 8-5799] Converted tricell instance 'kth_axi_rni_static_0i_1' to logic
+CRITICAL WARNING: [Synth 8-5799] Converted tricell instance 'kth_axi_rni_static_0i_2' to logic
+CRITICAL WARNING: [Synth 8-5799] Converted tricell instance 'kth_axi_rni_static_0i_3' to logic
+CRITICAL WARNING: [Synth 8-5799] Converted tricell instance 'kth_axi_rni_static_0i_4' to logic
+CRITICAL WARNING: [Synth 8-5799] Converted tricell instance 'kth_axi_rni_static_0i_5' to logic
+CRITICAL WARNING: [Synth 8-5799] Converted tricell instance 'kth_axi_rni_static_0i_6' to logic
+CRITICAL WARNING: [Synth 8-5799] Converted tricell instance 'kth_axi_rni_static_0i_7' to logic
+CRITICAL WARNING: [Synth 8-5799] Converted tricell instance 'kth_axi_rni_static_0i_8' to logic
+CRITICAL WARNING: [Synth 8-5799] Converted tricell instance 'kth_axi_rni_static_0i_9' to logic
+CRITICAL WARNING: [Synth 8-5799] Converted tricell instance 'kth_axi_rni_static_0i_10' to logic
+CRITICAL WARNING: [Synth 8-5799] Converted tricell instance 'kth_axi_rni_static_0i_11' to logic
+CRITICAL WARNING: [Synth 8-5799] Converted tricell instance 'kth_axi_rni_static_0i_12' to logic
+CRITICAL WARNING: [Synth 8-5799] Converted tricell instance 'kth_axi_rni_static_0i_13' to logic
+CRITICAL WARNING: [Synth 8-5799] Converted tricell instance 'kth_axi_rni_static_0i_14' to logic
+CRITICAL WARNING: [Synth 8-5799] Converted tricell instance 'kth_axi_rni_static_0i_15' to logic
+CRITICAL WARNING: [Synth 8-5799] Converted tricell instance 'kth_axi_rni_static_0i_16' to logic
+CRITICAL WARNING: [Synth 8-5799] Converted tricell instance 'kth_axi_rni_static_0i_17' to logic
+CRITICAL WARNING: [Synth 8-5799] Converted tricell instance 'kth_axi_rni_static_0i_18' to logic
+CRITICAL WARNING: [Synth 8-5799] Converted tricell instance 'kth_axi_rni_static_0i_19' to logic
+CRITICAL WARNING: [Synth 8-5799] Converted tricell instance 'kth_axi_rni_static_0i_20' to logic
+CRITICAL WARNING: [Synth 8-5799] Converted tricell instance 'kth_axi_rni_static_0i_21' to logic
+CRITICAL WARNING: [Synth 8-5799] Converted tricell instance 'kth_axi_rni_static_0i_22' to logic
+CRITICAL WARNING: [Synth 8-5799] Converted tricell instance 'kth_axi_rni_static_0i_23' to logic
+CRITICAL WARNING: [Synth 8-5799] Converted tricell instance 'kth_axi_rni_static_0i_24' to logic
+CRITICAL WARNING: [Synth 8-5799] Converted tricell instance 'kth_axi_rni_static_0i_25' to logic
+CRITICAL WARNING: [Synth 8-5799] Converted tricell instance 'kth_axi_rni_static_0i_26' to logic
+CRITICAL WARNING: [Synth 8-5799] Converted tricell instance 'kth_axi_rni_static_0i_27' to logic
+CRITICAL WARNING: [Synth 8-5799] Converted tricell instance 'kth_axi_rni_static_0i_28' to logic
+CRITICAL WARNING: [Synth 8-5799] Converted tricell instance 'kth_axi_rni_static_0i_29' to logic
+CRITICAL WARNING: [Synth 8-5799] Converted tricell instance 'kth_axi_rni_static_0i_30' to logic
+CRITICAL WARNING: [Synth 8-5799] Converted tricell instance 'kth_axi_rni_static_0i_31' to logic
+CRITICAL WARNING: [Synth 8-5799] Converted tricell instance 'kth_axi_rni_static_0i_32' to logic
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:36 ; elapsed = 00:00:41 . Memory (MB): peak = 1531.578 ; gain = 612.355 ; free physical = 1889 ; free virtual = 124563
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:36 ; elapsed = 00:00:41 . Memory (MB): peak = 1531.578 ; gain = 612.355 ; free physical = 1888 ; free virtual = 124562
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:36 ; elapsed = 00:00:41 . Memory (MB): peak = 1531.578 ; gain = 612.355 ; free physical = 1882 ; free virtual = 124556
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:36 ; elapsed = 00:00:41 . Memory (MB): peak = 1531.578 ; gain = 612.355 ; free physical = 1881 ; free virtual = 124556
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:36 ; elapsed = 00:00:41 . Memory (MB): peak = 1531.578 ; gain = 612.355 ; free physical = 1878 ; free virtual = 124552
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:36 ; elapsed = 00:00:41 . Memory (MB): peak = 1531.578 ; gain = 612.355 ; free physical = 1878 ; free virtual = 124552
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |CARRY4   |    10|
+|2     |LUT1     |    43|
+|3     |LUT2     |    47|
+|4     |LUT3     |    48|
+|5     |LUT4     |    43|
+|6     |LUT5     |    78|
+|7     |LUT6     |   215|
+|8     |MUXF7    |     3|
+|9     |RAMB18E1 |     4|
+|10    |FDCE     |   219|
+|11    |FDRE     |   134|
++------+---------+------+
+
+Report Instance Areas: 
++------+---------------------------+---------------------------+------+
+|      |Instance                   |Module                     |Cells |
++------+---------------------------+---------------------------+------+
+|1     |top                        |                           |   844|
+|2     |  U0                       |kth_axi_rni_static_c1_v1_0 |   844|
+|3     |    kth_axi_rni_static_0   |kth_axi_rni_static         |   844|
+|4     |      AXI_LITE_IPIF_I      |axi_lite_ipif              |   134|
+|5     |        I_SLAVE_ATTACHMENT |slave_attachment           |   134|
+|6     |          I_DECODER        |address_decoder            |    72|
+|7     |      USER_LOGIC_I         |kth_generic_rni_static     |   710|
+|8     |        \G0.recv_buffer    |rni_memory__parameterized0 |    35|
+|9     |          HW               |rams_16b__parameterized4   |    17|
+|10    |          LW               |rams_16b__parameterized2   |    18|
+|11    |        \G0.send_buffer    |rni_memory                 |    34|
+|12    |          HW               |rams_16b                   |    17|
+|13    |          LW               |rams_16b_0                 |    17|
+|14    |        interface          |generic_nios_to_3D_noc     |   605|
++------+---------------------------+---------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:36 ; elapsed = 00:00:41 . Memory (MB): peak = 1531.578 ; gain = 612.355 ; free physical = 1878 ; free virtual = 124552
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 32 critical warnings and 88 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:26 ; elapsed = 00:00:29 . Memory (MB): peak = 1531.578 ; gain = 116.465 ; free physical = 1876 ; free virtual = 124549
+Synthesis Optimization Complete : Time (s): cpu = 00:00:36 ; elapsed = 00:00:41 . Memory (MB): peak = 1531.578 ; gain = 612.355 ; free physical = 1876 ; free virtual = 124549
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 14 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+200 Infos, 103 Warnings, 32 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:34 ; elapsed = 00:00:37 . Memory (MB): peak = 1539.586 ; gain = 513.645 ; free physical = 1822 ; free virtual = 124496
+INFO: [Common 17-1381] The checkpoint '/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.runs/BD_kth_axi_rni_static_2_0_synth_1/BD_kth_axi_rni_static_2_0.dcp' has been generated.
+INFO: [Coretcl 2-1174] Renamed 13 cell refs.
+INFO: [Common 17-1381] The checkpoint '/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.runs/BD_kth_axi_rni_static_2_0_synth_1/BD_kth_axi_rni_static_2_0.dcp' has been generated.
+report_utilization: Time (s): cpu = 00:00:00.08 ; elapsed = 00:00:00.13 . Memory (MB): peak = 1563.598 ; gain = 0.000 ; free physical = 1847 ; free virtual = 124522
+INFO: [Common 17-206] Exiting Vivado at Mon Oct 31 17:13:41 2016...

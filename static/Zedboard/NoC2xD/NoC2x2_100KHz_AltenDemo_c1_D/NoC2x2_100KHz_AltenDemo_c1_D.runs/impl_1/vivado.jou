@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2015.4.2 (64-bit)
+# SW Build 1494164 on Fri Feb 26 04:18:54 MST 2016
+# IP Build 1491208 on Wed Feb 24 03:25:39 MST 2016
+# Start of session at: Mon Oct 31 17:04:23 2016
+# Process ID: 15769
+# Current directory: /home/tage/DegreeProject/Zedboard/NoC2xD/NoC2x2_100KHz_AltenDemo_c1_D/NoC2x2_100KHz_AltenDemo_c1_D.runs/impl_1
+# Command line: vivado -log BD_wrapper.vdi -applog -messageDb vivado.pb -mode batch -source BD_wrapper.tcl -notrace
+# Log file: /home/tage/DegreeProject/Zedboard/NoC2xD/NoC2x2_100KHz_AltenDemo_c1_D/NoC2x2_100KHz_AltenDemo_c1_D.runs/impl_1/BD_wrapper.vdi
+# Journal file: /home/tage/DegreeProject/Zedboard/NoC2xD/NoC2x2_100KHz_AltenDemo_c1_D/NoC2x2_100KHz_AltenDemo_c1_D.runs/impl_1/vivado.jou
+#-----------------------------------------------------------
+source BD_wrapper.tcl -notrace

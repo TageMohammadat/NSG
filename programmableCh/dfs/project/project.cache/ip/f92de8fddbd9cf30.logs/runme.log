@@ -1,0 +1,119 @@
+
+*** Running vivado
+    with args -log BD_mdm_1_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source BD_mdm_1_0.tcl
+
+
+****** Vivado v2016.3 (64-bit)
+  **** SW Build 1682563 on Mon Oct 10 19:07:26 MDT 2016
+  **** IP Build 1681267 on Mon Oct 10 21:28:31 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source BD_mdm_1_0.tcl -notrace
+Starting RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1113.613 ; gain = 201.301 ; free physical = 771 ; free virtual = 122371
+INFO: [Synth 8-638] synthesizing module 'BD_mdm_1_0' [/home/tage/git/NoC/programmableCh/dfs/project/project.srcs/sources_1/bd/BD/ip/BD_mdm_1_0/synth/BD_mdm_1_0.vhd:112]
+INFO: [Synth 8-638] synthesizing module 'MDM' [/home/tage/git/NoC/programmableCh/dfs/project/project.srcs/sources_1/bd/BD/ipshared/911b/hdl/mdm_v3_2_vh_rfs.vhd:13311]
+INFO: [Synth 8-638] synthesizing module 'MB_BSCANE2' [/home/tage/git/NoC/programmableCh/dfs/project/project.srcs/sources_1/bd/BD/ipshared/911b/hdl/mdm_v3_2_vh_rfs.vhd:277]
+INFO: [Synth 8-256] done synthesizing module 'MB_BSCANE2' (1#1) [/home/tage/git/NoC/programmableCh/dfs/project/project.srcs/sources_1/bd/BD/ipshared/911b/hdl/mdm_v3_2_vh_rfs.vhd:277]
+INFO: [Synth 8-638] synthesizing module 'MB_BUFG' [/home/tage/git/NoC/programmableCh/dfs/project/project.srcs/sources_1/bd/BD/ipshared/911b/hdl/mdm_v3_2_vh_rfs.vhd:328]
+INFO: [Synth 8-256] done synthesizing module 'MB_BUFG' (2#1) [/home/tage/git/NoC/programmableCh/dfs/project/project.srcs/sources_1/bd/BD/ipshared/911b/hdl/mdm_v3_2_vh_rfs.vhd:328]
+INFO: [Synth 8-638] synthesizing module 'MDM_Core' [/home/tage/git/NoC/programmableCh/dfs/project/project.srcs/sources_1/bd/BD/ipshared/911b/hdl/mdm_v3_2_vh_rfs.vhd:6525]
+INFO: [Synth 8-638] synthesizing module 'MB_FDRE' [/home/tage/git/NoC/programmableCh/dfs/project/project.srcs/sources_1/bd/BD/ipshared/911b/hdl/mdm_v3_2_vh_rfs.vhd:450]
+INFO: [Synth 8-256] done synthesizing module 'MB_FDRE' (3#1) [/home/tage/git/NoC/programmableCh/dfs/project/project.srcs/sources_1/bd/BD/ipshared/911b/hdl/mdm_v3_2_vh_rfs.vhd:450]
+INFO: [Synth 8-638] synthesizing module 'JTAG_CONTROL' [/home/tage/git/NoC/programmableCh/dfs/project/project.srcs/sources_1/bd/BD/ipshared/911b/hdl/mdm_v3_2_vh_rfs.vhd:3101]
+INFO: [Synth 8-638] synthesizing module 'MB_FDC_1' [/home/tage/git/NoC/programmableCh/dfs/project/project.srcs/sources_1/bd/BD/ipshared/911b/hdl/mdm_v3_2_vh_rfs.vhd:630]
+INFO: [Synth 8-256] done synthesizing module 'MB_FDC_1' (4#1) [/home/tage/git/NoC/programmableCh/dfs/project/project.srcs/sources_1/bd/BD/ipshared/911b/hdl/mdm_v3_2_vh_rfs.vhd:630]
+INFO: [Synth 8-638] synthesizing module 'MB_FDRE_1' [/home/tage/git/NoC/programmableCh/dfs/project/project.srcs/sources_1/bd/BD/ipshared/911b/hdl/mdm_v3_2_vh_rfs.vhd:690]
+INFO: [Synth 8-256] done synthesizing module 'MB_FDRE_1' (5#1) [/home/tage/git/NoC/programmableCh/dfs/project/project.srcs/sources_1/bd/BD/ipshared/911b/hdl/mdm_v3_2_vh_rfs.vhd:690]
+INFO: [Synth 8-638] synthesizing module 'MB_SRL16E' [/home/tage/git/NoC/programmableCh/dfs/project/project.srcs/sources_1/bd/BD/ipshared/911b/hdl/mdm_v3_2_vh_rfs.vhd:758]
+INFO: [Synth 8-256] done synthesizing module 'MB_SRL16E' (6#1) [/home/tage/git/NoC/programmableCh/dfs/project/project.srcs/sources_1/bd/BD/ipshared/911b/hdl/mdm_v3_2_vh_rfs.vhd:758]
+INFO: [Synth 8-638] synthesizing module 'MB_SRL16E__parameterized1' [/home/tage/git/NoC/programmableCh/dfs/project/project.srcs/sources_1/bd/BD/ipshared/911b/hdl/mdm_v3_2_vh_rfs.vhd:758]
+INFO: [Synth 8-256] done synthesizing module 'MB_SRL16E__parameterized1' (6#1) [/home/tage/git/NoC/programmableCh/dfs/project/project.srcs/sources_1/bd/BD/ipshared/911b/hdl/mdm_v3_2_vh_rfs.vhd:758]
+INFO: [Synth 8-638] synthesizing module 'MB_SRL16E__parameterized3' [/home/tage/git/NoC/programmableCh/dfs/project/project.srcs/sources_1/bd/BD/ipshared/911b/hdl/mdm_v3_2_vh_rfs.vhd:758]
+INFO: [Synth 8-256] done synthesizing module 'MB_SRL16E__parameterized3' (6#1) [/home/tage/git/NoC/programmableCh/dfs/project/project.srcs/sources_1/bd/BD/ipshared/911b/hdl/mdm_v3_2_vh_rfs.vhd:758]
+INFO: [Synth 8-638] synthesizing module 'MB_SRL16E__parameterized5' [/home/tage/git/NoC/programmableCh/dfs/project/project.srcs/sources_1/bd/BD/ipshared/911b/hdl/mdm_v3_2_vh_rfs.vhd:758]
+INFO: [Synth 8-256] done synthesizing module 'MB_SRL16E__parameterized5' (6#1) [/home/tage/git/NoC/programmableCh/dfs/project/project.srcs/sources_1/bd/BD/ipshared/911b/hdl/mdm_v3_2_vh_rfs.vhd:758]
+INFO: [Synth 8-638] synthesizing module 'MB_FDRSE' [/home/tage/git/NoC/programmableCh/dfs/project/project.srcs/sources_1/bd/BD/ipshared/911b/hdl/mdm_v3_2_vh_rfs.vhd:841]
+INFO: [Synth 8-256] done synthesizing module 'MB_FDRSE' (7#1) [/home/tage/git/NoC/programmableCh/dfs/project/project.srcs/sources_1/bd/BD/ipshared/911b/hdl/mdm_v3_2_vh_rfs.vhd:841]
+INFO: [Synth 8-638] synthesizing module 'SRL_FIFO' [/home/tage/git/NoC/programmableCh/dfs/project/project.srcs/sources_1/bd/BD/ipshared/911b/hdl/mdm_v3_2_vh_rfs.vhd:1768]
+INFO: [Synth 8-638] synthesizing module 'MB_MUXCY_XORCY' [/home/tage/git/NoC/programmableCh/dfs/project/project.srcs/sources_1/bd/BD/ipshared/911b/hdl/mdm_v3_2_vh_rfs.vhd:942]
+INFO: [Synth 8-256] done synthesizing module 'MB_MUXCY_XORCY' (8#1) [/home/tage/git/NoC/programmableCh/dfs/project/project.srcs/sources_1/bd/BD/ipshared/911b/hdl/mdm_v3_2_vh_rfs.vhd:942]
+INFO: [Synth 8-638] synthesizing module 'MB_XORCY' [/home/tage/git/NoC/programmableCh/dfs/project/project.srcs/sources_1/bd/BD/ipshared/911b/hdl/mdm_v3_2_vh_rfs.vhd:1036]
+INFO: [Synth 8-256] done synthesizing module 'MB_XORCY' (9#1) [/home/tage/git/NoC/programmableCh/dfs/project/project.srcs/sources_1/bd/BD/ipshared/911b/hdl/mdm_v3_2_vh_rfs.vhd:1036]
+INFO: [Synth 8-638] synthesizing module 'MB_SRL16E__parameterized7' [/home/tage/git/NoC/programmableCh/dfs/project/project.srcs/sources_1/bd/BD/ipshared/911b/hdl/mdm_v3_2_vh_rfs.vhd:758]
+INFO: [Synth 8-256] done synthesizing module 'MB_SRL16E__parameterized7' (9#1) [/home/tage/git/NoC/programmableCh/dfs/project/project.srcs/sources_1/bd/BD/ipshared/911b/hdl/mdm_v3_2_vh_rfs.vhd:758]
+INFO: [Synth 8-638] synthesizing module 'MB_SRL16E__parameterized9' [/home/tage/git/NoC/programmableCh/dfs/project/project.srcs/sources_1/bd/BD/ipshared/911b/hdl/mdm_v3_2_vh_rfs.vhd:758]
+INFO: [Synth 8-256] done synthesizing module 'MB_SRL16E__parameterized9' (9#1) [/home/tage/git/NoC/programmableCh/dfs/project/project.srcs/sources_1/bd/BD/ipshared/911b/hdl/mdm_v3_2_vh_rfs.vhd:758]
+INFO: [Synth 8-638] synthesizing module 'MB_SRL16E__parameterized11' [/home/tage/git/NoC/programmableCh/dfs/project/project.srcs/sources_1/bd/BD/ipshared/911b/hdl/mdm_v3_2_vh_rfs.vhd:758]
+INFO: [Synth 8-256] done synthesizing module 'MB_SRL16E__parameterized11' (9#1) [/home/tage/git/NoC/programmableCh/dfs/project/project.srcs/sources_1/bd/BD/ipshared/911b/hdl/mdm_v3_2_vh_rfs.vhd:758]
+INFO: [Synth 8-638] synthesizing module 'MB_SRL16E__parameterized13' [/home/tage/git/NoC/programmableCh/dfs/project/project.srcs/sources_1/bd/BD/ipshared/911b/hdl/mdm_v3_2_vh_rfs.vhd:758]
+INFO: [Synth 8-256] done synthesizing module 'MB_SRL16E__parameterized13' (9#1) [/home/tage/git/NoC/programmableCh/dfs/project/project.srcs/sources_1/bd/BD/ipshared/911b/hdl/mdm_v3_2_vh_rfs.vhd:758]
+INFO: [Synth 8-638] synthesizing module 'MB_SRL16E__parameterized15' [/home/tage/git/NoC/programmableCh/dfs/project/project.srcs/sources_1/bd/BD/ipshared/911b/hdl/mdm_v3_2_vh_rfs.vhd:758]
+INFO: [Synth 8-256] done synthesizing module 'MB_SRL16E__parameterized15' (9#1) [/home/tage/git/NoC/programmableCh/dfs/project/project.srcs/sources_1/bd/BD/ipshared/911b/hdl/mdm_v3_2_vh_rfs.vhd:758]
+INFO: [Synth 8-638] synthesizing module 'MB_SRL16E__parameterized17' [/home/tage/git/NoC/programmableCh/dfs/project/project.srcs/sources_1/bd/BD/ipshared/911b/hdl/mdm_v3_2_vh_rfs.vhd:758]
+INFO: [Synth 8-256] done synthesizing module 'MB_SRL16E__parameterized17' (9#1) [/home/tage/git/NoC/programmableCh/dfs/project/project.srcs/sources_1/bd/BD/ipshared/911b/hdl/mdm_v3_2_vh_rfs.vhd:758]
+INFO: [Synth 8-638] synthesizing module 'MB_SRL16E__parameterized19' [/home/tage/git/NoC/programmableCh/dfs/project/project.srcs/sources_1/bd/BD/ipshared/911b/hdl/mdm_v3_2_vh_rfs.vhd:758]
+INFO: [Synth 8-256] done synthesizing module 'MB_SRL16E__parameterized19' (9#1) [/home/tage/git/NoC/programmableCh/dfs/project/project.srcs/sources_1/bd/BD/ipshared/911b/hdl/mdm_v3_2_vh_rfs.vhd:758]
+INFO: [Synth 8-638] synthesizing module 'MB_SRL16E__parameterized21' [/home/tage/git/NoC/programmableCh/dfs/project/project.srcs/sources_1/bd/BD/ipshared/911b/hdl/mdm_v3_2_vh_rfs.vhd:758]
+INFO: [Synth 8-256] done synthesizing module 'MB_SRL16E__parameterized21' (9#1) [/home/tage/git/NoC/programmableCh/dfs/project/project.srcs/sources_1/bd/BD/ipshared/911b/hdl/mdm_v3_2_vh_rfs.vhd:758]
+INFO: [Synth 8-256] done synthesizing module 'SRL_FIFO' (10#1) [/home/tage/git/NoC/programmableCh/dfs/project/project.srcs/sources_1/bd/BD/ipshared/911b/hdl/mdm_v3_2_vh_rfs.vhd:1768]
+INFO: [Synth 8-256] done synthesizing module 'JTAG_CONTROL' (11#1) [/home/tage/git/NoC/programmableCh/dfs/project/project.srcs/sources_1/bd/BD/ipshared/911b/hdl/mdm_v3_2_vh_rfs.vhd:3101]
+INFO: [Synth 8-256] done synthesizing module 'MDM_Core' (12#1) [/home/tage/git/NoC/programmableCh/dfs/project/project.srcs/sources_1/bd/BD/ipshared/911b/hdl/mdm_v3_2_vh_rfs.vhd:6525]
+INFO: [Synth 8-638] synthesizing module 'axi_lite_ipif' [/home/tage/git/NoC/programmableCh/dfs/project/project.srcs/sources_1/bd/BD/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2948]
+INFO: [Synth 8-638] synthesizing module 'slave_attachment' [/home/tage/git/NoC/programmableCh/dfs/project/project.srcs/sources_1/bd/BD/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2341]
+INFO: [Synth 8-638] synthesizing module 'address_decoder' [/home/tage/git/NoC/programmableCh/dfs/project/project.srcs/sources_1/bd/BD/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1775]
+INFO: [Synth 8-638] synthesizing module 'pselect_f' [/home/tage/git/NoC/programmableCh/dfs/project/project.srcs/sources_1/bd/BD/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f' (13#1) [/home/tage/git/NoC/programmableCh/dfs/project/project.srcs/sources_1/bd/BD/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized0' [/home/tage/git/NoC/programmableCh/dfs/project/project.srcs/sources_1/bd/BD/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized0' (13#1) [/home/tage/git/NoC/programmableCh/dfs/project/project.srcs/sources_1/bd/BD/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized1' [/home/tage/git/NoC/programmableCh/dfs/project/project.srcs/sources_1/bd/BD/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized1' (13#1) [/home/tage/git/NoC/programmableCh/dfs/project/project.srcs/sources_1/bd/BD/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized2' [/home/tage/git/NoC/programmableCh/dfs/project/project.srcs/sources_1/bd/BD/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized2' (13#1) [/home/tage/git/NoC/programmableCh/dfs/project/project.srcs/sources_1/bd/BD/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'address_decoder' (14#1) [/home/tage/git/NoC/programmableCh/dfs/project/project.srcs/sources_1/bd/BD/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1775]
+INFO: [Synth 8-256] done synthesizing module 'slave_attachment' (15#1) [/home/tage/git/NoC/programmableCh/dfs/project/project.srcs/sources_1/bd/BD/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2341]
+INFO: [Synth 8-256] done synthesizing module 'axi_lite_ipif' (16#1) [/home/tage/git/NoC/programmableCh/dfs/project/project.srcs/sources_1/bd/BD/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2948]
+INFO: [Synth 8-256] done synthesizing module 'MDM' (17#1) [/home/tage/git/NoC/programmableCh/dfs/project/project.srcs/sources_1/bd/BD/ipshared/911b/hdl/mdm_v3_2_vh_rfs.vhd:13311]
+INFO: [Synth 8-256] done synthesizing module 'BD_mdm_1_0' (18#1) [/home/tage/git/NoC/programmableCh/dfs/project/project.srcs/sources_1/bd/BD/ip/BD_mdm_1_0/synth/BD_mdm_1_0.vhd:112]
+Finished RTL Elaboration : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1167.082 ; gain = 254.770 ; free physical = 516 ; free virtual = 122117
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1167.082 ; gain = 254.770 ; free physical = 492 ; free virtual = 122093
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 1549.668 ; gain = 0.000 ; free physical = 433 ; free virtual = 121678
+Finished Constraint Validation : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 1549.668 ; gain = 637.355 ; free physical = 422 ; free virtual = 121438
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 1549.668 ; gain = 637.355 ; free physical = 421 ; free virtual = 121437
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 1549.668 ; gain = 637.355 ; free physical = 420 ; free virtual = 121436
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 1549.668 ; gain = 637.355 ; free physical = 422 ; free virtual = 121407
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 1549.668 ; gain = 637.355 ; free physical = 364 ; free virtual = 121308
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:38 ; elapsed = 00:00:39 . Memory (MB): peak = 1549.668 ; gain = 637.355 ; free physical = 552 ; free virtual = 121084
+Finished Timing Optimization : Time (s): cpu = 00:00:38 ; elapsed = 00:00:40 . Memory (MB): peak = 1549.668 ; gain = 637.355 ; free physical = 507 ; free virtual = 121052
+Finished Technology Mapping : Time (s): cpu = 00:00:38 ; elapsed = 00:00:40 . Memory (MB): peak = 1549.668 ; gain = 637.355 ; free physical = 487 ; free virtual = 121033
+Finished IO Insertion : Time (s): cpu = 00:00:39 ; elapsed = 00:00:41 . Memory (MB): peak = 1549.668 ; gain = 637.355 ; free physical = 459 ; free virtual = 121008
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:39 ; elapsed = 00:00:41 . Memory (MB): peak = 1549.668 ; gain = 637.355 ; free physical = 458 ; free virtual = 121008
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:39 ; elapsed = 00:00:41 . Memory (MB): peak = 1549.668 ; gain = 637.355 ; free physical = 456 ; free virtual = 121007
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:39 ; elapsed = 00:00:41 . Memory (MB): peak = 1549.668 ; gain = 637.355 ; free physical = 454 ; free virtual = 121004
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:39 ; elapsed = 00:00:41 . Memory (MB): peak = 1549.668 ; gain = 637.355 ; free physical = 447 ; free virtual = 120998
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:39 ; elapsed = 00:00:41 . Memory (MB): peak = 1549.668 ; gain = 637.355 ; free physical = 447 ; free virtual = 120998
+
+Report Cell Usage: 
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |BSCANE2 |     1|
+|2     |BUFG    |     1|
+|3     |LUT1    |     5|
+|4     |LUT2    |    23|
+|5     |LUT3    |    32|
+|6     |LUT4    |    52|
+|7     |LUT5    |    41|
+|8     |LUT6    |    51|
+|9     |MUXCY_L |     6|
+|10    |SRL16E  |    23|
+|11    |XORCY   |     8|
+|12    |FDCE    |   122|
+|13    |FDC_1   |     1|
+|14    |FDPE    |     7|
+|15    |FDRE    |    48|
+|16    |FDRE_1  |     1|
+|17    |FDSE    |     2|
++------+--------+------+
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:39 ; elapsed = 00:00:41 . Memory (MB): peak = 1549.668 ; gain = 637.355 ; free physical = 447 ; free virtual = 120998
+synth_design: Time (s): cpu = 00:00:37 ; elapsed = 00:00:38 . Memory (MB): peak = 1990.840 ; gain = 956.809 ; free physical = 938 ; free virtual = 121469

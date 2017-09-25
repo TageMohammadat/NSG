@@ -1,0 +1,91 @@
+#-----------------------------------------------------------
+# Vivado v2016.3 (64-bit)
+# SW Build 1682563 on Mon Oct 10 19:07:26 MDT 2016
+# IP Build 1681267 on Mon Oct 10 21:28:31 MDT 2016
+# Start of session at: Mon May 22 11:32:41 2017
+# Process ID: 2324
+# Current directory: /home/tage/git/NoC/programmableCh/dfs/project/project.runs/BD_xbar_2_synth_1
+# Command line: vivado -log BD_xbar_2.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source BD_xbar_2.tcl
+# Log file: /home/tage/git/NoC/programmableCh/dfs/project/project.runs/BD_xbar_2_synth_1/BD_xbar_2.vds
+# Journal file: /home/tage/git/NoC/programmableCh/dfs/project/project.runs/BD_xbar_2_synth_1/vivado.jou
+#-----------------------------------------------------------
+source BD_xbar_2.tcl -notrace
+Starting RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1115.613 ; gain = 203.301 ; free physical = 2437 ; free virtual = 125375
+INFO: [Synth 8-638] synthesizing module 'BD_xbar_2' [/home/tage/git/NoC/programmableCh/dfs/project/project.srcs/sources_1/bd/BD/ip/BD_xbar_2/synth/BD_xbar_2.v:59]
+INFO: [Synth 8-638] synthesizing module 'axi_crossbar_v2_1_11_axi_crossbar' [/home/tage/git/NoC/programmableCh/dfs/project/project.srcs/sources_1/bd/BD/ipshared/d552/hdl/axi_crossbar_v2_1_vl_rfs.v:4882]
+INFO: [Synth 8-638] synthesizing module 'axi_crossbar_v2_1_11_crossbar_sasd' [/home/tage/git/NoC/programmableCh/dfs/project/project.srcs/sources_1/bd/BD/ipshared/d552/hdl/axi_crossbar_v2_1_vl_rfs.v:1240]
+INFO: [Synth 8-638] synthesizing module 'axi_crossbar_v2_1_11_addr_decoder' [/home/tage/git/NoC/programmableCh/dfs/project/project.srcs/sources_1/bd/BD/ipshared/d552/hdl/axi_crossbar_v2_1_vl_rfs.v:794]
+INFO: [Synth 8-638] synthesizing module 'generic_baseblocks_v2_1_0_comparator_static' [/home/tage/git/NoC/programmableCh/dfs/project/project.srcs/sources_1/bd/BD/ipshared/7ee0/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
+INFO: [Synth 8-638] synthesizing module 'generic_baseblocks_v2_1_0_carry_and' [/home/tage/git/NoC/programmableCh/dfs/project/project.srcs/sources_1/bd/BD/ipshared/7ee0/hdl/generic_baseblocks_v2_1_vl_rfs.v:62]
+INFO: [Synth 8-256] done synthesizing module 'generic_baseblocks_v2_1_0_carry_and' (1#1) [/home/tage/git/NoC/programmableCh/dfs/project/project.srcs/sources_1/bd/BD/ipshared/7ee0/hdl/generic_baseblocks_v2_1_vl_rfs.v:62]
+INFO: [Synth 8-256] done synthesizing module 'generic_baseblocks_v2_1_0_comparator_static' (2#1) [/home/tage/git/NoC/programmableCh/dfs/project/project.srcs/sources_1/bd/BD/ipshared/7ee0/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
+INFO: [Synth 8-638] synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized0' [/home/tage/git/NoC/programmableCh/dfs/project/project.srcs/sources_1/bd/BD/ipshared/7ee0/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
+INFO: [Synth 8-256] done synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized0' (2#1) [/home/tage/git/NoC/programmableCh/dfs/project/project.srcs/sources_1/bd/BD/ipshared/7ee0/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
+INFO: [Synth 8-638] synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized1' [/home/tage/git/NoC/programmableCh/dfs/project/project.srcs/sources_1/bd/BD/ipshared/7ee0/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
+INFO: [Synth 8-256] done synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized1' (2#1) [/home/tage/git/NoC/programmableCh/dfs/project/project.srcs/sources_1/bd/BD/ipshared/7ee0/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
+INFO: [Synth 8-638] synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized2' [/home/tage/git/NoC/programmableCh/dfs/project/project.srcs/sources_1/bd/BD/ipshared/7ee0/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
+INFO: [Synth 8-256] done synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized2' (2#1) [/home/tage/git/NoC/programmableCh/dfs/project/project.srcs/sources_1/bd/BD/ipshared/7ee0/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
+INFO: [Synth 8-638] synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized3' [/home/tage/git/NoC/programmableCh/dfs/project/project.srcs/sources_1/bd/BD/ipshared/7ee0/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
+INFO: [Synth 8-256] done synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized3' (2#1) [/home/tage/git/NoC/programmableCh/dfs/project/project.srcs/sources_1/bd/BD/ipshared/7ee0/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
+INFO: [Synth 8-638] synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized4' [/home/tage/git/NoC/programmableCh/dfs/project/project.srcs/sources_1/bd/BD/ipshared/7ee0/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
+INFO: [Synth 8-256] done synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized4' (2#1) [/home/tage/git/NoC/programmableCh/dfs/project/project.srcs/sources_1/bd/BD/ipshared/7ee0/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
+INFO: [Synth 8-638] synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized5' [/home/tage/git/NoC/programmableCh/dfs/project/project.srcs/sources_1/bd/BD/ipshared/7ee0/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
+INFO: [Synth 8-256] done synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized5' (2#1) [/home/tage/git/NoC/programmableCh/dfs/project/project.srcs/sources_1/bd/BD/ipshared/7ee0/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
+INFO: [Synth 8-256] done synthesizing module 'axi_crossbar_v2_1_11_addr_decoder' (3#1) [/home/tage/git/NoC/programmableCh/dfs/project/project.srcs/sources_1/bd/BD/ipshared/d552/hdl/axi_crossbar_v2_1_vl_rfs.v:794]
+INFO: [Synth 8-638] synthesizing module 'axi_crossbar_v2_1_11_decerr_slave' [/home/tage/git/NoC/programmableCh/dfs/project/project.srcs/sources_1/bd/BD/ipshared/d552/hdl/axi_crossbar_v2_1_vl_rfs.v:3500]
+INFO: [Synth 8-256] done synthesizing module 'axi_crossbar_v2_1_11_decerr_slave' (4#1) [/home/tage/git/NoC/programmableCh/dfs/project/project.srcs/sources_1/bd/BD/ipshared/d552/hdl/axi_crossbar_v2_1_vl_rfs.v:3500]
+INFO: [Synth 8-638] synthesizing module 'axi_crossbar_v2_1_11_addr_arbiter_sasd' [/home/tage/git/NoC/programmableCh/dfs/project/project.srcs/sources_1/bd/BD/ipshared/d552/hdl/axi_crossbar_v2_1_vl_rfs.v:65]
+INFO: [Synth 8-256] done synthesizing module 'axi_crossbar_v2_1_11_addr_arbiter_sasd' (5#1) [/home/tage/git/NoC/programmableCh/dfs/project/project.srcs/sources_1/bd/BD/ipshared/d552/hdl/axi_crossbar_v2_1_vl_rfs.v:65]
+INFO: [Synth 8-638] synthesizing module 'axi_crossbar_v2_1_11_splitter' [/home/tage/git/NoC/programmableCh/dfs/project/project.srcs/sources_1/bd/BD/ipshared/d552/hdl/axi_crossbar_v2_1_vl_rfs.v:4459]
+INFO: [Synth 8-256] done synthesizing module 'axi_crossbar_v2_1_11_splitter' (6#1) [/home/tage/git/NoC/programmableCh/dfs/project/project.srcs/sources_1/bd/BD/ipshared/d552/hdl/axi_crossbar_v2_1_vl_rfs.v:4459]
+INFO: [Synth 8-638] synthesizing module 'axi_crossbar_v2_1_11_splitter__parameterized0' [/home/tage/git/NoC/programmableCh/dfs/project/project.srcs/sources_1/bd/BD/ipshared/d552/hdl/axi_crossbar_v2_1_vl_rfs.v:4459]
+INFO: [Synth 8-256] done synthesizing module 'axi_crossbar_v2_1_11_splitter__parameterized0' (6#1) [/home/tage/git/NoC/programmableCh/dfs/project/project.srcs/sources_1/bd/BD/ipshared/d552/hdl/axi_crossbar_v2_1_vl_rfs.v:4459]
+INFO: [Synth 8-638] synthesizing module 'generic_baseblocks_v2_1_0_mux_enc' [/home/tage/git/NoC/programmableCh/dfs/project/project.srcs/sources_1/bd/BD/ipshared/7ee0/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+INFO: [Synth 8-256] done synthesizing module 'generic_baseblocks_v2_1_0_mux_enc' (7#1) [/home/tage/git/NoC/programmableCh/dfs/project/project.srcs/sources_1/bd/BD/ipshared/7ee0/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+INFO: [Synth 8-638] synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized0' [/home/tage/git/NoC/programmableCh/dfs/project/project.srcs/sources_1/bd/BD/ipshared/7ee0/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+INFO: [Synth 8-256] done synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized0' (7#1) [/home/tage/git/NoC/programmableCh/dfs/project/project.srcs/sources_1/bd/BD/ipshared/7ee0/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+INFO: [Synth 8-638] synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized1' [/home/tage/git/NoC/programmableCh/dfs/project/project.srcs/sources_1/bd/BD/ipshared/7ee0/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+INFO: [Synth 8-256] done synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized1' (7#1) [/home/tage/git/NoC/programmableCh/dfs/project/project.srcs/sources_1/bd/BD/ipshared/7ee0/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+INFO: [Synth 8-638] synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized2' [/home/tage/git/NoC/programmableCh/dfs/project/project.srcs/sources_1/bd/BD/ipshared/7ee0/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+INFO: [Synth 8-256] done synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized2' (7#1) [/home/tage/git/NoC/programmableCh/dfs/project/project.srcs/sources_1/bd/BD/ipshared/7ee0/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+INFO: [Synth 8-638] synthesizing module 'axi_register_slice_v2_1_10_axic_register_slice' [/home/tage/git/NoC/programmableCh/dfs/project/project.srcs/sources_1/bd/BD/ipshared/7efe/hdl/axi_register_slice_v2_1_vl_rfs.v:85]
+INFO: [Synth 8-256] done synthesizing module 'axi_register_slice_v2_1_10_axic_register_slice' (8#1) [/home/tage/git/NoC/programmableCh/dfs/project/project.srcs/sources_1/bd/BD/ipshared/7efe/hdl/axi_register_slice_v2_1_vl_rfs.v:85]
+INFO: [Synth 8-638] synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized3' [/home/tage/git/NoC/programmableCh/dfs/project/project.srcs/sources_1/bd/BD/ipshared/7ee0/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+INFO: [Synth 8-256] done synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized3' (8#1) [/home/tage/git/NoC/programmableCh/dfs/project/project.srcs/sources_1/bd/BD/ipshared/7ee0/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+INFO: [Synth 8-256] done synthesizing module 'axi_crossbar_v2_1_11_crossbar_sasd' (9#1) [/home/tage/git/NoC/programmableCh/dfs/project/project.srcs/sources_1/bd/BD/ipshared/d552/hdl/axi_crossbar_v2_1_vl_rfs.v:1240]
+INFO: [Synth 8-256] done synthesizing module 'axi_crossbar_v2_1_11_axi_crossbar' (10#1) [/home/tage/git/NoC/programmableCh/dfs/project/project.srcs/sources_1/bd/BD/ipshared/d552/hdl/axi_crossbar_v2_1_vl_rfs.v:4882]
+INFO: [Synth 8-256] done synthesizing module 'BD_xbar_2' (11#1) [/home/tage/git/NoC/programmableCh/dfs/project/project.srcs/sources_1/bd/BD/ip/BD_xbar_2/synth/BD_xbar_2.v:59]
+Finished RTL Elaboration : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 1236.082 ; gain = 323.770 ; free physical = 1643 ; free virtual = 124581
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 1236.082 ; gain = 323.770 ; free physical = 1632 ; free virtual = 124571
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.05 ; elapsed = 00:00:00.05 . Memory (MB): peak = 1545.957 ; gain = 0.000 ; free physical = 1936 ; free virtual = 124876
+Finished Constraint Validation : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 1545.957 ; gain = 633.645 ; free physical = 1406 ; free virtual = 124347
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 1545.957 ; gain = 633.645 ; free physical = 1406 ; free virtual = 124347
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 1545.957 ; gain = 633.645 ; free physical = 1404 ; free virtual = 124344
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 1545.957 ; gain = 633.645 ; free physical = 1355 ; free virtual = 124296
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 1545.957 ; gain = 633.645 ; free physical = 1132 ; free virtual = 124073
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 1545.957 ; gain = 633.645 ; free physical = 1119 ; free virtual = 124060
+Finished Timing Optimization : Time (s): cpu = 00:00:38 ; elapsed = 00:00:40 . Memory (MB): peak = 1545.957 ; gain = 633.645 ; free physical = 1045 ; free virtual = 123986
+Finished Technology Mapping : Time (s): cpu = 00:00:38 ; elapsed = 00:00:40 . Memory (MB): peak = 1545.957 ; gain = 633.645 ; free physical = 995 ; free virtual = 123940
+Finished IO Insertion : Time (s): cpu = 00:00:39 ; elapsed = 00:00:41 . Memory (MB): peak = 1545.957 ; gain = 633.645 ; free physical = 948 ; free virtual = 123895
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:39 ; elapsed = 00:00:41 . Memory (MB): peak = 1545.957 ; gain = 633.645 ; free physical = 948 ; free virtual = 123895
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:39 ; elapsed = 00:00:41 . Memory (MB): peak = 1545.957 ; gain = 633.645 ; free physical = 944 ; free virtual = 123891
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:39 ; elapsed = 00:00:41 . Memory (MB): peak = 1545.957 ; gain = 633.645 ; free physical = 944 ; free virtual = 123891
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:39 ; elapsed = 00:00:41 . Memory (MB): peak = 1545.957 ; gain = 633.645 ; free physical = 944 ; free virtual = 123890
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:39 ; elapsed = 00:00:41 . Memory (MB): peak = 1545.957 ; gain = 633.645 ; free physical = 944 ; free virtual = 123890
+
+Report Cell Usage: 
++------+------+------+
+|      |Cell  |Count |
++------+------+------+
+|1     |LUT1  |     2|
+|2     |LUT2  |    18|
+|3     |LUT3  |    46|
+|4     |LUT4  |    62|
+|5     |LUT5  |    70|
+|6     |LUT6  |   108|
+|7     |MUXF7 |     4|
+|8     |FDRE  |   136|
++------+------+------+
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:39 ; elapsed = 00:00:41 . Memory (MB): peak = 1545.957 ; gain = 633.645 ; free physical = 944 ; free virtual = 123890
+synth_design: Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 1553.965 ; gain = 528.934 ; free physical = 802 ; free virtual = 123744

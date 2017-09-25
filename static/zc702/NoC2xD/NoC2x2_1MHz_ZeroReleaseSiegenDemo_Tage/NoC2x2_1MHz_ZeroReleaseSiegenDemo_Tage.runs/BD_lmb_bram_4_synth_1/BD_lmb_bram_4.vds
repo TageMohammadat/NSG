@@ -1,0 +1,42 @@
+#-----------------------------------------------------------
+# Vivado v2016.3 (64-bit)
+# SW Build 1682563 on Mon Oct 10 19:07:26 MDT 2016
+# IP Build 1681267 on Mon Oct 10 21:28:31 MDT 2016
+# Start of session at: Mon Oct 31 17:14:09 2016
+# Process ID: 23340
+# Current directory: /home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.runs/BD_lmb_bram_4_synth_1
+# Command line: vivado -log BD_lmb_bram_4.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source BD_lmb_bram_4.tcl
+# Log file: /home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.runs/BD_lmb_bram_4_synth_1/BD_lmb_bram_4.vds
+# Journal file: /home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.runs/BD_lmb_bram_4_synth_1/vivado.jou
+#-----------------------------------------------------------
+source BD_lmb_bram_4.tcl -notrace
+Starting RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1108.523 ; gain = 189.301 ; free physical = 2091 ; free virtual = 124785
+INFO: [Synth 8-638] synthesizing module 'BD_lmb_bram_4' [/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.srcs/sources_1/bd/BD/ip/BD_lmb_bram_4/synth/BD_lmb_bram_4.vhd:78]
+INFO: [Synth 8-256] done synthesizing module 'BD_lmb_bram_4' (11#1) [/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.srcs/sources_1/bd/BD/ip/BD_lmb_bram_4/synth/BD_lmb_bram_4.vhd:78]
+Finished RTL Elaboration : Time (s): cpu = 00:00:45 ; elapsed = 00:00:46 . Memory (MB): peak = 1308.195 ; gain = 388.973 ; free physical = 3936 ; free virtual = 126635
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:45 ; elapsed = 00:00:46 . Memory (MB): peak = 1308.195 ; gain = 388.973 ; free physical = 3935 ; free virtual = 126635
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.01 . Memory (MB): peak = 1507.070 ; gain = 1.000 ; free physical = 3889 ; free virtual = 126589
+Finished Constraint Validation : Time (s): cpu = 00:00:52 ; elapsed = 00:00:53 . Memory (MB): peak = 1507.070 ; gain = 587.848 ; free physical = 3909 ; free virtual = 126609
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:52 ; elapsed = 00:00:53 . Memory (MB): peak = 1507.070 ; gain = 587.848 ; free physical = 3909 ; free virtual = 126609
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:52 ; elapsed = 00:00:53 . Memory (MB): peak = 1507.070 ; gain = 587.848 ; free physical = 3909 ; free virtual = 126609
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:52 ; elapsed = 00:00:53 . Memory (MB): peak = 1507.070 ; gain = 587.848 ; free physical = 3907 ; free virtual = 126607
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:53 ; elapsed = 00:00:53 . Memory (MB): peak = 1507.070 ; gain = 587.848 ; free physical = 3892 ; free virtual = 126591
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:58 ; elapsed = 00:00:59 . Memory (MB): peak = 1507.070 ; gain = 587.848 ; free physical = 3860 ; free virtual = 126559
+Finished Timing Optimization : Time (s): cpu = 00:00:58 ; elapsed = 00:00:59 . Memory (MB): peak = 1507.070 ; gain = 587.848 ; free physical = 3860 ; free virtual = 126559
+Finished Technology Mapping : Time (s): cpu = 00:00:58 ; elapsed = 00:00:59 . Memory (MB): peak = 1507.070 ; gain = 587.848 ; free physical = 3851 ; free virtual = 126550
+Finished IO Insertion : Time (s): cpu = 00:00:58 ; elapsed = 00:00:59 . Memory (MB): peak = 1507.070 ; gain = 587.848 ; free physical = 3850 ; free virtual = 126550
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:58 ; elapsed = 00:00:59 . Memory (MB): peak = 1507.070 ; gain = 587.848 ; free physical = 3850 ; free virtual = 126550
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:58 ; elapsed = 00:00:59 . Memory (MB): peak = 1507.070 ; gain = 587.848 ; free physical = 3850 ; free virtual = 126550
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:58 ; elapsed = 00:00:59 . Memory (MB): peak = 1507.070 ; gain = 587.848 ; free physical = 3850 ; free virtual = 126550
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:58 ; elapsed = 00:00:59 . Memory (MB): peak = 1507.070 ; gain = 587.848 ; free physical = 3850 ; free virtual = 126549
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:58 ; elapsed = 00:00:59 . Memory (MB): peak = 1507.070 ; gain = 587.848 ; free physical = 3850 ; free virtual = 126549
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |RAMB36E1 |     8|
++------+---------+------+
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:58 ; elapsed = 00:00:59 . Memory (MB): peak = 1507.070 ; gain = 587.848 ; free physical = 3850 ; free virtual = 126549
+synth_design: Time (s): cpu = 00:00:55 ; elapsed = 00:00:56 . Memory (MB): peak = 1507.070 ; gain = 481.129 ; free physical = 3832 ; free virtual = 126531

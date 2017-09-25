@@ -1,0 +1,189 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="BD_kth_axi_rni_static_0_0_synth_1" LaunchDir="/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.runs/BD_kth_axi_rni_static_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="BD_axi_gpio_0_0_synth_1" LaunchDir="/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.runs/BD_axi_gpio_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="BD_clk_wiz_0_synth_1" LaunchDir="/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.runs/BD_clk_wiz_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="BD_cpu_0_0_0_synth_1" LaunchDir="/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.runs/BD_cpu_0_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="BD_ilmb_v10_0_synth_1" LaunchDir="/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.runs/BD_ilmb_v10_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="BD_dlmb_v10_0_synth_1" LaunchDir="/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.runs/BD_dlmb_v10_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="BD_dlmb_bram_if_cntlr_0_synth_1" LaunchDir="/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.runs/BD_dlmb_bram_if_cntlr_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="BD_ilmb_bram_if_cntlr_0_synth_1" LaunchDir="/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.runs/BD_ilmb_bram_if_cntlr_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="BD_lmb_bram_5_synth_1" LaunchDir="/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.runs/BD_lmb_bram_5_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="BD_ilmb_bram_if_cntlr_5_synth_1" LaunchDir="/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.runs/BD_ilmb_bram_if_cntlr_5_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="BD_dlmb_bram_if_cntlr_5_synth_1" LaunchDir="/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.runs/BD_dlmb_bram_if_cntlr_5_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="BD_ilmb_v10_5_synth_1" LaunchDir="/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.runs/BD_ilmb_v10_5_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="BD_dlmb_v10_5_synth_1" LaunchDir="/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.runs/BD_dlmb_v10_5_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="BD_auto_pc_0_synth_1" LaunchDir="/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.runs/BD_auto_pc_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="BD_axi_crossbar_0_0_synth_1" LaunchDir="/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.runs/BD_axi_crossbar_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="BD_mdm_1_0_synth_1" LaunchDir="/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.runs/BD_mdm_1_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="BD_rst_clk_wiz_50M_0_synth_1" LaunchDir="/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.runs/BD_rst_clk_wiz_50M_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="BD_lmb_bram_0_synth_1" LaunchDir="/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.runs/BD_lmb_bram_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="BD_kth_2DNoC_2x2x1_0_0_synth_1" LaunchDir="/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.runs/BD_kth_2DNoC_2x2x1_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="BD_xbar_2_synth_1" LaunchDir="/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.runs/BD_xbar_2_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="BD_cpu_0_1_0_synth_1" LaunchDir="/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.runs/BD_cpu_0_1_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="BD_kth_axi_rni_static_1_0_synth_1" LaunchDir="/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.runs/BD_kth_axi_rni_static_1_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="BD_pio_0_1_0_synth_1" LaunchDir="/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.runs/BD_pio_0_1_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="BD_xbar_0_synth_1" LaunchDir="/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.runs/BD_xbar_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="BD_xlconstant_0_0_synth_1" LaunchDir="/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.runs/BD_xlconstant_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="BD_Ground_1_0_synth_1" LaunchDir="/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.runs/BD_Ground_1_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="BD_lmb_bram_3_synth_1" LaunchDir="/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.runs/BD_lmb_bram_3_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="BD_dlmb_v10_3_synth_1" LaunchDir="/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.runs/BD_dlmb_v10_3_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="BD_dlmb_bram_if_cntlr_3_synth_1" LaunchDir="/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.runs/BD_dlmb_bram_if_cntlr_3_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="BD_ilmb_v10_3_synth_1" LaunchDir="/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.runs/BD_ilmb_v10_3_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="BD_ilmb_bram_if_cntlr_3_synth_1" LaunchDir="/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.runs/BD_ilmb_bram_if_cntlr_3_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="BD_lmb_bram_1_synth_1" LaunchDir="/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.runs/BD_lmb_bram_1_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="BD_xbar_1_synth_1" LaunchDir="/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.runs/BD_xbar_1_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="BD_dlmb_bram_if_cntlr_1_synth_1" LaunchDir="/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.runs/BD_dlmb_bram_if_cntlr_1_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="BD_Ground_8_0_synth_1" LaunchDir="/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.runs/BD_Ground_8_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="BD_xbar_3_synth_1" LaunchDir="/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.runs/BD_xbar_3_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="BD_cpu_1_0_0_synth_1" LaunchDir="/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.runs/BD_cpu_1_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="BD_kth_axi_rni_static_2_0_synth_1" LaunchDir="/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.runs/BD_kth_axi_rni_static_2_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="BD_pio_1_0_0_synth_1" LaunchDir="/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.runs/BD_pio_1_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="BD_lmb_bram_2_synth_1" LaunchDir="/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.runs/BD_lmb_bram_2_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="BD_ilmb_bram_if_cntlr_1_synth_1" LaunchDir="/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.runs/BD_ilmb_bram_if_cntlr_1_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="BD_dlmb_v10_2_synth_1" LaunchDir="/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.runs/BD_dlmb_v10_2_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="BD_ilmb_v10_2_synth_1" LaunchDir="/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.runs/BD_ilmb_v10_2_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="BD_dlmb_bram_if_cntlr_2_synth_1" LaunchDir="/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.runs/BD_dlmb_bram_if_cntlr_2_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="BD_ilmb_bram_if_cntlr_2_synth_1" LaunchDir="/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.runs/BD_ilmb_bram_if_cntlr_2_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="BD_microblaze_0_0_synth_1" LaunchDir="/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.runs/BD_microblaze_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="BD_kth_axi_rni_static_0_1_synth_1" LaunchDir="/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.runs/BD_kth_axi_rni_static_0_1_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="BD_pio_0_0_0_synth_1" LaunchDir="/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.runs/BD_pio_0_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="BD_dlmb_v10_1_synth_1" LaunchDir="/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.runs/BD_dlmb_v10_1_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="BD_ilmb_v10_1_synth_1" LaunchDir="/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.runs/BD_ilmb_v10_1_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="BD_processing_system7_0_0_synth_1" LaunchDir="/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.runs/BD_processing_system7_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="BD_cpu_1_0_x_0_synth_1" LaunchDir="/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.runs/BD_cpu_1_0_x_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="BD_dlmb_v10_4_synth_1" LaunchDir="/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.runs/BD_dlmb_v10_4_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="BD_ilmb_v10_4_synth_1" LaunchDir="/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.runs/BD_ilmb_v10_4_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="BD_dlmb_bram_if_cntlr_4_synth_1" LaunchDir="/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.runs/BD_dlmb_bram_if_cntlr_4_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="BD_ilmb_bram_if_cntlr_4_synth_1" LaunchDir="/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.runs/BD_ilmb_bram_if_cntlr_4_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="BD_Ground_15_0_synth_1" LaunchDir="/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.runs/BD_Ground_15_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="BD_pio_dpr_0_synth_1" LaunchDir="/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.runs/BD_pio_dpr_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="BD_lmb_bram_4_synth_1" LaunchDir="/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.runs/BD_lmb_bram_4_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="BD_cpu_1_1_x_0_synth_1" LaunchDir="/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.runs/BD_cpu_1_1_x_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="synth_1" LaunchDir="/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.runs/synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado">
+		<Parent Id="BD_kth_axi_rni_static_0_0_synth_1"/>
+		<Parent Id="BD_axi_gpio_0_0_synth_1"/>
+		<Parent Id="BD_clk_wiz_0_synth_1"/>
+		<Parent Id="BD_cpu_0_0_0_synth_1"/>
+		<Parent Id="BD_ilmb_v10_0_synth_1"/>
+		<Parent Id="BD_dlmb_v10_0_synth_1"/>
+		<Parent Id="BD_dlmb_bram_if_cntlr_0_synth_1"/>
+		<Parent Id="BD_ilmb_bram_if_cntlr_0_synth_1"/>
+		<Parent Id="BD_lmb_bram_5_synth_1"/>
+		<Parent Id="BD_ilmb_bram_if_cntlr_5_synth_1"/>
+		<Parent Id="BD_dlmb_bram_if_cntlr_5_synth_1"/>
+		<Parent Id="BD_ilmb_v10_5_synth_1"/>
+		<Parent Id="BD_dlmb_v10_5_synth_1"/>
+		<Parent Id="BD_auto_pc_0_synth_1"/>
+		<Parent Id="BD_axi_crossbar_0_0_synth_1"/>
+		<Parent Id="BD_mdm_1_0_synth_1"/>
+		<Parent Id="BD_rst_clk_wiz_50M_0_synth_1"/>
+		<Parent Id="BD_lmb_bram_0_synth_1"/>
+		<Parent Id="BD_kth_2DNoC_2x2x1_0_0_synth_1"/>
+		<Parent Id="BD_xbar_2_synth_1"/>
+		<Parent Id="BD_cpu_0_1_0_synth_1"/>
+		<Parent Id="BD_kth_axi_rni_static_1_0_synth_1"/>
+		<Parent Id="BD_pio_0_1_0_synth_1"/>
+		<Parent Id="BD_xbar_0_synth_1"/>
+		<Parent Id="BD_xlconstant_0_0_synth_1"/>
+		<Parent Id="BD_Ground_1_0_synth_1"/>
+		<Parent Id="BD_lmb_bram_3_synth_1"/>
+		<Parent Id="BD_dlmb_v10_3_synth_1"/>
+		<Parent Id="BD_dlmb_bram_if_cntlr_3_synth_1"/>
+		<Parent Id="BD_ilmb_v10_3_synth_1"/>
+		<Parent Id="BD_ilmb_bram_if_cntlr_3_synth_1"/>
+		<Parent Id="BD_lmb_bram_1_synth_1"/>
+		<Parent Id="BD_xbar_1_synth_1"/>
+		<Parent Id="BD_dlmb_bram_if_cntlr_1_synth_1"/>
+		<Parent Id="BD_Ground_8_0_synth_1"/>
+		<Parent Id="BD_xbar_3_synth_1"/>
+		<Parent Id="BD_cpu_1_0_0_synth_1"/>
+		<Parent Id="BD_kth_axi_rni_static_2_0_synth_1"/>
+		<Parent Id="BD_pio_1_0_0_synth_1"/>
+		<Parent Id="BD_lmb_bram_2_synth_1"/>
+		<Parent Id="BD_ilmb_bram_if_cntlr_1_synth_1"/>
+		<Parent Id="BD_dlmb_v10_2_synth_1"/>
+		<Parent Id="BD_ilmb_v10_2_synth_1"/>
+		<Parent Id="BD_dlmb_bram_if_cntlr_2_synth_1"/>
+		<Parent Id="BD_ilmb_bram_if_cntlr_2_synth_1"/>
+		<Parent Id="BD_microblaze_0_0_synth_1"/>
+		<Parent Id="BD_kth_axi_rni_static_0_1_synth_1"/>
+		<Parent Id="BD_pio_0_0_0_synth_1"/>
+		<Parent Id="BD_dlmb_v10_1_synth_1"/>
+		<Parent Id="BD_ilmb_v10_1_synth_1"/>
+		<Parent Id="BD_processing_system7_0_0_synth_1"/>
+		<Parent Id="BD_cpu_1_0_x_0_synth_1"/>
+		<Parent Id="BD_dlmb_v10_4_synth_1"/>
+		<Parent Id="BD_ilmb_v10_4_synth_1"/>
+		<Parent Id="BD_dlmb_bram_if_cntlr_4_synth_1"/>
+		<Parent Id="BD_ilmb_bram_if_cntlr_4_synth_1"/>
+		<Parent Id="BD_Ground_15_0_synth_1"/>
+		<Parent Id="BD_pio_dpr_0_synth_1"/>
+		<Parent Id="BD_lmb_bram_4_synth_1"/>
+		<Parent Id="BD_cpu_1_1_x_0_synth_1"/>
+	</Run>
+	<Run Id="impl_1" LaunchDir="/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.runs/impl_1" FlowId="Vivado_Implementation" FromStepId="init_design" ToStepId="write_bitstream">
+		<Parent Id="synth_1"/>
+		<Parent Id="BD_kth_axi_rni_static_0_0_synth_1"/>
+		<Parent Id="BD_axi_gpio_0_0_synth_1"/>
+		<Parent Id="BD_clk_wiz_0_synth_1"/>
+		<Parent Id="BD_cpu_0_0_0_synth_1"/>
+		<Parent Id="BD_ilmb_v10_0_synth_1"/>
+		<Parent Id="BD_dlmb_v10_0_synth_1"/>
+		<Parent Id="BD_dlmb_bram_if_cntlr_0_synth_1"/>
+		<Parent Id="BD_ilmb_bram_if_cntlr_0_synth_1"/>
+		<Parent Id="BD_lmb_bram_5_synth_1"/>
+		<Parent Id="BD_ilmb_bram_if_cntlr_5_synth_1"/>
+		<Parent Id="BD_dlmb_bram_if_cntlr_5_synth_1"/>
+		<Parent Id="BD_ilmb_v10_5_synth_1"/>
+		<Parent Id="BD_dlmb_v10_5_synth_1"/>
+		<Parent Id="BD_auto_pc_0_synth_1"/>
+		<Parent Id="BD_axi_crossbar_0_0_synth_1"/>
+		<Parent Id="BD_mdm_1_0_synth_1"/>
+		<Parent Id="BD_rst_clk_wiz_50M_0_synth_1"/>
+		<Parent Id="BD_lmb_bram_0_synth_1"/>
+		<Parent Id="BD_kth_2DNoC_2x2x1_0_0_synth_1"/>
+		<Parent Id="BD_xbar_2_synth_1"/>
+		<Parent Id="BD_cpu_0_1_0_synth_1"/>
+		<Parent Id="BD_kth_axi_rni_static_1_0_synth_1"/>
+		<Parent Id="BD_pio_0_1_0_synth_1"/>
+		<Parent Id="BD_xbar_0_synth_1"/>
+		<Parent Id="BD_xlconstant_0_0_synth_1"/>
+		<Parent Id="BD_Ground_1_0_synth_1"/>
+		<Parent Id="BD_lmb_bram_3_synth_1"/>
+		<Parent Id="BD_dlmb_v10_3_synth_1"/>
+		<Parent Id="BD_dlmb_bram_if_cntlr_3_synth_1"/>
+		<Parent Id="BD_ilmb_v10_3_synth_1"/>
+		<Parent Id="BD_ilmb_bram_if_cntlr_3_synth_1"/>
+		<Parent Id="BD_lmb_bram_1_synth_1"/>
+		<Parent Id="BD_xbar_1_synth_1"/>
+		<Parent Id="BD_dlmb_bram_if_cntlr_1_synth_1"/>
+		<Parent Id="BD_Ground_8_0_synth_1"/>
+		<Parent Id="BD_xbar_3_synth_1"/>
+		<Parent Id="BD_cpu_1_0_0_synth_1"/>
+		<Parent Id="BD_kth_axi_rni_static_2_0_synth_1"/>
+		<Parent Id="BD_pio_1_0_0_synth_1"/>
+		<Parent Id="BD_lmb_bram_2_synth_1"/>
+		<Parent Id="BD_ilmb_bram_if_cntlr_1_synth_1"/>
+		<Parent Id="BD_dlmb_v10_2_synth_1"/>
+		<Parent Id="BD_ilmb_v10_2_synth_1"/>
+		<Parent Id="BD_dlmb_bram_if_cntlr_2_synth_1"/>
+		<Parent Id="BD_ilmb_bram_if_cntlr_2_synth_1"/>
+		<Parent Id="BD_microblaze_0_0_synth_1"/>
+		<Parent Id="BD_kth_axi_rni_static_0_1_synth_1"/>
+		<Parent Id="BD_pio_0_0_0_synth_1"/>
+		<Parent Id="BD_dlmb_v10_1_synth_1"/>
+		<Parent Id="BD_ilmb_v10_1_synth_1"/>
+		<Parent Id="BD_processing_system7_0_0_synth_1"/>
+		<Parent Id="BD_cpu_1_0_x_0_synth_1"/>
+		<Parent Id="BD_dlmb_v10_4_synth_1"/>
+		<Parent Id="BD_ilmb_v10_4_synth_1"/>
+		<Parent Id="BD_dlmb_bram_if_cntlr_4_synth_1"/>
+		<Parent Id="BD_ilmb_bram_if_cntlr_4_synth_1"/>
+		<Parent Id="BD_Ground_15_0_synth_1"/>
+		<Parent Id="BD_pio_dpr_0_synth_1"/>
+		<Parent Id="BD_lmb_bram_4_synth_1"/>
+		<Parent Id="BD_cpu_1_1_x_0_synth_1"/>
+	</Run>
+</Runs>
+

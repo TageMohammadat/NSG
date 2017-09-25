@@ -1,0 +1,58 @@
+This bundle contains scripts that automate 
+1- the generation of vivado and sdk projects from sources (i.e. sw_repo and ip_repo, constraints.xdc)
+2- the generation of all necessary files and running of executable on a powered-on ZC702 Evaluation board connected to the computer from sources (i.e. sw_repo and ip_repo, constraints.xdc)
+
+
+The scripts assume that:
+- Xilinx Vivado and XSDK version 2016.3 are installed
+- The installation directory is /opt/Xilinx/Vivado/2016.3
+- The host computer can run parallel tasks of 8 and its OS is Ubuntu 16.04
+
+To generate vivado and sdk project, 
+- open a terminal in the folder where the sources
+- make sure that you have sourced vivado settings (i.e. source /opt/Xilinx/Vivado/2016.3/settings64.sh)
+- make sure that you have 'expect' package installed, otherwise install it (i.e. sudo apt install expect)
+- execute (make elf) or alternativelythe following two commands
+	chmod a+x scripts/generateall.sh
+	./scripts/generateall.sh
+Generation results for vivado project is in folder 'prjoect'
+Generation results for XSDK project is in folder 'prjoect/sw'
+.bitstream is generated in 'prjoect/sw/BD_wrapper.bit'
+.elf files are in
+-'prjoect/sw/A9_0/Debug/A9_0.elf'
+-'prjoect/sw/microblaze_1/Debug/microblaze_1.elf'
+-'prjoect/sw/microblaze_2/Debug/microblaze_2.elf'
+
+To do everything including running the elf files on the connected board,
+- open a terminal in the folder where the sources
+- make sure that you have sourced vivado settings (e.g. source /opt/Xilinx/Vivado/2016.3/settings64.sh)
+- make sure that you have 'expect' package installed, otherwise install it (i.e. sudo apt install expect)
+- execute (make run) or alternatively the following two commands
+	chmod a+x scripts/runall.sh
+	./scripts/runall.sh
+Generation results for vivado project is in folder 'prjoect'
+Generation results for XSDK project is in folder 'prjoect/sw'
+.bitstream is generated in 'prjoect/sw/BD_wrapper.bit'
+.elf files are in
+-'prjoect/sw/A9_0/Debug/A9_0.elf'
+-'prjoect/sw/microblaze_1/Debug/microblaze_1.elf'
+-'prjoect/sw/microblaze_2/Debug/microblaze_2.elf'
+
+
+The implemented design can be described as follows:
+    HARDWARE:
+        -        The Processing system is instantiated and connected to the Programmable Logic via a secure NI.
+        -        Three MicroBlazes.
+        -        Each processor should have inbox and outbox channels to allow bidirectional communication with the other processors.
+    SOFTWARE:
+        -        One active ARM processor running one process receiving messages from the MicroBlazes (and printing them on stdout), whereas the Microblazes receive a value and write it to the LED.
+        -        The ARM NI uses 2 input (inbox) channels and writes to 2 output (outbox) channels.
+        -        Two MicroBlazes run two processes sending a message to the ARM and reading a value to be writen in the LED.
+        -        The MicroBlazes writes to one outbox and read from one inbox.
+
+-The subsystem residing in the programmable logic (the Microblazes and the NoC) are fed via FCLK0 at 50MHz.
+    -The FCLK_RESET_N software-controlled reset is connected as an auxiliary reset for the subsystem on the programmable logic. It still has external reset controlled by push button SW7 (GPIO_SW_S).
+-Each soft processor is connected to Timer, self-timed-pausing IP, performance monitor, GPIO (LEDs DS_19, DS_20, DS_21) and Network Interface.
+
+
+For questions please contact Tage <mtme@kth.se>

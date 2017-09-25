@@ -1,0 +1,49 @@
+
+*** Running vivado
+    with args -log BD_dlmb_bram_if_cntlr_5.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source BD_dlmb_bram_if_cntlr_5.tcl
+
+
+****** Vivado v2016.3 (64-bit)
+  **** SW Build 1682563 on Mon Oct 10 19:07:26 MDT 2016
+  **** IP Build 1681267 on Mon Oct 10 21:28:31 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source BD_dlmb_bram_if_cntlr_5.tcl -notrace
+Starting RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1106.523 ; gain = 187.301 ; free physical = 2867 ; free virtual = 125490
+INFO: [Synth 8-638] synthesizing module 'BD_dlmb_bram_if_cntlr_5' [/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.srcs/sources_1/bd/BD/ip/BD_dlmb_bram_if_cntlr_5/synth/BD_dlmb_bram_if_cntlr_5.vhd:84]
+INFO: [Synth 8-638] synthesizing module 'lmb_bram_if_cntlr' [/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.srcs/sources_1/bd/BD/ipshared/f4d9/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:3106]
+INFO: [Synth 8-638] synthesizing module 'lmb_mux' [/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.srcs/sources_1/bd/BD/ipshared/f4d9/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:2601]
+INFO: [Synth 8-638] synthesizing module 'pselect_mask' [/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.srcs/sources_1/bd/BD/ipshared/f4d9/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:2121]
+INFO: [Synth 8-256] done synthesizing module 'pselect_mask' (1#1) [/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.srcs/sources_1/bd/BD/ipshared/f4d9/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:2121]
+INFO: [Synth 8-256] done synthesizing module 'lmb_mux' (2#1) [/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.srcs/sources_1/bd/BD/ipshared/f4d9/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:2601]
+INFO: [Synth 8-256] done synthesizing module 'lmb_bram_if_cntlr' (3#1) [/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.srcs/sources_1/bd/BD/ipshared/f4d9/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:3106]
+INFO: [Synth 8-256] done synthesizing module 'BD_dlmb_bram_if_cntlr_5' (4#1) [/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.srcs/sources_1/bd/BD/ip/BD_dlmb_bram_if_cntlr_5/synth/BD_dlmb_bram_if_cntlr_5.vhd:84]
+Finished RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1148.992 ; gain = 229.770 ; free physical = 2749 ; free virtual = 125368
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 1148.992 ; gain = 229.770 ; free physical = 2739 ; free virtual = 125354
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 1484.570 ; gain = 0.000 ; free physical = 1720 ; free virtual = 124335
+Finished Constraint Validation : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 1484.570 ; gain = 565.348 ; free physical = 1339 ; free virtual = 123954
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 1484.570 ; gain = 565.348 ; free physical = 1339 ; free virtual = 123954
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 1484.570 ; gain = 565.348 ; free physical = 1338 ; free virtual = 123953
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 1484.570 ; gain = 565.348 ; free physical = 1322 ; free virtual = 123937
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 1484.570 ; gain = 565.348 ; free physical = 1271 ; free virtual = 123886
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:30 ; elapsed = 00:00:34 . Memory (MB): peak = 1484.570 ; gain = 565.348 ; free physical = 580 ; free virtual = 123198
+Finished Timing Optimization : Time (s): cpu = 00:00:30 ; elapsed = 00:00:34 . Memory (MB): peak = 1484.570 ; gain = 565.348 ; free physical = 578 ; free virtual = 123196
+Finished Technology Mapping : Time (s): cpu = 00:00:30 ; elapsed = 00:00:34 . Memory (MB): peak = 1484.570 ; gain = 565.348 ; free physical = 572 ; free virtual = 123190
+Finished IO Insertion : Time (s): cpu = 00:00:31 ; elapsed = 00:00:35 . Memory (MB): peak = 1484.570 ; gain = 565.348 ; free physical = 571 ; free virtual = 123188
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:31 ; elapsed = 00:00:35 . Memory (MB): peak = 1484.570 ; gain = 565.348 ; free physical = 571 ; free virtual = 123188
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:31 ; elapsed = 00:00:35 . Memory (MB): peak = 1484.570 ; gain = 565.348 ; free physical = 571 ; free virtual = 123187
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:31 ; elapsed = 00:00:35 . Memory (MB): peak = 1484.570 ; gain = 565.348 ; free physical = 571 ; free virtual = 123187
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:31 ; elapsed = 00:00:35 . Memory (MB): peak = 1484.570 ; gain = 565.348 ; free physical = 562 ; free virtual = 123179
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:31 ; elapsed = 00:00:35 . Memory (MB): peak = 1484.570 ; gain = 565.348 ; free physical = 561 ; free virtual = 123178
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |LUT2 |     3|
+|2     |LUT3 |     4|
+|3     |FDRE |     2|
++------+-----+------+
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:31 ; elapsed = 00:00:35 . Memory (MB): peak = 1484.570 ; gain = 565.348 ; free physical = 561 ; free virtual = 123178
+synth_design: Time (s): cpu = 00:00:28 ; elapsed = 00:00:31 . Memory (MB): peak = 1520.602 ; gain = 495.660 ; free physical = 808 ; free virtual = 123428

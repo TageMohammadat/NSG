@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<document>
+<!--The data in this file is primarily intended for consumption by Xilinx tools.
+The structure and the elements are likely to change over the next few releases.
+This means code written to parse this file will need to be revisited each subsequent release.-->
+<application name="pa" timeStamp="Mon Nov 28 16:13:07 2016">
+<section name="Project Information" visible="false">
+<property name="ProjectID" value="1c88b63c91dd46b68ef5c64247dbd7a0" type="ProjectID"/>
+<property name="ProjectIteration" value="1" type="ProjectIteration"/>
+</section>
+<section name="PlanAhead Usage" visible="true">
+<item name="Project Data">
+<property name="SrcSetCount" value="1" type="SrcSetCount"/>
+<property name="ConstraintSetCount" value="1" type="ConstraintSetCount"/>
+<property name="DesignMode" value="RTL" type="DesignMode"/>
+<property name="SynthesisStrategy" value="Vivado Synthesis Defaults" type="SynthesisStrategy"/>
+<property name="ImplStrategy" value="Vivado Implementation Defaults" type="ImplStrategy"/>
+</item>
+<item name="Java Command Handlers">
+<property name="CoreView" value="1" type="JavaHandler"/>
+<property name="CustomizeRSBBlock" value="1" type="JavaHandler"/>
+<property name="EditUndo" value="16" type="JavaHandler"/>
+<property name="OpenBlockDesign" value="2" type="JavaHandler"/>
+<property name="ToggleViewNavigator" value="1" type="JavaHandler"/>
+</item>
+<item name="Gui Resources Info">
+<property name="BaseDialog_OK" value="1" type="GuiResourceData"/>
+<property name="CommandsInput_TYPE_TCL_COMMAND_HERE" value="5" type="GuiResourceData"/>
+<property name="CoreTreeTablePanel_CORE_TREE_TABLE" value="5" type="GuiResourceData"/>
+<property name="FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE" value="3" type="GuiResourceData"/>
+<property name="MainMenuMgr_FILE" value="2" type="GuiResourceData"/>
+<property name="MainMenuMgr_OPEN_RECENT_PROJECT" value="3" type="GuiResourceData"/>
+<property name="PACommandNames_TOGGLE_VIEW_NAV" value="1" type="GuiResourceData"/>
+<property name="PlanAheadTab_SHOW_FLOW_NAVIGATOR" value="1" type="GuiResourceData"/>
+<property name="SaveProjectUtils_DONT_SAVE" value="1" type="GuiResourceData"/>
+<property name="TclConsoleView_COPY" value="1" type="GuiResourceData"/>
+<property name="TclConsoleView_TCL_CONSOLE_CODE_EDITOR" value="4" type="GuiResourceData"/>
+</item>
+<item name="Other">
+<property name="GuiMode" value="9" type="GuiMode"/>
+<property name="BatchMode" value="0" type="BatchMode"/>
+<property name="TclMode" value="8" type="TclMode"/>
+</item>
+</section>
+</application>
+</document>

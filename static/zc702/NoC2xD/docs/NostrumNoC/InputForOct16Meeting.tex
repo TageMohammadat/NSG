@@ -1,0 +1,267 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% $Id: report.tex,v 1.5 2005/02/09 21:06:42 lindstrm Exp $
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% costhesis usage example
+%% modified and added to by GQMJr
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% The costhesis package accepts the following options
+%
+%   Document types:
+%     msc               - Master Thesis
+%     bsc		- Kandidate Thesis
+%
+%   Layout options:
+%
+%   Other options:
+%     blank             - Removes pagenumbers and headers from empty pages
+%     blankmsg          - Prints a message of intent on empty pages
+%     scheader          - Typeset headers in SMALL CAPS shape (default)
+%     slheader          - Typeset headers in slanted shape 
+%
+%
+%
+%
+
+%\documentclass{standalone}
+\documentclass{article}
+
+\renewcommand{\rmdefault}{ptm} 
+\usepackage{mathptmx}
+\usepackage[scaled=.90]{helvet}
+\usepackage{courier}
+\usepackage{bookmark}
+ \usepackage[dvipsnames*,svgnames]{xcolor} %% For extended colors
+ \usepackage{tikz}
+ \usetikzlibrary{arrows,decorations.pathmorphing,backgrounds,fit,positioning,calc,shapes}
+%%----------------------------------------------------------------------------
+%\usepackage[latin1]{inputenc}
+\usepackage[utf8]{inputenc} % inputenc allows the user to input accented
+\usepackage[swedish,english]{babel}
+\usepackage{rotating}		 %% For text rotating
+\usepackage{array}			 %% For table wrapping
+\usepackage{graphicx}	 %% Support for images
+\usepackage{float}			 %% Suppor for more flexible floating box positioning
+\usepackage{color}           %% Support for colour 
+\usepackage{mdwlist}
+\usepackage{setspace}    %% For fine-grained control over line spacing
+\usepackage{listings}		%% For source code listing
+\usepackage{bytefield}    %% For packet drawings
+\usepackage{tabularx}		%% For simple table stretching
+\usepackage{multirow}	%% Support for multirow colums in tables
+\usepackage{dcolumn}	%% Support for decimal point alignment in tables
+\usepackage{url}	%% Support for breaking URLs
+\usepackage[perpage,para,symbol]{footmisc} %% use symbols to ``number'' footnotes
+\usepackage{bigstrut}
+\usepackage{rotating}
+\usepackage{multirow}
+\usepackage{array}
+\newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{R}[1]{>{\raggedleft\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\usepackage{minted}		%% For source code highlighting
+\usemintedstyle{borland}
+\usepackage{hyperref}		
+\usepackage[all]{hypcap}	 %% Prevents an issue related to hyperref and caption
+\hypersetup{colorlinks,breaklinks,
+            linkcolor=darkblue,urlcolor=darkblue,
+            anchorcolor=darkblue,citecolor=darkblue}
+\definecolor{darkblue}{rgb}{0.0,0.0,0.3} %% define a color called darkblue
+\definecolor{darkred}{rgb}{0.4,0.0,0.0}
+\definecolor{red}{rgb}{0.7,0.0,0.0}
+\definecolor{lightgrey}{rgb}{0.8,0.8,0.8} 
+\definecolor{grey}{rgb}{0.6,0.6,0.6}
+\definecolor{darkgrey}{rgb}{0.4,0.4,0.4}
+\usepackage{textcomp}
+\usepackage{pgf}
+\usepackage{tikz}
+\usetikzlibrary{arrows,automata}
+\usetikzlibrary{shapes,arrows,chains}
+\usetikzlibrary{matrix,calc,shapes}
+\usepackage{smartdiagram}
+\usepackage{lmodern}	% font definition
+\usepackage{amsmath}	% math fonts
+\usepackage{amsthm}
+\usepackage{amsfonts}
+\usetikzlibrary{decorations.pathmorphing} % noisy shapes
+\usetikzlibrary{fit}					% fitting shapes to coordinates
+\usetikzlibrary{backgrounds}	% drawing the background after the foreground
+\usepackage{xcolor}
+\usepackage{subcaption}
+\usepackage{rotating}
+
+\usepackage{authblk}
+\title{Respond to Input Request on Hardware Requirement/Block Diagrams for Oct-19 SAFEPOWER Follow-up Meeting}
+\author[1]{Mohamed Tage.}
+\affil[1]{School of Information and Communication Technology, KTH Royal Institute of Technology, mtme AT kth DOT se}
+\date{2016, Oct, 19}
+
+\begin{document}
+  \maketitle
+
+\section{System Block Diagram}
+
+The main elements of the system are switches connected in a 2x2 mesh topology and interfaced to processing nodes through network interfaces (NI). A block diagram illustrating the system can be seen in Fig. \ref{fig_ch3_NoC_Generic2x2}. The figure depicts four resources or nodes which are either microblaze systems or dual cortex A9 processor, connected to a structure of switches array each is denoted by Sxx via network interfaces (NI).
+
+
+\begin{figure}[ht]
+\centering
+\tikzstyle{switch}=[circle,
+thick,
+minimum size=3cm,
+draw=blue!80,
+fill=blue!20]
+\tikzstyle{resource}=[circle,
+thick, text width=4cm,
+minimum size=1.2cm,
+draw=purple!80,
+fill=purple!20]
+
+\tikzstyle{matrx}=[rectangle,
+thick,
+minimum size=1cm,
+draw=gray!80,
+fill=gray!20]
+% The input, state transition, and measurement matrices
+% are represented by gray squares.
+% They have a smaller minimal size for aesthetic reasons.
+\tikzstyle{NI}=[rectangle,
+thick,
+minimum size=.5cm,
+draw=yellow!85!black,
+fill=yellow!40]
+% The system and measurement noise are represented by yellow
+% circles with a "noisy" uneven circumference.
+% This requires the TikZ library "decorations.pathmorphing".
+\tikzstyle{noise}=[circle,
+thick,
+minimum size=1.2cm,
+draw=yellow!85!black,
+fill=yellow!40] %,
+%decorate,
+%decoration={random steps,
+%                        segment length=2pt,
+%                        amplitude=2pt}]
+
+% Everything is drawn on underlying gray rectangles with
+% rounded corners.
+\tikzstyle{background}=[rectangle,
+fill=gray!10,
+inner sep=0.2cm,
+rounded corners=5mm]
+
+\begin{tikzpicture}[>=latex,text height=1.5ex,text depth=0.25ex]
+% "text height" and "text depth" are required to vertically
+% align the labels with and without indices.
+% The various elements are conveniently placed using a matrix:
+\matrix[row sep=0.5cm,column sep=0.5cm] {
+% First line: Resources
+&
+\node (R2) [resource]{Node 3: Microblaze System}; &&
+&
+\node (R3)   [resource]{Node 2: Microblaze System};     &
+&
+\\
+% Second line: RNIs
+&\node (RNI2) [NI] {NI};       &&
+&\node (RNI3)   [NI] {NI};       &
+\\
+% Third line: 1st Switch matrix
+&\node (S2) [switch] {$\mathbf{S_{10}}$}; &&
+&\node (S3)   [switch] {$\mathbf{S_{11}}$};     &
+\\
+% Fourth line: 2nd Switch matrix
+&\node (S0) [switch] {$\mathbf{S_{00}}$}; &&
+&\node (S1)   [switch] {$\mathbf{S_{01}}$};     &
+\\
+% Fifth line: RNIs
+&\node (RNI0) [NI] {NI};       &&
+&\node (RNI1)   [NI] {NI};       &
+\\
+% Sixth line: Resources
+&
+\node (R0) [resource] {Node 0: Processing System: Dual A9}; &&
+&
+\node (R1)   [resource] {Node 1: Microblaze System};     &
+&
+\\
+};
+% The diagram elements are now connected through arrows:
+\path[->]
+(R2) edge[thick] (RNI2)	% Resource10 to NI
+(R3) edge[thick] (RNI3)	% Resource11 to NI    
+(R0) edge[thick] (RNI0)	% Resource00 to NI
+(R1) edge[thick] (RNI1)	% Resource01 to NI
+;
+\path[->]
+(RNI1) edge[thick,bend left=10] (S1)	% NI to the rest of the Network
+(S1) edge[thick,bend left=10] (RNI1)
+(RNI0) edge[thick,bend left=10] (S0)	% NI to the rest of the Network
+(S0) edge[thick,bend left=10] (RNI0)
+(RNI3) edge[thick,bend left=10] (S3)	% NI to the rest of the Network
+(S3) edge[thick,bend left=10] (RNI3) 
+(RNI2) edge[thick,bend left=10] (S2)	% NI to the rest of the Network
+(S2) edge[thick,bend left=10] (RNI2)
+
+% Switch network connections
+(S0) edge[thick,bend left=10] (S1)
+(S1) edge[thick,bend left=10] (S0)
+
+(S1) edge[thick,bend left=10] (S3)
+(S3) edge[thick,bend left=10] (S1)	
+
+(S3) edge[thick,bend left=10] (S2)		
+(S2) edge[thick,bend left=10] (S3)
+
+(S2) edge[thick,bend left=10] (S0)
+(S0) edge[thick,bend left=10] (S2)
+;
+% Now that the diagram has been drawn, background rectangles
+% can be fitted to its elements.
+\begin{pgfonlayer}{background}
+\node [background,
+fit=(R2) (R3),        
+label=left:Processing Nodes (Resources):] {};
+\node [rectangle,
+fit=(RNI2),        
+label=left:Network Interface (NI)] {};
+\node [background,
+fit=(R0) (R1),        
+label=left:Processing Nodes (Resources):] {};
+\node [background,
+fit=(S2) (S0) (S1),label=left:Switch Netowrk:] {};
+\end{pgfonlayer}
+\end{tikzpicture}
+\caption{Block Diagram of Network-on-Chip Based MPSoC Depicting Network Interfaces and Switch Network for 2x2 Mesh Type Nostrum NoC and Processing Nodes}
+\label{fig_ch3_NoC_Generic2x2}
+\end{figure}
+
+\section{Hardware Requirements}
+
+\begin{table}[ht]
+	\centering
+	\caption{Resource Utilisation}
+	\begin{tabular}{|l|l|l|l|}
+		\hline
+		& Microblaze   & 64KB Microblaze Memory & NoC    \bigstrut\\
+		\hline
+		6-inputs LUTs  & 1115  & 7     & 2768   \bigstrut\\
+		\hline
+		Registers & 2272  & 13    & 6723  \bigstrut\\
+		\hline
+		BlockRAM  & 0     & 16    & 8      \bigstrut\\
+		\hline
+	\end{tabular}%
+	\label{tabresourc}
+\end{table}
+
+\begin{itemize}
+	\item The NoC part of the MPSoC system would require minimal Look-up tables (LUT)s and registers resources on the programmable logic of the Zynq device as shown in the last column of Table \ref{tabresourc}.
+	\item Since the next release would be slightly different, a 50\% increase in the required resources can be taken into consideration as design margins.
+	\item Minimal on-chip memory requirements for the NoC part of the MPSoC would depend on the maximum size of packets or messages in Bytes expected to be sent and received at any moment of time. This is because, the packets to be sent or received are stored in the network interface which is considered a part of the NoC. The 8 Block RAM in Table \ref{tabresourc} corresponds to 2KB of send buffer and  2 KB or receive buffer for four nodes.
+	\item Table \ref{tabresourc} (Column 1 and 2) shows a minimal requirements on the soft-processor systems (Microblaze, on-chip memory). The application derived from the relevant use-cases (avionics+public) would potentially override/re-define the requirement on the soft-processing systems and possibly the required logic resources for the NoC.
+	\item For potential Dynamic Frequency Scaling (DFS), four Programmable Clock signals (3 to be fed to the soft-processor systems and 1 for the NoC block) from Processing System Clock Generator Module can be allocated. Alternatively, four Clocking Management Tiles can be allocated.
+
+
+\end{itemize}
+\end{document}

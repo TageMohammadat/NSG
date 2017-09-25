@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<document>
+<!--The data in this file is primarily intended for consumption by Xilinx tools.
+The structure and the elements are likely to change over the next few releases.
+This means code written to parse this file will need to be revisited each subsequent release.-->
+<application name="pa" timeStamp="Wed Nov  9 13:22:58 2016">
+<section name="Project Information" visible="false">
+<property name="ProjectID" value="530d00856ed043c590a60baaa7242e81" type="ProjectID"/>
+<property name="ProjectIteration" value="2" type="ProjectIteration"/>
+</section>
+<section name="PlanAhead Usage" visible="true">
+<item name="Project Data">
+<property name="SrcSetCount" value="1" type="SrcSetCount"/>
+<property name="ConstraintSetCount" value="1" type="ConstraintSetCount"/>
+<property name="DesignMode" value="RTL" type="DesignMode"/>
+<property name="SynthesisStrategy" value="Vivado Synthesis Defaults" type="SynthesisStrategy"/>
+<property name="ImplStrategy" value="Vivado Implementation Defaults" type="ImplStrategy"/>
+</item>
+<item name="Java Command Handlers">
+<property name="CloseProject" value="1" type="JavaHandler"/>
+<property name="CustomizeRSBBlock" value="5" type="JavaHandler"/>
+<property name="EditUndo" value="1" type="JavaHandler"/>
+<property name="FileExit" value="1" type="JavaHandler"/>
+<property name="OpenBlockDesign" value="1" type="JavaHandler"/>
+</item>
+<item name="Gui Resources Info">
+<property name="BaseDialog_CANCEL" value="2" type="GuiResourceData"/>
+<property name="BaseDialog_OK" value="4" type="GuiResourceData"/>
+<property name="CommandsInput_TYPE_TCL_COMMAND_HERE" value="1" type="GuiResourceData"/>
+<property name="FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE" value="1" type="GuiResourceData"/>
+<property name="GICTreeTablePanel_GIC_TREE_TABLE" value="2" type="GuiResourceData"/>
+<property name="GenSettingTreeTablePanel_GEN_SETTING_TREE_TABLE" value="9" type="GuiResourceData"/>
+<property name="GettingStartedView_RECENT_PROJECTS" value="1" type="GuiResourceData"/>
+<property name="LogMonitor_MONITOR" value="1" type="GuiResourceData"/>
+<property name="MainMenuMgr_EXPORT" value="1" type="GuiResourceData"/>
+<property name="MainMenuMgr_FILE" value="4" type="GuiResourceData"/>
+<property name="MainMenuMgr_OPEN_RECENT_FILE" value="3" type="GuiResourceData"/>
+<property name="MainMenuMgr_OPEN_RECENT_PROJECT" value="1" type="GuiResourceData"/>
+<property name="PACommandNames_CLOSE_PROJECT" value="1" type="GuiResourceData"/>
+<property name="PACommandNames_EXIT" value="1" type="GuiResourceData"/>
+<property name="RSBApplyAutomationBar_RUN_CONNECTION_AUTOMATION" value="2" type="GuiResourceData"/>
+<property name="SaveProjectUtils_DONT_SAVE" value="1" type="GuiResourceData"/>
+<property name="SystemBuilderMenu_IP_DOCUMENTATION" value="1" type="GuiResourceData"/>
+<property name="SystemBuilderView_EXPAND_COLLAPSE" value="2" type="GuiResourceData"/>
+<property name="SystemBuilderView_ORIENTATION" value="2" type="GuiResourceData"/>
+</item>
+<item name="Other">
+<property name="GuiMode" value="5" type="GuiMode"/>
+<property name="BatchMode" value="0" type="BatchMode"/>
+<property name="TclMode" value="4" type="TclMode"/>
+</item>
+</section>
+</application>
+</document>

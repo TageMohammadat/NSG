@@ -1,0 +1,884 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% $Id: report.tex,v 1.5 2005/02/09 21:06:42 lindstrm Exp $
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% costhesis usage example
+%% modified and added to by GQMJr
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% The costhesis package accepts the following options
+%
+%   Document types:
+%     msc               - Master Thesis
+%     bsc		- Kandidate Thesis
+%
+%   Layout options:
+%
+%   Other options:
+%     blank             - Removes pagenumbers and headers from empty pages
+%     blankmsg          - Prints a message of intent on empty pages
+%     scheader          - Typeset headers in SMALL CAPS shape (default)
+%     slheader          - Typeset headers in slanted shape 
+%
+%
+%
+%
+
+%\documentclass{standalone}
+\documentclass{article}
+
+\renewcommand{\rmdefault}{ptm} 
+\usepackage{mathptmx}
+\usepackage[scaled=.90]{helvet}
+\usepackage{courier}
+\usepackage{bookmark}
+ \usepackage[dvipsnames*,svgnames]{xcolor} %% For extended colors
+ \usepackage{tikz}
+ \usetikzlibrary{arrows,decorations.pathmorphing,backgrounds,fit,positioning,calc,shapes}
+%%----------------------------------------------------------------------------
+%\usepackage[latin1]{inputenc}
+\usepackage[utf8]{inputenc} % inputenc allows the user to input accented
+\usepackage[swedish,english]{babel}
+\usepackage{rotating}		 %% For text rotating
+\usepackage{array}			 %% For table wrapping
+\usepackage{graphicx}	 %% Support for images
+\usepackage{float}			 %% Suppor for more flexible floating box positioning
+\usepackage{color}           %% Support for colour 
+\usepackage{mdwlist}
+\usepackage{setspace}    %% For fine-grained control over line spacing
+\usepackage{listings}		%% For source code listing
+\usepackage{bytefield}    %% For packet drawings
+\usepackage{tabularx}		%% For simple table stretching
+\usepackage{multirow}	%% Support for multirow colums in tables
+\usepackage{dcolumn}	%% Support for decimal point alignment in tables
+\usepackage{url}	%% Support for breaking URLs
+\usepackage[perpage,para,symbol]{footmisc} %% use symbols to ``number'' footnotes
+\usepackage{bigstrut}
+\usepackage{rotating}
+\usepackage{multirow}
+\usepackage{array}
+\newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{R}[1]{>{\raggedleft\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\usepackage{minted}		%% For source code highlighting
+\usemintedstyle{borland}
+\usepackage{hyperref}		
+\usepackage[all]{hypcap}	 %% Prevents an issue related to hyperref and caption
+\hypersetup{colorlinks,breaklinks,
+            linkcolor=darkblue,urlcolor=darkblue,
+            anchorcolor=darkblue,citecolor=darkblue}
+\definecolor{darkblue}{rgb}{0.0,0.0,0.3} %% define a color called darkblue
+\definecolor{darkred}{rgb}{0.4,0.0,0.0}
+\definecolor{red}{rgb}{0.7,0.0,0.0}
+\definecolor{lightgrey}{rgb}{0.8,0.8,0.8} 
+\definecolor{grey}{rgb}{0.6,0.6,0.6}
+\definecolor{darkgrey}{rgb}{0.4,0.4,0.4}
+\usepackage{textcomp}
+\usepackage{pgf}
+\usepackage{tikz}
+\usetikzlibrary{arrows,automata}
+\usetikzlibrary{shapes,arrows,chains}
+\usetikzlibrary{matrix,calc,shapes}
+\usepackage{smartdiagram}
+\usepackage{lmodern}	% font definition
+\usepackage{amsmath}	% math fonts
+\usepackage{amsthm}
+\usepackage{amsfonts}
+\usetikzlibrary{decorations.pathmorphing} % noisy shapes
+\usetikzlibrary{fit}					% fitting shapes to coordinates
+\usetikzlibrary{backgrounds}	% drawing the background after the foreground
+\usepackage{xcolor}
+\usepackage{subcaption}
+\usepackage{rotating}
+
+\usepackage{authblk}
+\title{Elaboration on the Nostrum Zero Release at F2F SAFEPOWER Meeting in Siegen}
+\author[1]{Mohamed Tage.}
+\affil[1]{School of Information and Communication Technology, KTH Royal Institute of Technology, mtme AT kth DOT se}
+\date{2016, Oct, 5}
+
+\begin{document}
+  \maketitle
+
+\section{General View of the Network-on-Chip}
+
+Network-on-Chip or on-chip network is considered a scalable architecture for many-core applications providing high communication bandwidth, reduced latency and improved energy-efficiency compared to other alternatives such as bus with shared memory and point to point communication. The major elements of such architecture are switches connected in a particular topology and interfaced to processing nodes through network interfaces (NI). A typical example of a NoC can be seen in Fig. \ref{fig_ch3_NoC_Generic2x2}. The figure depicts four resources or nodes which are either microblaze systems or dual cortex A9 processor, connected to a structure of switches array each is denoted by Sxx via network interfaces (NI). There are several terminologies concerning the NoC and to reduce possible ambiguity in the remainder of this work, some terminologies can be defined briefly as follows:
+
+\begin{itemize}
+\item Network-on-Chip/On Chip Network: The collection of switches compris-ing the network.
+\item Switch/Router: an intermediate module connecting to a processing resource and other switches to relay messages between resources or nodes.
+\item Resource/Node: one or more module connected to the same bus and has access to the network, through a network interface, to exchange messages. Usually it is a processing system with its own memory space and peripherals but could be any type or resource such as memory or special purpose Intellectual Property (IP) block.
+\item Network Interface (NI): an intermediate module connecting a resource to the network.
+\item Packet: the message in one or more words being sent or received in the network. Usually it consists of number of flits.
+\item Flit: originally short for flow control digit and is used interchangeably in this work with Phit, physical control digit. A flit is the actual bits propagating from or to the NI through the switches. Flits can be carrying setup or data words.
+\item Routing scheme: algorithm used to decide the path of a flit propagation through the network, for example, XY routing scheme in the Nostrum NoC routes flits horizontally until it reaches its X position and then vertically until it reaches its Y position.
+\item NoC Topology: The connection between the switches, usually in shape of mesh, torus, star, tree, etc.
+\item NoC Flow Control: the procedure employed to for transmission and reception of packets to allow correct message delivery between NI and switch and between switches. Examples for flow control includes: buffer-less flow control, store and forward flow control, wormhole, etc.
+\end{itemize}
+
+
+\begin{figure}[ht]
+\centering
+\tikzstyle{switch}=[circle,
+thick,
+minimum size=3cm,
+draw=blue!80,
+fill=blue!20]
+\tikzstyle{resource}=[circle,
+thick, text width=4cm,
+minimum size=1.2cm,
+draw=purple!80,
+fill=purple!20]
+
+\tikzstyle{matrx}=[rectangle,
+thick,
+minimum size=1cm,
+draw=gray!80,
+fill=gray!20]
+% The input, state transition, and measurement matrices
+% are represented by gray squares.
+% They have a smaller minimal size for aesthetic reasons.
+\tikzstyle{NI}=[rectangle,
+thick,
+minimum size=.5cm,
+draw=yellow!85!black,
+fill=yellow!40]
+% The system and measurement noise are represented by yellow
+% circles with a "noisy" uneven circumference.
+% This requires the TikZ library "decorations.pathmorphing".
+\tikzstyle{noise}=[circle,
+thick,
+minimum size=1.2cm,
+draw=yellow!85!black,
+fill=yellow!40] %,
+%decorate,
+%decoration={random steps,
+%                        segment length=2pt,
+%                        amplitude=2pt}]
+
+% Everything is drawn on underlying gray rectangles with
+% rounded corners.
+\tikzstyle{background}=[rectangle,
+fill=gray!10,
+inner sep=0.2cm,
+rounded corners=5mm]
+
+\begin{tikzpicture}[>=latex,text height=1.5ex,text depth=0.25ex]
+% "text height" and "text depth" are required to vertically
+% align the labels with and without indices.
+% The various elements are conveniently placed using a matrix:
+\matrix[row sep=0.5cm,column sep=0.5cm] {
+% First line: Resources
+&
+\node (R2) [resource]{Node 3: Microblaze System}; &&
+&
+\node (R3)   [resource]{Node 2: Microblaze System};     &
+&
+\\
+% Second line: RNIs
+&\node (RNI2) [NI] {NI};       &&
+&\node (RNI3)   [NI] {NI};       &
+\\
+% Third line: 1st Switch matrix
+&\node (S2) [switch] {$\mathbf{S_{10}}$}; &&
+&\node (S3)   [switch] {$\mathbf{S_{11}}$};     &
+\\
+% Fourth line: 2nd Switch matrix
+&\node (S0) [switch] {$\mathbf{S_{00}}$}; &&
+&\node (S1)   [switch] {$\mathbf{S_{01}}$};     &
+\\
+% Fifth line: RNIs
+&\node (RNI0) [NI] {NI};       &&
+&\node (RNI1)   [NI] {NI};       &
+\\
+% Sixth line: Resources
+&
+\node (R0) [resource] {Node 0: Processing System: Dual A9}; &&
+&
+\node (R1)   [resource] {Node 1: Microblaze System};     &
+&
+\\
+};
+% The diagram elements are now connected through arrows:
+\path[->]
+(R2) edge[thick] (RNI2)	% Resource10 to NI
+(R3) edge[thick] (RNI3)	% Resource11 to NI    
+(R0) edge[thick] (RNI0)	% Resource00 to NI
+(R1) edge[thick] (RNI1)	% Resource01 to NI
+;
+\path[->]
+(RNI1) edge[thick,bend left=10] (S1)	% NI to the rest of the Network
+(S1) edge[thick,bend left=10] (RNI1)
+(RNI0) edge[thick,bend left=10] (S0)	% NI to the rest of the Network
+(S0) edge[thick,bend left=10] (RNI0)
+(RNI3) edge[thick,bend left=10] (S3)	% NI to the rest of the Network
+(S3) edge[thick,bend left=10] (RNI3) 
+(RNI2) edge[thick,bend left=10] (S2)	% NI to the rest of the Network
+(S2) edge[thick,bend left=10] (RNI2)
+
+% Switch network connections
+(S0) edge[thick,bend left=10] (S1)
+(S1) edge[thick,bend left=10] (S0)
+
+(S1) edge[thick,bend left=10] (S3)
+(S3) edge[thick,bend left=10] (S1)	
+
+(S3) edge[thick,bend left=10] (S2)		
+(S2) edge[thick,bend left=10] (S3)
+
+(S2) edge[thick,bend left=10] (S0)
+(S0) edge[thick,bend left=10] (S2)
+;
+% Now that the diagram has been drawn, background rectangles
+% can be fitted to its elements.
+\begin{pgfonlayer}{background}
+\node [background,
+fit=(R2) (R3),        
+label=left:Processing Nodes (Resources):] {};
+\node [rectangle,
+fit=(RNI2),        
+label=left:Network Interface (NI)] {};
+\node [background,
+fit=(R0) (R1),        
+label=left:Processing Nodes (Resources):] {};
+\node [background,
+fit=(S2) (S0) (S1),label=left:Switch Netowrk:] {};
+\end{pgfonlayer}
+\end{tikzpicture}
+\caption{Architecture of Network-on-Chip Depicting Resources, Network Interfaces and Switch Network for 2x2 Mesh Type NoC }
+\label{fig_ch3_NoC_Generic2x2}
+\end{figure}
+
+\clearpage
+
+The NoC is seen from the processor side as a memory map device which can simply be reduced to 3 regions: control registers, inboxes and outboxes. For convenience, Inboxes and Outboxes are divided into 2 regions to spatially isolate messages of critical and non-critical processes. The memory map is shown in Figure \ref{fig_ch3_Critical_NonCritical_Comm}. 
+
+\begin{figure}[ht]
+\centering
+\begin{tabular}{|l|l|}
+\hline
+\multicolumn{2}{|l|}{Command/Control/Configuration Registers} \bigstrut\\
+\hline
+\multicolumn{2}{|l|}{Critical Process Region: Incoming Packets Channels (Inbox)} \bigstrut\\
+\hline
+\multicolumn{2}{|l|}{Critical Process Region: Outgoing Packets Channels (Outbox)} \bigstrut\\
+\hline
+\hline
+\multicolumn{2}{|l|}{Critical Process Region: Incoming Packets Channels (Inbox)} \bigstrut\\
+\hline
+\multicolumn{2}{|l|}{Critical Process Region: Outgoing Packets Channels (Outbox)} \bigstrut\\
+\hline
+\hline
+\end{tabular}%
+\caption{Simple Memory Map for the Network Interface as viewed from the Processor}
+\label{fig_ch3_Critical_NonCritical_Comm}
+\end{figure}
+
+\clearpage
+
+A process in a processor can send a message to other processor by writing the message into the outbox and issue a send command telling the message destination at one of the control registers. The packet transmission and delivery is shown in Figure \ref{fig_ch3_PacketFlow}.
+
+\begin{figure}
+\centering
+\smartdiagramset{circular distance=4cm,
+text width=2.5cm,
+module minimum width=2.5cm,
+module minimum height=1.5cm,
+arrow tip=to}
+\smartdiagram[circular diagram:clockwise]{1. A Process Writes a Message at the Respective Outbox Channel,
+2. A Process Writes Control Info to the NI, 3. Message Propagates through the NoC, 4. Wait for Heartbeat, 5. Message is Accessible at Destination Node's NI in the Respective Inbox Channel}
+\caption{Flow Diagram Summarising a Resource-to-Resource Message (Packet) Delivery Cycle from a Process Point of View}
+\label{fig_ch3_PacketFlow}
+\end{figure}
+
+\clearpage
+
+\section{Implementation Example as Delivered in the Zero Release}
+\label{Ch:Method-Sec:Imp}
+
+
+\begin{sidewaysfigure}
+\centering
+{
+\tikzstyle{mixedcriticalnode}=[circle,
+very thick,
+minimum size=1cm,, top color=purple!15, inner color=white, bottom color=blue!15,
+draw=violet!90, inner sep=0pt,path picture={\draw (path picture bounding box.south east) -- (path picture bounding box.north west);}
+]
+\tikzstyle{switch}=[circle]
+\tikzstyle{resource}=[circle,
+thick,
+minimum size=1cm,
+draw=purple!80,
+fill=purple!20]
+\tikzstyle{movablecriticalresource}=[circle,
+thick,dotted,
+minimum size=1cm,
+draw=purple!80,
+outer color=white,inner color=purple!20]
+\tikzstyle{criticalresource}=[circle,
+thick,
+minimum size=1cm,
+draw=purple!80,
+fill=purple!20]
+\tikzstyle{movablenoncriticalresource}=[circle,
+thick,dotted,
+minimum size=1cm,
+draw=blue!80,outer color=white,
+inner color=blue!20]
+\tikzstyle{noncriticalresource}=[circle,
+thick,
+minimum size=1cm,
+draw=blue!80,
+fill=blue!20]
+\tikzstyle{matrx}=[rectangle,
+thick,
+minimum size=0.5cm,
+draw=gray!80,
+fill=gray!20]
+% The input, state transition, and measurement matrices
+% are represented by gray squares.
+% They have a smaller minimal size for aesthetic reasons.
+\tikzstyle{NI}=[rectangle]
+
+% Everything is drawn on underlying gray rectangles with
+% rounded corners.
+\tikzstyle{background}=[cloud,
+fill=gray!20,
+inner sep=-0.4cm]
+\tikzstyle{rectbackground}=[rectangle,
+thick,
+minimum size=1cm,
+draw=black!80,
+inner sep=1cm]
+\begin{tikzpicture}[>=latex,text height=1.5ex,text depth=0.25ex]
+
+\tikzstyle{every label}=[font=\small]
+% "text height" and "text depth" are required to vertically
+% align the labels with and without indices.
+% The various elements are conveniently placed using a matrix:
+\matrix[row sep=0.2cm,column sep=0.2cm] {
+% First line: Resources
+&
+\node (xR2-4) [criticalresource,xshift=-0.4cm]{};\node (xR2-3) [movablecriticalresource,xshift=-0.2cm]{};\node (xR2-2) [criticalresource,xshift=-0.0cm]{};\node (xR2-1) [criticalresource,xshift=0.2cm]{}; \node (xR2) [resource,xshift=+0.4cm]{};&&
+&
+\node (xR3-4) [noncriticalresource,xshift=-0.4cm]{};\node (xR3-3) [movablenoncriticalresource,xshift=-0.2cm]{};\node (xR3-2) [resource,xshift=0.0cm]{}; \node (xR3-1) [resource,xshift=0.2cm]{};\node (xR3)   [noncriticalresource,xshift=0.4cm]{};     &
+&
+\\
+% Second line: RNIs
+&\node (xRNI2) [NI] {};       &&
+&\node (xRNI3)   [NI] {};       &
+\\
+% Third line: 1st Switch matrix
+&\node (xS2) [switch] {}; &&
+&\node (xS3)   [switch] {};     &
+\\
+% Fourth line: 2nd Switch matrix
+&\node (xS0) [switch] {}; &&
+&\node (xS1)   [switch] {};     &
+\\
+% Fifth line: RNIs
+&\node (xRNI0) [NI] {};       &&
+&\node (xRNI1)   [NI] {};       &
+\\
+% Sixth line: Resources
+&
+\node (xR0-4) [resource,xshift=-0.4cm]{};\node (xR0-3) [resource,xshift=-0.2cm]{};\node (xR0-2) [noncriticalresource,xshift=-0.0cm]{};\node (xR0-1) [movablecriticalresource,xshift=+0.2cm]{}; \node (xR0) [resource,xshift=+0.4cm] {}; &&
+&
+\node (xR1-4) [movablecriticalresource,xshift=-0.4cm]{};\node (xR1-3) [resource,xshift=-0.2cm]{};\node (xR1-2) [resource,xshift=-0.0cm]{};\node (xR1-1) [resource,xshift=+0.2cm]{}; \node (xR1)   [resource,xshift=+0.4cm] {};     &
+&
+\\
+};
+% The diagram elements are now connected through arrows:
+\path[->]
+(xR2-2) edge[] (xRNI2)	% Resource10 to NI
+(xR3-2) edge[] (xRNI3)	% Resource11 to NI    
+(xR0-2) edge[] (xRNI0)	% Resource00 to NI
+(xR1-2) edge[] (xRNI1)	% Resource01 to NI
+;
+
+%the external network
+\matrix[row sep=0.2cm,column sep=0.2cm,xshift=-9.5cm] {
+% First line: Resources
+&
+\node (yR2-4) [criticalresource,xshift=-0.4cm]{};\node (yR2-3) [movablecriticalresource,xshift=-0.2cm]{};\node (yR2-2) [criticalresource,xshift=-0.0cm]{};\node (yR2-1) [criticalresource,xshift=0.2cm]{}; \node (yR2) [resource,xshift=+0.4cm]{};&&
+&
+\node (yR3-4) [noncriticalresource,xshift=-0.4cm]{};\node (yR3-3) [movablecriticalresource,xshift=-0.2cm]{};\node (yR3-2) [noncriticalresource,xshift=0.0cm]{}; \node (yR3-1) [noncriticalresource,xshift=0.2cm]{};\node (yR3)   [noncriticalresource,xshift=0.4cm]{};     &
+&
+\\
+% Second line: RNIs
+&\node (yRNI2) [NI] {};       &&
+&\node (yRNI3)   [NI] {};       &
+\\
+% Third line: 1st Switch matrix
+&\node (yS2) [switch] {}; &&
+&\node (yS3)   [switch] {};     &
+\\
+% Fourth line: 2nd Switch matrix
+&\node (yS0) [switch] {}; &&
+&\node (yS1)   [switch] {};     &
+\\
+% Fifth line: RNIs
+&\node (yRNI0) [NI] {};       &&
+&\node (yRNI1)   [NI] {};       &
+\\
+% Sixth line: Resources
+&
+\node (yR0-4) [resource,xshift=-0.4cm]{};\node (yR0-3) [noncriticalresource,xshift=-0.2cm]{};\node (yR0-2) [resource,xshift=-0.0cm]{};\node (yR0-1) [movablenoncriticalresource,xshift=+0.2cm]{}; \node (yR0) [resource,xshift=+0.4cm] {}; &&
+&
+\node (yR1-4) [movablecriticalresource,xshift=-0.4cm]{};\node (yR1-3) [resource,xshift=-0.2cm]{};\node (yR1-2) [resource,xshift=-0.0cm]{};\node (yR1-1) [resource,xshift=+0.2cm]{}; \node (yR1)   [resource,xshift=+0.4cm] {};     &
+&
+\\
+};
+\path[->]
+(yR2-2) edge[] (yRNI2)	% Resource10 to NI
+(yR3-2) edge[] (yRNI3)	% Resource11 to NI    
+(yR0-2) edge[] (yRNI0)	% Resource00 to NI
+(yR1-2) edge[] (yRNI1)	% Resource01 to NI
+;
+% Now that the diagram has been drawn, background rectangles
+% can be fitted to its elements.
+\node[left of=xS0,xshift=-2.3cm,yshift=-1.5cm](comment3) {\begin{tabular}{l}
+\parbox{4cm}{\color{black}{To support:}}\\
+\parbox{4cm}{\color{black}{$\otimes$ Resource resue}}\\
+\parbox{4cm}{\color{black}{$\otimes$ Fault tolerance}}\\
+\parbox{4cm}{\color{black}{$\otimes$ Longevity improvement}}\\
+\parbox{4cm}{\color{black}{$\otimes$ Energy reduction}}\\
+\end{tabular}};
+\begin{pgfonlayer}{background}
+\node [background,
+fit=(yS2) (yS0) (yS1)](yshading) {Local Network of Region/Chip Y};
+\node [background,
+fit=(xS2) (xS0) (xS1)](xshading) {Local Network of Region/Chip X};
+\node [rectbackground,dotted,
+fit=(xshading)](regionx) {};
+\node [rectbackground,
+fit=(yshading)](regiony) {};
+\node [right of=xshading,xshift=3.25cm,yshift=-0.25cm] {\begin{tabular}{p{0.05cm}p{2.35cm}}
+$\Leftarrow$&How would the NoC know new process destination?\\
+$\Leftarrow$&How messages fidelity can be guaranteed in mixed criticality environment?\\
+\end{tabular}};
+\end{pgfonlayer}
+%draw a cloud
+\node [cloud, thick,dotted, left of=xshading, xshift=-3.75cm,yshift=0.75cm,draw,cloud puffs=10,cloud puff arc=120, aspect=2,inner sep=-0.4cm](localcloud) {Network to Network Bridge};
+\node [above of=localcloud,yshift=0.25cm] {\begin{tabular}{p{3cm}}
+{}
+\end{tabular}};
+\node (xR1-c) [circle,xshift=-0.6cm,yshift=-1cm] at (localcloud) {};
+\node (xR2-c) [circle,xshift=0.6cm,yshift=1cm] at (localcloud) {};
+\draw [orange!90,dashed,very thick] plot [smooth] coordinates { (yR3-3.south)(yRNI3) (yS3.north)(yS2.north)(yR2-3.south)};
+\draw [orange!90,dashed,very thick] plot [smooth] coordinates { (xR1-4.north)(xRNI1) (xS1.west)(xS0.south)(xR0-1.north)};
+%moving processes to the other network
+\draw [blue!50,dashed,thick] plot [smooth] coordinates { (yR0-1.north)  (yS1) (xR1-c) (xS2.north) (xS3.north) (xRNI3) (xR3-3.south)};
+\end{tikzpicture}
+}
+\caption{Problem Context: The Figure Poses a Question of How DPR Should Be Supported to Enable  Efficient Execution of Expensive and Computationally-Intense Services, Distribute Processing Loads and Manage Hot-Sparring in the Context of Networked Real-Time Mixed-Critical NoC-based MPSoCs. In the Diagram, Critical and Non-Critical Processes are Indicated by Red and Blue Circles Respectively. Connected Dashed Circles Indicate Relocatable Processes.}
+\label{fig_problem_context}
+\end{sidewaysfigure}
+
+
+To show case a potential energy-efficient NoC based platform, an example with emphasis on demonstrating dynamic process relocation is considered. This means, the NoC can support the delivery of messages of communicating processes even if some processes are subject to relocation. To be acquainted to the context out of which the example is draw, it is advised to refer to Figure \ref{fig_problem_context}.
+
+
+
+Several use cases can be considered for showing the capacity of this work:
+
+\begin{enumerate}
+\item Intra-Chip Dynamic Process Relocation for critical processes acting as source process attached to a redundant hardware input wiring. This could be beneficial for a use-case in which a sensor such as engine temperature sensor or engine piston position is subject to damage but the redundancy is made locally within the chip.
+\item Intra-Chip Dynamic Process Relocation for critical processes acting as a destination process attached to a redundant hardware output wiring. This could be beneficial for a use-case in which an actuator such as a valve or a brake or fuel injector is subject to damage but the redundancy is made locally within the chip.
+\item Inter-Chip Dynamic Process Relocation for critical processes acting as source process attached to a redundant hardware input. This could be beneficial for a use-case in which a sensor such as airflow sensor is subject to damage but the redundancy is made at a spatially distinct chip.
+\item Inter-Chip Dynamic Process Relocation for critical processes acting as a destination process attached to a redundant hardware output. This could be beneficial for a use-case in which an actuator such as airbag bump initiator is subject to damage but the redundancy is made at a spatially distinct chip.
+\item Inter-chip Dynamic Process Relocation for non-critical processes for controlling complex functionality that receives and sends signals to non-critical nodes. This could be beneficial for a use-case such as a game engine receiving input from a touch screen and controlling a monitor. Such process can be suspended and can experience less optimal quality depending on the load condition.
+\item Inter-chip Dynamic Process Relocation for non-critical processes for controlling complex functionality that just receives signals from non-critical nodes. This could be beneficial for a use-case such as distance logger. Such process does not have to be updated often and can be suspended and resumed depending on the load condition.
+\item Inter-chip Dynamic Process Relocation to change processes of non-critical functionalities to critical ones by replacing all non-critical processes by critical ones thus completely changing the criticality level of that node. This could be beneficial for a use-case such as disabling a non-critical node for the sake of accommodating critical demands mandated by faulty chip or load balancing.
+\end{enumerate}
+
+Although all cases are demonstrable, for the sake of demonstration simplicity, switches and LEDs are used instead of sensors and actuators. Furthermore, only four scenarios are considered:
+\begin{enumerate}
+\item Intra-chip relocation of a critical process connected with input acting as source process while preserving the position of the destination process.
+\item Intra-chip relocation of a critical process connected with an output acting as a destination process while preserving the position of the source process.
+\item Inter-chip relocation of a non-critical process connected with two other processes one is a source connected to an input and the other is a destination connected to an output. Both source and destination processes are fixed while the middle process can relocate from the Microblaze on the FPGA to the non-critical section of the ARM to another ARM off chip to another FPGA area off-chip. 
+\item Inter-chip relocation of a critical process such that it replaces a node occupied by non-critical process on another FPGA area off-chip.
+\end{enumerate}
+
+The implementation scenarios have been explained in Fig. \ref{fig_ch3_imp}.
+
+\begin{figure}[ht]
+\centering
+\begin{tikzpicture}[>=stealth',semithick,node distance = 2cm, auto]
+\tikzstyle{inp}  = [circle, minimum width=1pt, inner sep=0pt]
+\tikzstyle{outp}  = [circle, minimum width=1pt, inner sep=0pt]
+\tikzstyle{process}  = [circle, minimum width=1cm, draw, inner sep=0pt]
+\tikzstyle{permanentprocess}  = [circle, minimum width=1cm, draw=orange!90,fill=orange!40, inner sep=0pt]
+\tikzstyle{criticalprocess}  = [circle, minimum width=1cm, draw=purple!80,fill=purple!20, inner sep=0pt]
+\tikzstyle{noncriticalprocess}  = [circle, minimum width=1cm, draw=blue!80,fill=blue!20, inner sep=0pt]
+\tikzstyle{criticalprocessx}  = [circle, minimum width=1cm, draw=purple!80,fill=purple!20, inner sep=0pt, path picture={\draw (path picture bounding box.south east) -- (path picture bounding box.north west) (path picture bounding box.south west) -- (path picture bounding box.north east);}]
+\tikzstyle{noncriticalprocessx}  = [circle, minimum width=1cm, draw=blue!80,fill=blue!20, inner sep=0pt, path picture={\draw (path picture bounding box.south east) -- (path picture bounding box.north west) (path picture bounding box.south west) -- (path picture bounding box.north east);}]
+
+\tikzstyle{every label}=[font=\bfseries]
+
+% Line 1.........................
+\node[inp,yshift=0cm,  label=left:Case 1: Input 1] (sw0-0) at (0,0) {};
+\node[criticalprocess,yshift=0cm, label=below:] (p4-5) at (2,0) {p1*};
+\node[criticalprocess,yshift=0cm, label=below:] (p6) at (4,0) {p2};
+\node[outp,yshift=0cm,   label=right:Output 1] (ld0-0) at (6,0) {};
+\path[->]   (sw0-0)    edge                node  {}       (p4-5)
+(p4-5)    edge                node  {}       (p6)
+(p6)    edge                node  {}       (ld0-0);
+% Line 2.........................
+\node[inp,yshift=-2cm,  label=left:Case 2: Input 2] (sw1-0) at (0,0) {};
+\node[criticalprocess,yshift=-2cm, label=below:] (p7) at (2,0) {p3};
+\node[criticalprocess,yshift=-2cm, label=below:] (p8-9) at (4,0) {p4*};
+\node[outp,yshift=-2cm,   label=right:Output 2] (ld1-0) at (6,0) {};
+\path[->]   (sw1-0)    edge                node  {}       (p7)
+(p7)    edge                node  {}       (p8-9)
+(p8-9)    edge                node  {}       (ld1-0);
+% Line 3.........................
+\node[inp,yshift=-4cm,  label=left:Case 3: Input 3] (sw2-0-1) at (0,0) {};
+\node[criticalprocess,yshift=-4cm, label=below:] (p10-4-5) at (3,0) {p5*};
+\node[outp,yshift=-4cm,   label=right:Output 3] (ld2-0-1) at (6,0) {};
+\path[->]   (sw2-0-1)    edge                node  {}       (p10-4-5)
+(p10-4-5)    edge                node  {}       (ld2-0-1);
+% Line 4.........................
+\node[inp,yshift=-6cm,  label=left:Case 4: Input 3] (sw3-0) at (0,0) {};
+\node[noncriticalprocess,yshift=-6cm, label=below:] (p11) at (1.5,0) {p6};
+\node[noncriticalprocess,yshift=-6cm, label=below:] (p12-0-6) at (3.25,0) {p7*};
+\node[noncriticalprocess,yshift=-6cm, label=below:] (p13) at (5,0) {p8};
+\node[outp,yshift=-6cm,   label=right:Output 3] (ld3-0) at (6,0) {};
+\path[->]   (sw3-0)    edge                node  {}       (p11)
+(p11)    edge                node  {}       (p12-0-6)
+(p12-0-6)    edge                node  {}       (p13)
+(p13)    edge                node  {}       (ld3-0);
+\end{tikzpicture}
+
+\caption[Implementation Scenarios]{Implementation scenarios showing inter-process communication. Processes p1,p2,...,p5 are coloured in red to denote their high criticality level whereas p6, p7 and p8 are coloured in purple to indicate their low criticality level. The asterisk on processes denotes that they are subject to relocation with implications on how their communication channels is physically made}
+\label{fig_ch3_imp}
+\end{figure}
+
+\begin{sidewaysfigure}
+\centering
+	\begin{tikzpicture}[>=stealth',semithick,node distance = 2cm, auto]
+\tikzstyle{inp}  = [circle, minimum width=1pt, inner sep=0pt]
+\tikzstyle{outp}  = [circle, minimum width=1pt, inner sep=0pt]
+\tikzstyle{process}  = [circle, minimum width=1cm, draw, inner sep=0pt]
+\tikzstyle{permanentprocess}  = [circle, minimum width=1cm, draw=orange!90,fill=orange!40, inner sep=0pt]
+\tikzstyle{criticalprocess}  = [circle, minimum width=1cm, draw=purple!80,fill=purple!20, inner sep=0pt]
+\tikzstyle{noncriticalprocess}  = [circle, minimum width=1cm, draw=blue!80,fill=blue!20, inner sep=0pt]
+\tikzstyle{criticalprocessx}  = [circle, minimum width=1cm, draw=purple!80,fill=purple!20, inner sep=0pt, path picture={\draw (path picture bounding box.south east) -- (path picture bounding box.north west) (path picture bounding box.south west) -- (path picture bounding box.north east);}]
+\tikzstyle{noncriticalprocessx}  = [circle, minimum width=1cm, draw=blue!80,fill=blue!20, inner sep=0pt, path picture={\draw (path picture bounding box.south east) -- (path picture bounding box.north west) (path picture bounding box.south west) -- (path picture bounding box.north east);}]
+\tikzstyle{mixedcriticalnode}=[circle,
+very thick,
+minimum size=4cm,, top color=purple!15, inner color=white, bottom color=blue!15,
+draw=violet!90, inner sep=0pt,path picture={\draw (path picture bounding box.south east) -- (path picture bounding box.north west);}
+]
+\tikzstyle{criticalnode}=[circle,
+very thick,
+minimum size=4cm, top color=white, bottom color=purple!15,
+draw=purple!80, inner sep=0pt
+]
+\tikzstyle{noncriticalnode}=[circle,
+very thick,
+minimum size=4cm, top color=white, bottom color=blue!15,
+draw=blue!80, inner sep=0pt
+]
+\tikzstyle{inp}  = [circle, minimum width=1pt, inner sep=0pt]
+\tikzstyle{outp}  = [circle, minimum width=1pt, inner sep=0pt]
+\tikzstyle{process}  = [circle, minimum width=1cm, draw, inner sep=0pt]
+\tikzstyle{gostnoncriticalprocess}  = [circle, minimum width=1cm, draw=blue!90,top color=gray!20, bottom color=blue!10, inner sep=0pt]
+\tikzstyle{gostcriticalprocess}  = [circle, minimum width=1cm, draw=red!90,top color=gray!20, bottom color=red!10, inner sep=0pt]
+\tikzstyle{permanentprocess}  = [circle, minimum width=1.25cm, draw=orange!90,fill=orange!40, inner sep=0pt]
+\tikzstyle{permanentprocesss}  = [circle, minimum width=0.5cm, draw=orange!90,fill=orange!40, inner sep=0pt]
+\tikzstyle{permanentprocessb}  = [circle, minimum width=1.5cm, draw=orange!90,fill=orange!40, inner sep=0pt]
+\tikzstyle{criticalprocess}  = [circle, minimum width=1cm, draw=purple!80,fill=purple!20, inner sep=0pt]
+\tikzstyle{noncriticalprocess}  = [circle, minimum width=1cm, draw=blue!80,fill=blue!20, inner sep=0pt]
+\tikzstyle{criticalprocessx}  = [circle, minimum width=1cm, draw=purple!80,fill=purple!20, inner sep=0pt, path picture={\draw (path picture bounding box.south east) -- (path picture bounding box.north west) (path picture bounding box.south west) -- (path picture bounding box.north east);}]
+\tikzstyle{noncriticalprocessx}  = [circle, minimum width=1cm, draw=blue!80,fill=blue!20, inner sep=0pt, path picture={\draw (path picture bounding box.south east) -- (path picture bounding box.north west) (path picture bounding box.south west) -- (path picture bounding box.north east);}]
+\tikzstyle{emptyprocess}  = [circle, minimum width=0.5cm, draw=black!80,top color=gray!5, inner color=white, bottom color=white!15, inner sep=0pt]
+\tikzstyle{every label}=[font=\bfseries]
+\tikzstyle{rectbackground}=[rectangle,
+thick,
+minimum size=1cm,
+draw=black!80,
+inner sep=0.55cm]
+% Positioning of Nodes
+\node[mixedcriticalnode,yshift=0.5cm,xshift=1cm, label={[xshift=-0.0cm, yshift=-4.75cm] Node $i_0 j_0$}] (node00) at (0,0) {};
+\node[criticalnode,yshift=0.5cm,xshift=7cm, label={[xshift=-0.0cm, yshift=-4.75cm] Node $i_0 j_1$}] (node01) at (0,0) {};
+\node[criticalnode,yshift=6.5cm,xshift=7cm, label={[xshift=-0.0cm, yshift=0cm] Node $i_1 j_0$}] (node10) at (0,0) {};
+\node[noncriticalnode,yshift=6.5cm,xshift=1cm, label={[xshift=-0.0cm, yshift=0cm] Node $i_1 j_1$}] (node11) at (0,0) {};
+
+%draw a cloud
+\node [cloud, thick,dotted, left of=node00, xshift=-4.5cm,yshift=6.5cm,draw,cloud puffs=10,cloud puff arc=120, aspect=2,inner sep=1cm,label={[xshift=-0.0cm, yshift=0.25cm] External Network}](localcloud) {};
+
+%Draw types of relocatable processes like a legend
+\node[left of=node00, xshift=-4.75cm,yshift=2.4cm,label={[xshift=-1cm, yshift=-0.25cm] Relocation Scenarios}] (typesref){};
+% Line 0.........................
+\node[inp,yshift=1.1cm,label=left:Type 0:] (sw00) at (-7,1) {};
+\node[criticalprocess,yshift=1.1cm, label=below:] (p5-10) at (-7+0.75,1) {p5*};
+\node[outp,yshift=1.1cm,label=right:] (ld00) at (-7+1.5,1) {};
+\path[->]   
+(sw00)    edge                node  {}       (p5-10)
+(p5-10)    edge                node  {}       (ld00);
+% Line 1.........................
+\node[inp,yshift=0cm,  label=left:Type 1:] (sw0-0) at (-7+0,1) {};
+\node[criticalprocess,yshift=0cm, label=below:] (p4-5) at (-7+0.75,1) {p1*};
+\node[criticalprocess,yshift=0cm, label=below:] (p6) at (-7+2,1) {p2};
+\node[outp,yshift=0cm,   label=right:] (ld0-0) at (-7+2.75,1) {};
+\path[->]   (sw0-0)    edge                node  {}       (p4-5)
+(p4-5)    edge                node  {}       (p6)
+(p6)    edge                node  {}       (ld0-0);
+% Line 2.........................
+\node[inp,yshift=-1.1cm,  label=left:Type 2:] (sw1-0) at (-7+0,1) {};
+\node[criticalprocess,yshift=-1.1cm, label=below:] (p7) at (-7+0.75,1) {p3};
+\node[criticalprocess,yshift=-1.1cm, label=below:] (p8-9) at (-7+2,1) {p4*};
+\node[outp,yshift=-1.1cm,   label=right:] (ld1-0) at (-7+2.75,1) {};
+\path[->]   (sw1-0)    edge                node  {}       (p7)
+(p7)    edge                node  {}       (p8-9)
+(p8-9)    edge                node  {}       (ld1-0);
+% Line 3.........................
+\node[inp,yshift=-2.2cm,  label=left:Type 3:] (sw3-0) at (-7+0,1) {};
+\node[noncriticalprocess,yshift=-2.2cm, label=below:] (p11) at (-7+0.75,1) {p6};
+\node[noncriticalprocess,yshift=-2.2cm, label=below:] (p12-0-6) at (-7+2,1) {p7*};
+\node[noncriticalprocess,yshift=-2.2cm, label=below:] (p13) at (-7+3.25,1) {p8};
+\node[outp,yshift=-2.2cm,   label=right:] (ld3-0) at (-7+4,1) {};
+\path[->]   (sw3-0)    edge                node  {}       (p11)
+(p11)    edge                node  {}       (p12-0-6)
+(p12-0-6)    edge                node  {}       (p13)
+(p13)    edge                node  {}       (ld3-0);
+
+% Positioning of Processes
+\node[emptyprocess,yshift=0cm,xshift=-0.0cm] (npnc) at (0,0) {NP};
+\node[emptyprocess,yshift=1.95cm,xshift=0.5cm] (npc) at (0,0) {NP};
+\node[permanentprocessb,yshift=0.75cm,xshift=1.85cm] (nd) at (0,0) {ND};
+\node[permanentprocess,yshift=0cm,xshift=6cm] (ph1) at (0,0) {PH1};
+\node[permanentprocess,yshift=6.15cm,xshift=5.75cm] (ph2) at (0,0) {PH2};
+\node[permanentprocess,yshift=5.5cm,xshift=0.5cm] (ph3) at (0,0) {PH3};
+
+\path[->]   (nd)    edge [thick,bend right=5]       (ph1)
+(ph1)   edge [thick,bend right=5]      (nd)
+(nd)    edge [thick,bend left=5]     (npnc)
+(npnc)    edge [thick,bend left=5]      (nd)
+(nd)    edge [thick,bend left=5]     (npc)
+(npc)    edge [thick,bend left=5]      (nd)
+(nd)    edge [thick,bend left=5]     (ph2)
+(ph2)    edge [thick,bend left=5]      (nd)
+(nd)    edge [thick,bend right=5]       (ph3)
+(ph3)    edge[thick,bend right=5]       (nd);
+
+%Processes in Node 01.........................
+\node[criticalprocess,yshift=1.5cm,xshift=7.75cm] (p1) at (0,0) {p1*};
+\node[criticalprocess,yshift=1.5cm,xshift=6.0cm] (p3) at (0,0) {p3};
+\node[criticalprocess,yshift=0cm,xshift=8cm] (p2) at (0,0) {p2};    \node[criticalprocess,yshift=-0.8cm,xshift=7.10cm] (p4) at (0,0) {p4*};
+
+%Processes in Node 10.........................
+\node[gostcriticalprocess,yshift=5.2cm,xshift=6.8cm] (p1-1) at (0,0) {p1*};
+\node[gostcriticalprocess,yshift=5.5cm,xshift=8cm] (p4-1) at (0,0) {p4*};
+\node[criticalprocess,yshift=7.75cm,xshift=7.25cm] (p5) at (0,0) {p5*};
+
+%Processes in Node 11.........................
+\node[noncriticalprocess,yshift=6.75cm,xshift=-0.25cm] (p6) at (0,0) {p6};
+\node[noncriticalprocess,yshift=6.75cm,xshift=1cm] (p8) at (0,0) {p8};
+\node[noncriticalprocess,yshift=7.9cm,xshift=1.0cm] (p7) at (0,0) {p7*};
+
+%Processes in Node 00.........................
+
+
+%Processes in the cloud
+\node[permanentprocessb,yshift=0.5cm,xshift=0cm] (nd-1) at (localcloud) {ND};
+\node[gostnoncriticalprocess,yshift=-0.15cm,xshift=-2cm] (p7-1) at (localcloud) {p7*};
+\node[gostcriticalprocess,yshift=0.15cm,xshift=2cm] (p5-1) at (localcloud) {p5*};
+
+
+%Connecting Processes.........................
+\path[->]   (ph1)    edge [thick,bend right=5]       (p2)
+(p3)   edge [thick,bend right=5]      (ph1)
+(p3)   edge [thick,bend left=5]      (ph2)
+(p1)   edge [thick,bend right=5]      (ph1)
+(p1-1)   edge [thick,bend left=17]      (ph1)
+(ph1)   edge [thick,bend right=5]      (p4)
+(ph2)   edge [thick,bend left=10]      (p4-1)
+(p7)   edge [thick,bend left=25]      (nd)
+(nd)   edge [thick,bend left=95]      (p7)
+(p6)   edge [thick,bend right=50]      (nd)
+(nd)   edge [thick,bend right=10]      (p8)
+;
+
+%Connecting to the cloud.........................
+\path[->]
+(p7-1)   edge [thick,bend left=10]      (nd-1)
+(nd-1)   edge [thick,bend left=10]      (p7-1)
+%(p5-1)   edge [thick,bend left=10]      (nd-1)
+%(nd-1)   edge [thick,bend left=10]      (p5-1)
+(npnc)   edge [thick,bend left=30]      (nd-1)
+(nd-1)   edge [thick,bend right=40]      (npnc)
+(npc)   edge [thick,bend left=10]      (nd-1)
+(nd-1)   edge [thick,bend left=10]      (npc)
+;
+
+\begin{pgfonlayer}{background}
+\node [rectbackground,dotted,
+fit=(node00) (node10) (node01) (node11), label={[xshift=-0.0cm, yshift=-1cm] Local Network}](regionx) {};
+\end{pgfonlayer}
+
+\end{tikzpicture}
+
+
+\caption{NoC Example Depicting Process Communication in the NoC. The orange colour signifies the supervisory process handler responsible of overseeing the communication and process activation/deactivation in each node}
+\label{fig_ch3_channel_assignment_c2}
+\end{sidewaysfigure}
+
+
+\section{Envisioned Implementation}
+The envisioned implementation on the NoC side can be thought as a system that has two power-state configurations. High power state enabling high performance and Low power state enabling minimal safety-critical performance.
+\begin{table}
+\caption{Power state configuration}
+\begin{tabular}{|l|l||}
+\hline
+High Performance/Balanced Load  & Load is distributed, all features available  \bigstrut\\
+\hline
+Minimal Energy Consumption & Non-critical processes are shut-off \bigstrut\\
+\hline
+Fault-Tolerance & Replication of P5 in another MPSoC \bigstrut\\
+\hline
+\hline
+\end{tabular}%
+
+\end{table}
+
+
+The performance characteristics can be described as follows:
+
+
+
+\begin{table}[ht]
+\centering
+\caption{Performance Metrics}
+\begin{tabular}{|l|l|}
+\hline
+Metric & NoC    \bigstrut\\
+\hline
+Dynamic Power (Watt) & 0.012  \bigstrut\\
+\hline
+Static Power (Watt) & 0.006966  \bigstrut\\
+\hline
+Latency Per Transaction (Cycles)  & 24     \bigstrut\\
+\hline
+Latency Per Transaction (micro Sec.)  & 2.083 \bigstrut\\
+\hline
+Energy Per Transaction (mJ) & 39.513  \bigstrut\\
+\hline
+\end{tabular}%
+\label{tabAnal}
+\end{table}
+
+\begin{table}[ht]
+\centering
+\caption{GPIOs Used}
+\begin{tabular}{|l|l|}
+\hline
+IO in Design & Pin on the Board \bigstrut\\
+\hline
+Input Switch for Dual A9 System & GPIO\_SW\_S  \bigstrut\\
+\hline
+Output LED for Dual A9 System & PMOD1\_0\_LS  \bigstrut\\
+\hline
+Input Switch for MB1 System & GPIO\_SW\_N  \bigstrut\\
+\hline
+Output LED for MB1 System & PMOD1\_1\_LS  \bigstrut\\
+\hline
+Input Switch for MB2 System & GPIO\_DIP\_SW0  \bigstrut\\
+\hline
+Output LED for MB2 System & PMOD1\_2\_LS  \bigstrut\\
+\hline
+Input Switch for MB3 System & GPIO\_DIP\_SW1  \bigstrut\\
+\hline
+Output LED for MB3 System & PMOD1\_3\_LS  \bigstrut\\
+\hline
+DPR Switch & GPIO\_DIP\_SW1  \bigstrut\\
+\hline
+DPR Output Status & PMOD1\_3\_LS  \bigstrut\\
+\hline
+\end{tabular}%
+\label{tabIO}
+\end{table}
+
+\pagebreak
+\section{Appendix: Extended Design Characterisation}
+Generally, packet propagation latency has an inter-dependent relation with the activities of the network and packet length in units of words (a flit carries one word of info). But due to the time-triggered operation of the NoC, the dependence on network activities is negligible and therefore, the packet latency, $T_{packet}$, follows this equation.
+
+\begin{equation}
+T_{packet}= T_{\text{Setup}} + T_{\text{flit}}\times flits
+\end{equation}
+\noindent Or,
+\begin{equation}
+T_{\text{flit}}= 2T_{\text{NI to NoC}}+ T_{\text{Switch to Switch}} \times N_{\text{switches}}
+\end{equation}
+
+\noindent Where:\\
+\noindent $T_{\text{flit}}$: Total propagation latency for one flit from sending NI to receiving NI.\\
+\noindent $T_{\text{Setup}}$: Setup time required before the actual flits can be sent.\\
+\noindent $T_{\text{NI to NoC}}$: Flit propagation latency within the NI until the flit is injected at the Switch.\\
+\noindent $T_{\text{Switch to Switch}}$: Flit propagation latency within the switch receiver and transmitter until the flit is injected at the subsequent Switch or NI.\\
+\noindent $N_{\text{switches}}$: The number of switches the flit has to traverse to reach the destination NI. Also known as the number of hops or hops counter.\\
+\noindent $flits$: Packet size in term of number of flits or words, $W$.
+
+\begin{table}[ht]
+\centering
+\caption{NoC Timing Parameters}
+\begin{tabular}{|l|l|}
+\hline
+Parameter& Value  (Cycles)   \bigstrut\\
+\hline
+$T_{\text{NI to Switch}}$ & 16 \bigstrut\\
+\hline
+$T_{\text{Switch to Switch}}$ & 4 \bigstrut\\
+\hline
+$T_{\text{Switch to NI}}$  & 4 \bigstrut\\
+\hline
+\end{tabular}%
+\label{tabNoC}
+\end{table}
+The NoC timing parameters for NI to Switch, Switch to Switch and Switch to NI are reported in Table \ref{tabNoC}. $T_{\text{NI to Switch}}$ encapsulates the worst case delay imposed by the time-trigger mechanism of the NoC in addition to the access time to fetch data from the memory. $T_{\text{Switch to Switch}}$ includes the timing in the switch's receiver and transmitter. $T_{\text{Switch to NI}}$ includes time to fetch data from the switch and store it at the right memory address. Those numbers can be used to formulate timing analysis for various NoC topologies. For 2x2 NoC, the maximum delay can be taken from diagonal nodes can thus be described as follows:
+%\begin{equation}
+%T_{packet}= 48+24\times W
+%\end{equation}
+\begin{equation}
+T_{packet}= 24\times W
+\end{equation}
+
+\begin{equation}
+T_{packet}^{'}= 48 +24\times W
+\end{equation}
+
+Where $T_{packet}$ is in the units of cycles and $W$ is the packet length in words (1 word is 32 bit). The 48 cycles are actually for the first two flits which are used to relay the time at which the packet was inserted and the length of the packet.
+
+Due to the possibilities of dynamic relocation, packets could be subject to forwarding thus introducing an additional latency to $T_{packet}$. The new latency due to forwarding effects ($T_{forwarding}$) and the overall latency can be denoted as  $T_{packet}^{forwarding}$. Since the forwarding is done within the process handlers/NoC Daemon, it is highly dependent on the software implementation of the forwarding. Mainly, the time required to check the status of the destination and source processes, and the time required to point to the respective inbox/outbox channel. The additional latency is dependent on the processor frequency as well. The $T_{packet}^{forwarding}$ can be described as follows:
+\begin{equation}
+T_{packet}^{forwarding}=T_{packet}+T_{forwarding}
+\end{equation}
+
+$T_{forwarding}$ can be characterised at software development time but usually is considerably smaller than $T_{packet}$.
+
+Implementation wise, the design was synthesized at 50MHz on "xc7z020 clg484-1" chips. 
+
+
+
+The packet propagation latency in the NoC, energy consumption per flit, and resource utilization are shown in Table \ref{tabresourc} and Table \ref{tabAnal}. The tables also give statistics for CPU (Xilinx Microblaze) and its embedded memory (64KB).
+
+\begin{table}[ht]
+\centering
+\caption{Resource Utilisation}
+\begin{tabular}{|l|l|l|l|}
+\hline
+& Microblaze   & 64KB Microblaze Memory & NoC    \bigstrut\\
+\hline
+LUTs  & 1115  & 7     & 2768   \bigstrut\\
+\hline
+Registers & 2272  & 13    & 6723  \bigstrut\\
+\hline
+BRAM  & 0     & 16    & 8      \bigstrut\\
+\hline
+\end{tabular}%
+\label{tabresourc}
+\end{table}
+
+
+\end{document}

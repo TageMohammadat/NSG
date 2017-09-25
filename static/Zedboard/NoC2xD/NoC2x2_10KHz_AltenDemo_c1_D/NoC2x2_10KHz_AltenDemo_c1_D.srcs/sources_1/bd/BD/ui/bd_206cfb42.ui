@@ -1,0 +1,123 @@
+{
+   guistr: "# # String gsaved with Nlview 6.5.5  2015-06-26 bk=1.3371 VDI=38 GEI=35 GUI=JA:1.8
+#  -string -flagsOSRD
+preplace port SW3 -pg 1 -y -2470 -defaultsOSRD
+preplace port GCLK -pg 1 -y 50 -defaultsOSRD
+preplace port SW7 -pg 1 -y -110 -defaultsOSRD
+preplace port BTNC -pg 1 -y -2600 -defaultsOSRD
+preplace port SW0 -pg 1 -y 80 -defaultsOSRD
+preplace port SW1 -pg 1 -y 580 -defaultsOSRD
+preplace port SW2 -pg 1 -y 600 -defaultsOSRD
+preplace portBus LD0 -pg 1 -y -250 -defaultsOSRD
+preplace portBus LD1 -pg 1 -y 0 -defaultsOSRD
+preplace portBus LD2 -pg 1 -y -2540 -defaultsOSRD
+preplace portBus LD3 -pg 1 -y -2520 -defaultsOSRD
+preplace inst cpu_0_1_local_memory -pg 1 -lvl 5 -y -140 -defaultsOSRD
+preplace inst pio_0_1 -pg 1 -lvl 3 -y 10 -defaultsOSRD
+preplace inst Ground_1 -pg 1 -lvl 1 -y -990 -defaultsOSRD
+preplace inst kth_axi_rni_static_c1_0 -pg 1 -lvl 1 -y -560 -defaultsOSRD
+preplace inst clk_wiz -pg 1 -lvl 1 -y -50 -defaultsOSRD
+preplace inst cpu_1_1_axi_periph -pg 1 -lvl 3 -y -2330 -defaultsOSRD
+preplace inst cpu_1_0_axi_periph -pg 1 -lvl 1 -y -2300 -defaultsOSRD
+preplace inst kth_axi_rni_static_c1_1 -pg 1 -lvl 3 -y -620 -defaultsOSRD
+preplace inst kth_axi_rni_static_c1_2 -pg 1 -lvl 1 -y -1680 -defaultsOSRD
+preplace inst cpu_0_0_axi_periph -pg 1 -lvl 1 -y 170 -defaultsOSRD
+preplace inst sys_rst -pg 1 -lvl 5 -y 640 -defaultsOSRD
+preplace inst kth_axi_rni_static_c1_3 -pg 1 -lvl 3 -y -1740 -defaultsOSRD
+preplace inst cpu_0_0 -pg 1 -lvl 1 -y -340 -defaultsOSRD
+preplace inst cpu_1_0 -pg 1 -lvl 1 -y -1910 -defaultsOSRD
+preplace inst cpu_0_1 -pg 1 -lvl 3 -y -180 -defaultsOSRD
+preplace inst axi_timer_0 -pg 1 -lvl 2 -y 111 -defaultsOSRD
+preplace inst Ground_15 -pg 1 -lvl 1 -y -1170 -defaultsOSRD
+preplace inst cpu_1_1 -pg 1 -lvl 3 -y -1960 -defaultsOSRD
+preplace inst cpu_0_1_axi_periph -pg 1 -lvl 3 -y 250 -defaultsOSRD
+preplace inst axi_timer_1 -pg 1 -lvl 4 -y 300 -defaultsOSRD
+preplace inst cpu_0_0_local_memory -pg 1 -lvl 3 -y -360 -defaultsOSRD
+preplace inst Ground_64 -pg 1 -lvl 1 -y -1260 -defaultsOSRD
+preplace inst axi_timer_2 -pg 1 -lvl 2 -y -2370 -defaultsOSRD
+preplace inst mdm_1 -pg 1 -lvl 1 -y 900 -defaultsOSRD
+preplace inst Ground_8 -pg 1 -lvl 1 -y -1080 -defaultsOSRD
+preplace inst cpu_1_1_local_memory -pg 1 -lvl 4 -y -2040 -defaultsOSRD
+preplace inst axi_timer_3 -pg 1 -lvl 5 -y -2290 -defaultsOSRD
+preplace inst cpu_1_0_local_memory -pg 1 -lvl 2 -y -2010 -defaultsOSRD
+preplace inst pio_1_0 -pg 1 -lvl 1 -y -2060 -defaultsOSRD
+preplace inst kth_2DNoC_2x2x1_c1_0 -pg 1 -lvl 2 -y -1190 -defaultsOSRD
+preplace inst pio_1_1 -pg 1 -lvl 3 -y -2110 -defaultsOSRD
+preplace inst pio_dpr -pg 1 -lvl 6 -y 150 -defaultsOSRD
+preplace inst inverter -pg 1 -lvl 1 -y 730 -defaultsOSRD
+preplace inst pio_0_0 -pg 1 -lvl 1 -y -190 -defaultsOSRD
+preplace netloc cpu_1_1_axi_periph_M01_AXI 1 2 2 NJ -2490 NJ
+preplace netloc kth_axi_rni_static_c1_1_TO_NOC 1 1 3 700 -770 N -770 1710
+preplace netloc Ground_8_dout 1 0 3 20 -930 NJ -1000 1200
+preplace netloc cpu_1_0_axi_periph_M03_AXI 1 1 5 NJ -2570 NJ -2570 NJ -2570 NJ -2570 2480
+preplace netloc cpu_0_0_ilmb_1 1 1 2 NJ -370 N
+preplace netloc SW1_1 1 0 4 NJ 580 NJ 580 NJ 580 1710
+preplace netloc GCLK_1 1 0 1 NJ
+preplace netloc cpu_1_1_M_AXI_DP 1 2 2 1190 -2510 1730
+preplace netloc SW2_1 1 0 2 NJ 600 NJ
+preplace netloc cpu_0_0_M_AXI_DP 1 0 2 -20 -720 NJ
+preplace netloc cpu_0_1_axi_periph_M01_AXI 1 2 2 NJ -70 NJ
+preplace netloc inverter_Res 1 1 4 690 620 NJ 620 NJ 620 NJ
+preplace netloc cpu_1_0_dlmb_1 1 1 1 600
+preplace netloc Ground_1_dout 1 0 3 10 -940 NJ -990 1190
+preplace netloc cpu_1_0_axi_periph_M02_AXI 1 1 1 600
+preplace netloc cpu_1_1_axi_periph_M00_AXI 1 2 2 1180 -2500 1720
+preplace netloc kth_2DNoC_2x2x1_c1_0_From_NoC_0 1 0 3 60 -750 NJ -750 NJ
+preplace netloc SW0_1 1 0 2 NJ 0 NJ
+preplace netloc kth_2DNoC_2x2x1_c1_0_From_NoC_1 1 2 1 1160
+preplace netloc kth_2DNoC_2x2x1_c1_0_From_NoC_2 1 0 3 30 -2550 NJ -2550 NJ
+preplace netloc kth_2DNoC_2x2x1_c1_0_Sync_0 1 0 3 70 -740 NJ -740 NJ
+preplace netloc kth_2DNoC_2x2x1_c1_0_From_NoC_3 1 2 1 1090
+preplace netloc cpu_1_0_axi_periph_M01_AXI 1 0 2 50 -2500 570
+preplace netloc kth_2DNoC_2x2x1_c1_0_Sync_1 1 2 1 1140
+preplace netloc SW3_1 1 0 4 NJ -2580 N -2580 N -2580 1740
+preplace netloc kth_2DNoC_2x2x1_c1_0_Sync_2 1 0 3 40 -2540 NJ -2540 NJ
+preplace netloc kth_2DNoC_2x2x1_c1_0_Sync_3 1 2 1 1110
+preplace netloc cpu_0_1_dlmb_1 1 3 2 NJ -200 2090
+preplace netloc cpu_0_0_axi_periph_M01_AXI 1 0 2 70 -100 NJ
+preplace netloc cpu_1_0_debug 1 0 2 70 -1830 580
+preplace netloc mdm_1_debug_sys_rst 1 1 4 NJ 660 NJ 660 NJ 660 N
+preplace netloc cpu_0_1_debug 1 1 2 680 -190 NJ
+preplace netloc BTNC_1 1 0 1 -100
+preplace netloc cpu_0_1_M_AXI_DP 1 2 2 1190 -90 NJ
+preplace netloc rst_clk_wiz_50M_bus_struct_reset 1 1 5 670 -460 1090 -460 NJ -460 2050 -230 2440
+preplace netloc cpu_1_0_ilmb_1 1 1 1 610
+preplace netloc cpu_0_0_axi_periph_M00_AXI 1 0 2 30 10 NJ
+preplace netloc cpu_1_1_Clk 1 0 6 -70 -2520 650 -2520 1070 -2520 1770 -2260 2060 150 N
+preplace netloc sys_rst_peripheral_reset 1 1 5 680 -270 N -270 N -270 N -270 2470
+preplace netloc pio_1_1_gpio_io_o 1 3 4 NJ -2520 NJ -2520 NJ -2520 NJ
+preplace netloc SW7_1 1 0 7 NJ -110 NJ -280 NJ -280 NJ -280 NJ -280 NJ -280 2830
+preplace netloc cpu_0_1_axi_periph_M00_AXI 1 2 2 1210 -470 1730
+preplace netloc Ground_15_dout 1 0 3 -10 -920 NJ -1030 1170
+preplace netloc kth_axi_rni_static_c1_3_TO_NOC 1 1 3 690 -2560 N -2560 NJ
+preplace netloc kth_axi_rni_static_c1_2_TO_NOC 1 1 1 640
+preplace netloc cpu_0_1_ilmb_1 1 3 2 NJ -180 2040
+preplace netloc cpu_0_0_axi_periph_M02_AXI 1 1 1 NJ
+preplace netloc pio_0_1_gpio_io_o 1 3 4 NJ 0 NJ 0 NJ 0 NJ
+preplace netloc cpu_1_1_axi_periph_M02_AXI 1 3 2 NJ -2340 N
+preplace netloc cpu_1_0_axi_periph_M00_AXI 1 0 2 60 -2480 540
+preplace netloc kth_axi_rni_static_c1_0_TO_NOC 1 1 1 630
+preplace netloc cpu_0_0_debug 1 0 2 40 -710 560
+preplace netloc pio_0_0_gpio_io_o 1 1 6 NJ -200 NJ -100 NJ -100 NJ -250 NJ -250 NJ
+preplace netloc cpu_1_0_M_AXI_DP 1 0 2 70 -2490 560
+preplace netloc rst_clk_wiz_50M_mb_reset 1 0 6 -30 -730 NJ -730 1150 -260 NJ -260 NJ -260 2450
+preplace netloc cpu_1_1_debug 1 1 2 660 -2100 NJ
+preplace netloc cpu_0_0_dlmb_1 1 1 2 NJ -390 N
+preplace netloc cpu_0_1_axi_periph_M02_AXI 1 3 1 NJ
+preplace netloc rst_clk_wiz_50M_interconnect_aresetn 1 0 6 -50 -770 NJ -720 NJ 500 NJ 500 NJ 500 2460
+preplace netloc rst_clk_wiz_50M_peripheral_aresetn 1 0 6 -60 -2510 NJ -2270 NJ 410 NJ 170 NJ 170 2480
+preplace netloc Ground_64_dout 1 0 3 0 -1350 NJ -1350 1180
+preplace netloc kth_2DNoC_2x2x1_c1_0_HeartBeat_0 1 0 3 50 -760 NJ -760 NJ
+preplace netloc kth_2DNoC_2x2x1_c1_0_HeartBeat_1 1 2 1 1120
+preplace netloc kth_2DNoC_2x2x1_c1_0_HeartBeat_2 1 0 3 -40 -2600 NJ -2600 NJ
+preplace netloc kth_2DNoC_2x2x1_c1_0_HeartBeat_3 1 2 1 1130
+preplace netloc cpu_1_1_dlmb_1 1 3 1 1760
+preplace netloc pio_1_0_gpio_io_o 1 1 6 610 -2530 NJ -2540 NJ -2540 NJ -2540 NJ -2540 NJ
+preplace netloc cpu_1_1_ilmb_1 1 3 1 1780
+levelinfo -pg 1 -130 310 870 1480 1920 2270 2700 3660 -top -2640 -bot 1090
+",
+}
+{
+   da_axi4_cnt: "13",
+   da_mb_cnt: "4",
+}

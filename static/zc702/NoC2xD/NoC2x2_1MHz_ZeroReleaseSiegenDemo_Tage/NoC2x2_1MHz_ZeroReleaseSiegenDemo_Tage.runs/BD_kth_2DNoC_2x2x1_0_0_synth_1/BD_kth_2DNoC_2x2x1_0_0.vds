@@ -1,0 +1,1509 @@
+#-----------------------------------------------------------
+# Vivado v2016.3 (64-bit)
+# SW Build 1682563 on Mon Oct 10 19:07:26 MDT 2016
+# IP Build 1681267 on Mon Oct 10 21:28:31 MDT 2016
+# Start of session at: Mon Oct 31 17:11:10 2016
+# Process ID: 20609
+# Current directory: /home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.runs/BD_kth_2DNoC_2x2x1_0_0_synth_1
+# Command line: vivado -log BD_kth_2DNoC_2x2x1_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source BD_kth_2DNoC_2x2x1_0_0.tcl
+# Log file: /home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.runs/BD_kth_2DNoC_2x2x1_0_0_synth_1/BD_kth_2DNoC_2x2x1_0_0.vds
+# Journal file: /home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.runs/BD_kth_2DNoC_2x2x1_0_0_synth_1/vivado.jou
+#-----------------------------------------------------------
+source BD_kth_2DNoC_2x2x1_0_0.tcl -notrace
+Command: synth_design -top BD_kth_2DNoC_2x2x1_0_0 -part xc7z020clg484-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 20766 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1105.527 ; gain = 186.301 ; free physical = 2316 ; free virtual = 124945
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'BD_kth_2DNoC_2x2x1_0_0' [/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.srcs/sources_1/bd/BD/ip/BD_kth_2DNoC_2x2x1_0_0/synth/BD_kth_2DNoC_2x2x1_0_0.vhd:79]
+	Parameter HeartBeatTimerConst bound to: 50 - type: integer 
+INFO: [Synth 8-3491] module 'kth_2DNoC_2x2x1_c1_v1_0' declared at '/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.srcs/sources_1/bd/BD/ipshared/14b0/hdl/kth_2DNoC_2x2x1_v1_0.vhd:9' bound to instance 'U0' of component 'kth_2DNoC_2x2x1_c1_v1_0' [/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.srcs/sources_1/bd/BD/ip/BD_kth_2DNoC_2x2x1_0_0/synth/BD_kth_2DNoC_2x2x1_0_0.vhd:112]
+INFO: [Synth 8-638] synthesizing module 'kth_2DNoC_2x2x1_c1_v1_0' [/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.srcs/sources_1/bd/BD/ipshared/14b0/hdl/kth_2DNoC_2x2x1_v1_0.vhd:35]
+	Parameter HeartBeatTimerConst bound to: 50 - type: integer 
+INFO: [Synth 8-3491] module 'NoC_2D_Parallel' declared at '/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.srcs/sources_1/bd/BD/ipshared/14b0/hdl/NoC_2D_Parallel.vhd:10' bound to instance 'NOC' of component 'NoC_2D_Parallel' [/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.srcs/sources_1/bd/BD/ipshared/14b0/hdl/kth_2DNoC_2x2x1_v1_0.vhd:69]
+INFO: [Synth 8-638] synthesizing module 'NoC_2D_Parallel' [/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.srcs/sources_1/bd/BD/ipshared/14b0/hdl/NoC_2D_Parallel.vhd:18]
+	Parameter Col bound to: 0 - type: integer 
+	Parameter Row bound to: 0 - type: integer 
+	Parameter Layer bound to: 0 - type: integer 
+	Parameter inbuffer bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'NoC_3D_Parallel_Switch' declared at '/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.srcs/sources_1/bd/BD/ipshared/14b0/hdl/NoC_3D_parallel_switch.vhd:28' bound to instance 'UD' of component 'NoC_3D_Parallel_Switch' [/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.srcs/sources_1/bd/BD/ipshared/14b0/hdl/NoC_2D_Parallel.vhd:40]
+INFO: [Synth 8-638] synthesizing module 'NoC_3D_Parallel_Switch' [/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.srcs/sources_1/bd/BD/ipshared/14b0/hdl/NoC_3D_parallel_switch.vhd:41]
+	Parameter Col bound to: 0 - type: integer 
+	Parameter Row bound to: 0 - type: integer 
+	Parameter Layer bound to: 0 - type: integer 
+	Parameter inbuffer bound to: 1 - type: integer 
+	Parameter inbuffer bound to: 1 - type: integer 
+	Parameter Row bound to: 0 - type: integer 
+	Parameter Col bound to: 0 - type: integer 
+	Parameter Layer bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'NoC_3D_Parallel_recv' declared at '/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.srcs/sources_1/bd/BD/ipshared/14b0/hdl/NoC_3D_parallel_recv.vhd:7' bound to instance 'dir' of component 'NoC_3D_parallel_recv' [/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.srcs/sources_1/bd/BD/ipshared/14b0/hdl/NoC_3D_parallel_switch.vhd:124]
+INFO: [Synth 8-638] synthesizing module 'NoC_3D_Parallel_recv' [/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.srcs/sources_1/bd/BD/ipshared/14b0/hdl/NoC_3D_parallel_recv.vhd:21]
+	Parameter inbuffer bound to: 1 - type: integer 
+	Parameter Row bound to: 0 - type: integer 
+	Parameter Col bound to: 0 - type: integer 
+	Parameter Layer bound to: 0 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'NoC_3D_Parallel_recv' (1#1) [/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.srcs/sources_1/bd/BD/ipshared/14b0/hdl/NoC_3D_parallel_recv.vhd:21]
+	Parameter inbuffer bound to: 1 - type: integer 
+	Parameter Row bound to: 0 - type: integer 
+	Parameter Col bound to: 0 - type: integer 
+	Parameter Layer bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'NoC_3D_Parallel_recv' declared at '/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.srcs/sources_1/bd/BD/ipshared/14b0/hdl/NoC_3D_parallel_recv.vhd:7' bound to instance 'dir' of component 'NoC_3D_parallel_recv' [/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.srcs/sources_1/bd/BD/ipshared/14b0/hdl/NoC_3D_parallel_switch.vhd:124]
+	Parameter inbuffer bound to: 1 - type: integer 
+	Parameter Row bound to: 0 - type: integer 
+	Parameter Col bound to: 0 - type: integer 
+	Parameter Layer bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'NoC_3D_Parallel_recv' declared at '/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.srcs/sources_1/bd/BD/ipshared/14b0/hdl/NoC_3D_parallel_recv.vhd:7' bound to instance 'dir' of component 'NoC_3D_parallel_recv' [/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.srcs/sources_1/bd/BD/ipshared/14b0/hdl/NoC_3D_parallel_switch.vhd:124]
+	Parameter inbuffer bound to: 1 - type: integer 
+	Parameter Row bound to: 0 - type: integer 
+	Parameter Col bound to: 0 - type: integer 
+	Parameter Layer bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'NoC_3D_Parallel_recv' declared at '/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.srcs/sources_1/bd/BD/ipshared/14b0/hdl/NoC_3D_parallel_recv.vhd:7' bound to instance 'dir' of component 'NoC_3D_parallel_recv' [/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.srcs/sources_1/bd/BD/ipshared/14b0/hdl/NoC_3D_parallel_switch.vhd:124]
+	Parameter inbuffer bound to: 1 - type: integer 
+	Parameter Row bound to: 0 - type: integer 
+	Parameter Col bound to: 0 - type: integer 
+	Parameter Layer bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'NoC_3D_Parallel_recv' declared at '/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.srcs/sources_1/bd/BD/ipshared/14b0/hdl/NoC_3D_parallel_recv.vhd:7' bound to instance 'dir' of component 'NoC_3D_parallel_recv' [/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.srcs/sources_1/bd/BD/ipshared/14b0/hdl/NoC_3D_parallel_switch.vhd:124]
+	Parameter inbuffer bound to: 1 - type: integer 
+	Parameter Row bound to: 0 - type: integer 
+	Parameter Col bound to: 0 - type: integer 
+	Parameter Layer bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'NoC_3D_Parallel_recv' declared at '/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.srcs/sources_1/bd/BD/ipshared/14b0/hdl/NoC_3D_parallel_recv.vhd:7' bound to instance 'dir' of component 'NoC_3D_parallel_recv' [/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.srcs/sources_1/bd/BD/ipshared/14b0/hdl/NoC_3D_parallel_switch.vhd:124]
+	Parameter inbuffer bound to: 1 - type: integer 
+	Parameter Row bound to: 0 - type: integer 
+	Parameter Col bound to: 0 - type: integer 
+	Parameter Layer bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'NoC_3D_Parallel_recv' declared at '/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.srcs/sources_1/bd/BD/ipshared/14b0/hdl/NoC_3D_parallel_recv.vhd:7' bound to instance 'dir' of component 'NoC_3D_parallel_recv' [/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.srcs/sources_1/bd/BD/ipshared/14b0/hdl/NoC_3D_parallel_switch.vhd:124]
+INFO: [Synth 8-3491] module 'NoC_3D_Parallel_xmitter' declared at '/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.srcs/sources_1/bd/BD/ipshared/14b0/hdl/NoC_3D_parallel_xmitter.vhd:5' bound to instance 'dir' of component 'NoC_3D_parallel_xmitter' [/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.srcs/sources_1/bd/BD/ipshared/14b0/hdl/NoC_3D_parallel_switch.vhd:136]
+INFO: [Synth 8-638] synthesizing module 'NoC_3D_Parallel_xmitter' [/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.srcs/sources_1/bd/BD/ipshared/14b0/hdl/NoC_3D_parallel_xmitter.vhd:12]
+INFO: [Synth 8-256] done synthesizing module 'NoC_3D_Parallel_xmitter' (2#1) [/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.srcs/sources_1/bd/BD/ipshared/14b0/hdl/NoC_3D_parallel_xmitter.vhd:12]
+INFO: [Synth 8-3491] module 'NoC_3D_Parallel_xmitter' declared at '/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.srcs/sources_1/bd/BD/ipshared/14b0/hdl/NoC_3D_parallel_xmitter.vhd:5' bound to instance 'dir' of component 'NoC_3D_parallel_xmitter' [/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.srcs/sources_1/bd/BD/ipshared/14b0/hdl/NoC_3D_parallel_switch.vhd:136]
+INFO: [Synth 8-3491] module 'NoC_3D_Parallel_xmitter' declared at '/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.srcs/sources_1/bd/BD/ipshared/14b0/hdl/NoC_3D_parallel_xmitter.vhd:5' bound to instance 'dir' of component 'NoC_3D_parallel_xmitter' [/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.srcs/sources_1/bd/BD/ipshared/14b0/hdl/NoC_3D_parallel_switch.vhd:136]
+INFO: [Synth 8-3491] module 'NoC_3D_Parallel_xmitter' declared at '/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.srcs/sources_1/bd/BD/ipshared/14b0/hdl/NoC_3D_parallel_xmitter.vhd:5' bound to instance 'dir' of component 'NoC_3D_parallel_xmitter' [/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.srcs/sources_1/bd/BD/ipshared/14b0/hdl/NoC_3D_parallel_switch.vhd:136]
+INFO: [Synth 8-3491] module 'NoC_3D_Parallel_xmitter' declared at '/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.srcs/sources_1/bd/BD/ipshared/14b0/hdl/NoC_3D_parallel_xmitter.vhd:5' bound to instance 'dir' of component 'NoC_3D_parallel_xmitter' [/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.srcs/sources_1/bd/BD/ipshared/14b0/hdl/NoC_3D_parallel_switch.vhd:136]
+INFO: [Synth 8-3491] module 'NoC_3D_Parallel_xmitter' declared at '/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.srcs/sources_1/bd/BD/ipshared/14b0/hdl/NoC_3D_parallel_xmitter.vhd:5' bound to instance 'dir' of component 'NoC_3D_parallel_xmitter' [/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.srcs/sources_1/bd/BD/ipshared/14b0/hdl/NoC_3D_parallel_switch.vhd:136]
+INFO: [Synth 8-3491] module 'NoC_3D_Parallel_xmitter' declared at '/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.srcs/sources_1/bd/BD/ipshared/14b0/hdl/NoC_3D_parallel_xmitter.vhd:5' bound to instance 'dir' of component 'NoC_3D_parallel_xmitter' [/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.srcs/sources_1/bd/BD/ipshared/14b0/hdl/NoC_3D_parallel_switch.vhd:136]
+INFO: [Synth 8-226] default block is never used [/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.srcs/sources_1/bd/BD/ipshared/14b0/hdl/NoC_3D_parallel_switch.vhd:173]
+INFO: [Synth 8-256] done synthesizing module 'NoC_3D_Parallel_Switch' (3#1) [/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.srcs/sources_1/bd/BD/ipshared/14b0/hdl/NoC_3D_parallel_switch.vhd:41]
+	Parameter Col bound to: 0 - type: integer 
+	Parameter Row bound to: 1 - type: integer 
+	Parameter Layer bound to: 0 - type: integer 
+	Parameter inbuffer bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'NoC_3D_Parallel_Switch' declared at '/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.srcs/sources_1/bd/BD/ipshared/14b0/hdl/NoC_3D_parallel_switch.vhd:28' bound to instance 'UD' of component 'NoC_3D_Parallel_Switch' [/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.srcs/sources_1/bd/BD/ipshared/14b0/hdl/NoC_2D_Parallel.vhd:40]
+INFO: [Synth 8-638] synthesizing module 'NoC_3D_Parallel_Switch__parameterized1' [/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.srcs/sources_1/bd/BD/ipshared/14b0/hdl/NoC_3D_parallel_switch.vhd:41]
+	Parameter Col bound to: 0 - type: integer 
+	Parameter Row bound to: 1 - type: integer 
+	Parameter Layer bound to: 0 - type: integer 
+	Parameter inbuffer bound to: 1 - type: integer 
+	Parameter inbuffer bound to: 1 - type: integer 
+	Parameter Row bound to: 1 - type: integer 
+	Parameter Col bound to: 0 - type: integer 
+	Parameter Layer bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'NoC_3D_Parallel_recv' declared at '/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.srcs/sources_1/bd/BD/ipshared/14b0/hdl/NoC_3D_parallel_recv.vhd:7' bound to instance 'dir' of component 'NoC_3D_parallel_recv' [/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.srcs/sources_1/bd/BD/ipshared/14b0/hdl/NoC_3D_parallel_switch.vhd:124]
+INFO: [Synth 8-638] synthesizing module 'NoC_3D_Parallel_recv__parameterized0' [/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.srcs/sources_1/bd/BD/ipshared/14b0/hdl/NoC_3D_parallel_recv.vhd:21]
+	Parameter inbuffer bound to: 1 - type: integer 
+	Parameter Row bound to: 1 - type: integer 
+	Parameter Col bound to: 0 - type: integer 
+	Parameter Layer bound to: 0 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'NoC_3D_Parallel_recv__parameterized0' (3#1) [/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.srcs/sources_1/bd/BD/ipshared/14b0/hdl/NoC_3D_parallel_recv.vhd:21]
+	Parameter inbuffer bound to: 1 - type: integer 
+	Parameter Row bound to: 1 - type: integer 
+	Parameter Col bound to: 0 - type: integer 
+	Parameter Layer bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'NoC_3D_Parallel_recv' declared at '/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.srcs/sources_1/bd/BD/ipshared/14b0/hdl/NoC_3D_parallel_recv.vhd:7' bound to instance 'dir' of component 'NoC_3D_parallel_recv' [/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.srcs/sources_1/bd/BD/ipshared/14b0/hdl/NoC_3D_parallel_switch.vhd:124]
+INFO: [Synth 8-638] synthesizing module 'NoC_3D_Parallel_recv__parameterized1' [/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.srcs/sources_1/bd/BD/ipshared/14b0/hdl/NoC_3D_parallel_recv.vhd:21]
+	Parameter inbuffer bound to: 1 - type: integer 
+	Parameter Row bound to: 1 - type: integer 
+	Parameter Col bound to: 0 - type: integer 
+	Parameter Layer bound to: 0 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'NoC_3D_Parallel_recv__parameterized1' (3#1) [/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.srcs/sources_1/bd/BD/ipshared/14b0/hdl/NoC_3D_parallel_recv.vhd:21]
+	Parameter inbuffer bound to: 1 - type: integer 
+	Parameter Row bound to: 1 - type: integer 
+	Parameter Col bound to: 0 - type: integer 
+	Parameter Layer bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'NoC_3D_Parallel_recv' declared at '/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.srcs/sources_1/bd/BD/ipshared/14b0/hdl/NoC_3D_parallel_recv.vhd:7' bound to instance 'dir' of component 'NoC_3D_parallel_recv' [/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.srcs/sources_1/bd/BD/ipshared/14b0/hdl/NoC_3D_parallel_switch.vhd:124]
+INFO: [Synth 8-638] synthesizing module 'NoC_3D_Parallel_recv__parameterized2' [/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.srcs/sources_1/bd/BD/ipshared/14b0/hdl/NoC_3D_parallel_recv.vhd:21]
+	Parameter inbuffer bound to: 1 - type: integer 
+	Parameter Row bound to: 1 - type: integer 
+	Parameter Col bound to: 0 - type: integer 
+	Parameter Layer bound to: 0 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'NoC_3D_Parallel_recv__parameterized2' (3#1) [/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.srcs/sources_1/bd/BD/ipshared/14b0/hdl/NoC_3D_parallel_recv.vhd:21]
+	Parameter inbuffer bound to: 1 - type: integer 
+	Parameter Row bound to: 1 - type: integer 
+	Parameter Col bound to: 0 - type: integer 
+	Parameter Layer bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'NoC_3D_Parallel_recv' declared at '/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.srcs/sources_1/bd/BD/ipshared/14b0/hdl/NoC_3D_parallel_recv.vhd:7' bound to instance 'dir' of component 'NoC_3D_parallel_recv' [/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.srcs/sources_1/bd/BD/ipshared/14b0/hdl/NoC_3D_parallel_switch.vhd:124]
+INFO: [Synth 8-638] synthesizing module 'NoC_3D_Parallel_recv__parameterized3' [/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.srcs/sources_1/bd/BD/ipshared/14b0/hdl/NoC_3D_parallel_recv.vhd:21]
+	Parameter inbuffer bound to: 1 - type: integer 
+	Parameter Row bound to: 1 - type: integer 
+	Parameter Col bound to: 0 - type: integer 
+	Parameter Layer bound to: 0 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'NoC_3D_Parallel_recv__parameterized3' (3#1) [/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.srcs/sources_1/bd/BD/ipshared/14b0/hdl/NoC_3D_parallel_recv.vhd:21]
+	Parameter inbuffer bound to: 1 - type: integer 
+	Parameter Row bound to: 1 - type: integer 
+	Parameter Col bound to: 0 - type: integer 
+	Parameter Layer bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'NoC_3D_Parallel_recv' declared at '/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.srcs/sources_1/bd/BD/ipshared/14b0/hdl/NoC_3D_parallel_recv.vhd:7' bound to instance 'dir' of component 'NoC_3D_parallel_recv' [/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.srcs/sources_1/bd/BD/ipshared/14b0/hdl/NoC_3D_parallel_switch.vhd:124]
+INFO: [Synth 8-638] synthesizing module 'NoC_3D_Parallel_recv__parameterized4' [/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.srcs/sources_1/bd/BD/ipshared/14b0/hdl/NoC_3D_parallel_recv.vhd:21]
+	Parameter inbuffer bound to: 1 - type: integer 
+	Parameter Row bound to: 1 - type: integer 
+	Parameter Col bound to: 0 - type: integer 
+	Parameter Layer bound to: 0 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'NoC_3D_Parallel_recv__parameterized4' (3#1) [/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.srcs/sources_1/bd/BD/ipshared/14b0/hdl/NoC_3D_parallel_recv.vhd:21]
+	Parameter inbuffer bound to: 1 - type: integer 
+	Parameter Row bound to: 1 - type: integer 
+	Parameter Col bound to: 0 - type: integer 
+	Parameter Layer bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'NoC_3D_Parallel_recv' declared at '/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.srcs/sources_1/bd/BD/ipshared/14b0/hdl/NoC_3D_parallel_recv.vhd:7' bound to instance 'dir' of component 'NoC_3D_parallel_recv' [/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.srcs/sources_1/bd/BD/ipshared/14b0/hdl/NoC_3D_parallel_switch.vhd:124]
+INFO: [Synth 8-638] synthesizing module 'NoC_3D_Parallel_recv__parameterized5' [/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.srcs/sources_1/bd/BD/ipshared/14b0/hdl/NoC_3D_parallel_recv.vhd:21]
+	Parameter inbuffer bound to: 1 - type: integer 
+	Parameter Row bound to: 1 - type: integer 
+	Parameter Col bound to: 0 - type: integer 
+	Parameter Layer bound to: 0 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'NoC_3D_Parallel_recv__parameterized5' (3#1) [/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.srcs/sources_1/bd/BD/ipshared/14b0/hdl/NoC_3D_parallel_recv.vhd:21]
+	Parameter inbuffer bound to: 1 - type: integer 
+	Parameter Row bound to: 1 - type: integer 
+	Parameter Col bound to: 0 - type: integer 
+	Parameter Layer bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'NoC_3D_Parallel_recv' declared at '/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.srcs/sources_1/bd/BD/ipshared/14b0/hdl/NoC_3D_parallel_recv.vhd:7' bound to instance 'dir' of component 'NoC_3D_parallel_recv' [/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.srcs/sources_1/bd/BD/ipshared/14b0/hdl/NoC_3D_parallel_switch.vhd:124]
+INFO: [Synth 8-638] synthesizing module 'NoC_3D_Parallel_recv__parameterized6' [/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.srcs/sources_1/bd/BD/ipshared/14b0/hdl/NoC_3D_parallel_recv.vhd:21]
+	Parameter inbuffer bound to: 1 - type: integer 
+	Parameter Row bound to: 1 - type: integer 
+	Parameter Col bound to: 0 - type: integer 
+	Parameter Layer bound to: 0 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'NoC_3D_Parallel_recv__parameterized6' (3#1) [/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.srcs/sources_1/bd/BD/ipshared/14b0/hdl/NoC_3D_parallel_recv.vhd:21]
+INFO: [Synth 8-3491] module 'NoC_3D_Parallel_xmitter' declared at '/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.srcs/sources_1/bd/BD/ipshared/14b0/hdl/NoC_3D_parallel_xmitter.vhd:5' bound to instance 'dir' of component 'NoC_3D_parallel_xmitter' [/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.srcs/sources_1/bd/BD/ipshared/14b0/hdl/NoC_3D_parallel_switch.vhd:136]
+INFO: [Synth 8-3491] module 'NoC_3D_Parallel_xmitter' declared at '/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.srcs/sources_1/bd/BD/ipshared/14b0/hdl/NoC_3D_parallel_xmitter.vhd:5' bound to instance 'dir' of component 'NoC_3D_parallel_xmitter' [/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.srcs/sources_1/bd/BD/ipshared/14b0/hdl/NoC_3D_parallel_switch.vhd:136]
+INFO: [Synth 8-3491] module 'NoC_3D_Parallel_xmitter' declared at '/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.srcs/sources_1/bd/BD/ipshared/14b0/hdl/NoC_3D_parallel_xmitter.vhd:5' bound to instance 'dir' of component 'NoC_3D_parallel_xmitter' [/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.srcs/sources_1/bd/BD/ipshared/14b0/hdl/NoC_3D_parallel_switch.vhd:136]
+INFO: [Synth 8-3491] module 'NoC_3D_Parallel_xmitter' declared at '/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.srcs/sources_1/bd/BD/ipshared/14b0/hdl/NoC_3D_parallel_xmitter.vhd:5' bound to instance 'dir' of component 'NoC_3D_parallel_xmitter' [/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.srcs/sources_1/bd/BD/ipshared/14b0/hdl/NoC_3D_parallel_switch.vhd:136]
+INFO: [Synth 8-3491] module 'NoC_3D_Parallel_xmitter' declared at '/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.srcs/sources_1/bd/BD/ipshared/14b0/hdl/NoC_3D_parallel_xmitter.vhd:5' bound to instance 'dir' of component 'NoC_3D_parallel_xmitter' [/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.srcs/sources_1/bd/BD/ipshared/14b0/hdl/NoC_3D_parallel_switch.vhd:136]
+INFO: [Synth 8-3491] module 'NoC_3D_Parallel_xmitter' declared at '/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.srcs/sources_1/bd/BD/ipshared/14b0/hdl/NoC_3D_parallel_xmitter.vhd:5' bound to instance 'dir' of component 'NoC_3D_parallel_xmitter' [/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.srcs/sources_1/bd/BD/ipshared/14b0/hdl/NoC_3D_parallel_switch.vhd:136]
+INFO: [Synth 8-3491] module 'NoC_3D_Parallel_xmitter' declared at '/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.srcs/sources_1/bd/BD/ipshared/14b0/hdl/NoC_3D_parallel_xmitter.vhd:5' bound to instance 'dir' of component 'NoC_3D_parallel_xmitter' [/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.srcs/sources_1/bd/BD/ipshared/14b0/hdl/NoC_3D_parallel_switch.vhd:136]
+INFO: [Synth 8-226] default block is never used [/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.srcs/sources_1/bd/BD/ipshared/14b0/hdl/NoC_3D_parallel_switch.vhd:173]
+INFO: [Synth 8-256] done synthesizing module 'NoC_3D_Parallel_Switch__parameterized1' (3#1) [/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.srcs/sources_1/bd/BD/ipshared/14b0/hdl/NoC_3D_parallel_switch.vhd:41]
+	Parameter Col bound to: 1 - type: integer 
+	Parameter Row bound to: 0 - type: integer 
+	Parameter Layer bound to: 0 - type: integer 
+	Parameter inbuffer bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'NoC_3D_Parallel_Switch' declared at '/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.srcs/sources_1/bd/BD/ipshared/14b0/hdl/NoC_3D_parallel_switch.vhd:28' bound to instance 'UD' of component 'NoC_3D_Parallel_Switch' [/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.srcs/sources_1/bd/BD/ipshared/14b0/hdl/NoC_2D_Parallel.vhd:40]
+INFO: [Synth 8-638] synthesizing module 'NoC_3D_Parallel_Switch__parameterized3' [/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.srcs/sources_1/bd/BD/ipshared/14b0/hdl/NoC_3D_parallel_switch.vhd:41]
+	Parameter Col bound to: 1 - type: integer 
+	Parameter Row bound to: 0 - type: integer 
+	Parameter Layer bound to: 0 - type: integer 
+	Parameter inbuffer bound to: 1 - type: integer 
+	Parameter inbuffer bound to: 1 - type: integer 
+	Parameter Row bound to: 0 - type: integer 
+	Parameter Col bound to: 1 - type: integer 
+	Parameter Layer bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'NoC_3D_Parallel_recv' declared at '/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.srcs/sources_1/bd/BD/ipshared/14b0/hdl/NoC_3D_parallel_recv.vhd:7' bound to instance 'dir' of component 'NoC_3D_parallel_recv' [/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.srcs/sources_1/bd/BD/ipshared/14b0/hdl/NoC_3D_parallel_switch.vhd:124]
+INFO: [Synth 8-638] synthesizing module 'NoC_3D_Parallel_recv__parameterized7' [/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.srcs/sources_1/bd/BD/ipshared/14b0/hdl/NoC_3D_parallel_recv.vhd:21]
+	Parameter inbuffer bound to: 1 - type: integer 
+	Parameter Row bound to: 0 - type: integer 
+	Parameter Col bound to: 1 - type: integer 
+	Parameter Layer bound to: 0 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'NoC_3D_Parallel_recv__parameterized7' (3#1) [/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.srcs/sources_1/bd/BD/ipshared/14b0/hdl/NoC_3D_parallel_recv.vhd:21]
+	Parameter inbuffer bound to: 1 - type: integer 
+	Parameter Row bound to: 0 - type: integer 
+	Parameter Col bound to: 1 - type: integer 
+	Parameter Layer bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'NoC_3D_Parallel_recv' declared at '/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.srcs/sources_1/bd/BD/ipshared/14b0/hdl/NoC_3D_parallel_recv.vhd:7' bound to instance 'dir' of component 'NoC_3D_parallel_recv' [/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.srcs/sources_1/bd/BD/ipshared/14b0/hdl/NoC_3D_parallel_switch.vhd:124]
+INFO: [Synth 8-638] synthesizing module 'NoC_3D_Parallel_recv__parameterized8' [/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.srcs/sources_1/bd/BD/ipshared/14b0/hdl/NoC_3D_parallel_recv.vhd:21]
+	Parameter inbuffer bound to: 1 - type: integer 
+	Parameter Row bound to: 0 - type: integer 
+	Parameter Col bound to: 1 - type: integer 
+	Parameter Layer bound to: 0 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'NoC_3D_Parallel_recv__parameterized8' (3#1) [/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.srcs/sources_1/bd/BD/ipshared/14b0/hdl/NoC_3D_parallel_recv.vhd:21]
+	Parameter inbuffer bound to: 1 - type: integer 
+	Parameter Row bound to: 0 - type: integer 
+	Parameter Col bound to: 1 - type: integer 
+	Parameter Layer bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'NoC_3D_Parallel_recv' declared at '/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.srcs/sources_1/bd/BD/ipshared/14b0/hdl/NoC_3D_parallel_recv.vhd:7' bound to instance 'dir' of component 'NoC_3D_parallel_recv' [/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.srcs/sources_1/bd/BD/ipshared/14b0/hdl/NoC_3D_parallel_switch.vhd:124]
+INFO: [Synth 8-638] synthesizing module 'NoC_3D_Parallel_recv__parameterized9' [/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.srcs/sources_1/bd/BD/ipshared/14b0/hdl/NoC_3D_parallel_recv.vhd:21]
+	Parameter inbuffer bound to: 1 - type: integer 
+	Parameter Row bound to: 0 - type: integer 
+	Parameter Col bound to: 1 - type: integer 
+	Parameter Layer bound to: 0 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'NoC_3D_Parallel_recv__parameterized9' (3#1) [/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.srcs/sources_1/bd/BD/ipshared/14b0/hdl/NoC_3D_parallel_recv.vhd:21]
+	Parameter inbuffer bound to: 1 - type: integer 
+	Parameter Row bound to: 0 - type: integer 
+	Parameter Col bound to: 1 - type: integer 
+	Parameter Layer bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'NoC_3D_Parallel_recv' declared at '/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.srcs/sources_1/bd/BD/ipshared/14b0/hdl/NoC_3D_parallel_recv.vhd:7' bound to instance 'dir' of component 'NoC_3D_parallel_recv' [/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.srcs/sources_1/bd/BD/ipshared/14b0/hdl/NoC_3D_parallel_switch.vhd:124]
+INFO: [Synth 8-638] synthesizing module 'NoC_3D_Parallel_recv__parameterized10' [/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.srcs/sources_1/bd/BD/ipshared/14b0/hdl/NoC_3D_parallel_recv.vhd:21]
+	Parameter inbuffer bound to: 1 - type: integer 
+	Parameter Row bound to: 0 - type: integer 
+	Parameter Col bound to: 1 - type: integer 
+	Parameter Layer bound to: 0 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'NoC_3D_Parallel_recv__parameterized10' (3#1) [/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.srcs/sources_1/bd/BD/ipshared/14b0/hdl/NoC_3D_parallel_recv.vhd:21]
+	Parameter inbuffer bound to: 1 - type: integer 
+	Parameter Row bound to: 0 - type: integer 
+	Parameter Col bound to: 1 - type: integer 
+	Parameter Layer bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'NoC_3D_Parallel_recv' declared at '/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.srcs/sources_1/bd/BD/ipshared/14b0/hdl/NoC_3D_parallel_recv.vhd:7' bound to instance 'dir' of component 'NoC_3D_parallel_recv' [/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.srcs/sources_1/bd/BD/ipshared/14b0/hdl/NoC_3D_parallel_switch.vhd:124]
+INFO: [Synth 8-638] synthesizing module 'NoC_3D_Parallel_recv__parameterized11' [/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.srcs/sources_1/bd/BD/ipshared/14b0/hdl/NoC_3D_parallel_recv.vhd:21]
+	Parameter inbuffer bound to: 1 - type: integer 
+	Parameter Row bound to: 0 - type: integer 
+	Parameter Col bound to: 1 - type: integer 
+	Parameter Layer bound to: 0 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'NoC_3D_Parallel_recv__parameterized11' (3#1) [/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.srcs/sources_1/bd/BD/ipshared/14b0/hdl/NoC_3D_parallel_recv.vhd:21]
+	Parameter inbuffer bound to: 1 - type: integer 
+	Parameter Row bound to: 0 - type: integer 
+	Parameter Col bound to: 1 - type: integer 
+	Parameter Layer bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'NoC_3D_Parallel_recv' declared at '/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.srcs/sources_1/bd/BD/ipshared/14b0/hdl/NoC_3D_parallel_recv.vhd:7' bound to instance 'dir' of component 'NoC_3D_parallel_recv' [/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.srcs/sources_1/bd/BD/ipshared/14b0/hdl/NoC_3D_parallel_switch.vhd:124]
+INFO: [Synth 8-638] synthesizing module 'NoC_3D_Parallel_recv__parameterized12' [/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.srcs/sources_1/bd/BD/ipshared/14b0/hdl/NoC_3D_parallel_recv.vhd:21]
+	Parameter inbuffer bound to: 1 - type: integer 
+	Parameter Row bound to: 0 - type: integer 
+	Parameter Col bound to: 1 - type: integer 
+	Parameter Layer bound to: 0 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'NoC_3D_Parallel_recv__parameterized12' (3#1) [/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.srcs/sources_1/bd/BD/ipshared/14b0/hdl/NoC_3D_parallel_recv.vhd:21]
+	Parameter inbuffer bound to: 1 - type: integer 
+	Parameter Row bound to: 0 - type: integer 
+	Parameter Col bound to: 1 - type: integer 
+	Parameter Layer bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'NoC_3D_Parallel_recv' declared at '/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.srcs/sources_1/bd/BD/ipshared/14b0/hdl/NoC_3D_parallel_recv.vhd:7' bound to instance 'dir' of component 'NoC_3D_parallel_recv' [/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.srcs/sources_1/bd/BD/ipshared/14b0/hdl/NoC_3D_parallel_switch.vhd:124]
+INFO: [Synth 8-638] synthesizing module 'NoC_3D_Parallel_recv__parameterized13' [/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.srcs/sources_1/bd/BD/ipshared/14b0/hdl/NoC_3D_parallel_recv.vhd:21]
+	Parameter inbuffer bound to: 1 - type: integer 
+	Parameter Row bound to: 0 - type: integer 
+	Parameter Col bound to: 1 - type: integer 
+	Parameter Layer bound to: 0 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'NoC_3D_Parallel_recv__parameterized13' (3#1) [/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.srcs/sources_1/bd/BD/ipshared/14b0/hdl/NoC_3D_parallel_recv.vhd:21]
+INFO: [Synth 8-3491] module 'NoC_3D_Parallel_xmitter' declared at '/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.srcs/sources_1/bd/BD/ipshared/14b0/hdl/NoC_3D_parallel_xmitter.vhd:5' bound to instance 'dir' of component 'NoC_3D_parallel_xmitter' [/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.srcs/sources_1/bd/BD/ipshared/14b0/hdl/NoC_3D_parallel_switch.vhd:136]
+INFO: [Synth 8-3491] module 'NoC_3D_Parallel_xmitter' declared at '/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.srcs/sources_1/bd/BD/ipshared/14b0/hdl/NoC_3D_parallel_xmitter.vhd:5' bound to instance 'dir' of component 'NoC_3D_parallel_xmitter' [/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.srcs/sources_1/bd/BD/ipshared/14b0/hdl/NoC_3D_parallel_switch.vhd:136]
+INFO: [Synth 8-3491] module 'NoC_3D_Parallel_xmitter' declared at '/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.srcs/sources_1/bd/BD/ipshared/14b0/hdl/NoC_3D_parallel_xmitter.vhd:5' bound to instance 'dir' of component 'NoC_3D_parallel_xmitter' [/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.srcs/sources_1/bd/BD/ipshared/14b0/hdl/NoC_3D_parallel_switch.vhd:136]
+INFO: [Synth 8-3491] module 'NoC_3D_Parallel_xmitter' declared at '/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.srcs/sources_1/bd/BD/ipshared/14b0/hdl/NoC_3D_parallel_xmitter.vhd:5' bound to instance 'dir' of component 'NoC_3D_parallel_xmitter' [/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.srcs/sources_1/bd/BD/ipshared/14b0/hdl/NoC_3D_parallel_switch.vhd:136]
+INFO: [Synth 8-3491] module 'NoC_3D_Parallel_xmitter' declared at '/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.srcs/sources_1/bd/BD/ipshared/14b0/hdl/NoC_3D_parallel_xmitter.vhd:5' bound to instance 'dir' of component 'NoC_3D_parallel_xmitter' [/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.srcs/sources_1/bd/BD/ipshared/14b0/hdl/NoC_3D_parallel_switch.vhd:136]
+INFO: [Synth 8-3491] module 'NoC_3D_Parallel_xmitter' declared at '/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.srcs/sources_1/bd/BD/ipshared/14b0/hdl/NoC_3D_parallel_xmitter.vhd:5' bound to instance 'dir' of component 'NoC_3D_parallel_xmitter' [/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.srcs/sources_1/bd/BD/ipshared/14b0/hdl/NoC_3D_parallel_switch.vhd:136]
+INFO: [Synth 8-3491] module 'NoC_3D_Parallel_xmitter' declared at '/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.srcs/sources_1/bd/BD/ipshared/14b0/hdl/NoC_3D_parallel_xmitter.vhd:5' bound to instance 'dir' of component 'NoC_3D_parallel_xmitter' [/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.srcs/sources_1/bd/BD/ipshared/14b0/hdl/NoC_3D_parallel_switch.vhd:136]
+INFO: [Synth 8-226] default block is never used [/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.srcs/sources_1/bd/BD/ipshared/14b0/hdl/NoC_3D_parallel_switch.vhd:173]
+INFO: [Synth 8-256] done synthesizing module 'NoC_3D_Parallel_Switch__parameterized3' (3#1) [/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.srcs/sources_1/bd/BD/ipshared/14b0/hdl/NoC_3D_parallel_switch.vhd:41]
+	Parameter Col bound to: 1 - type: integer 
+	Parameter Row bound to: 1 - type: integer 
+	Parameter Layer bound to: 0 - type: integer 
+	Parameter inbuffer bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'NoC_3D_Parallel_Switch' declared at '/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.srcs/sources_1/bd/BD/ipshared/14b0/hdl/NoC_3D_parallel_switch.vhd:28' bound to instance 'UD' of component 'NoC_3D_Parallel_Switch' [/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.srcs/sources_1/bd/BD/ipshared/14b0/hdl/NoC_2D_Parallel.vhd:40]
+INFO: [Synth 8-638] synthesizing module 'NoC_3D_Parallel_Switch__parameterized5' [/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.srcs/sources_1/bd/BD/ipshared/14b0/hdl/NoC_3D_parallel_switch.vhd:41]
+	Parameter Col bound to: 1 - type: integer 
+	Parameter Row bound to: 1 - type: integer 
+	Parameter Layer bound to: 0 - type: integer 
+	Parameter inbuffer bound to: 1 - type: integer 
+	Parameter inbuffer bound to: 1 - type: integer 
+	Parameter Row bound to: 1 - type: integer 
+	Parameter Col bound to: 1 - type: integer 
+	Parameter Layer bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'NoC_3D_Parallel_recv' declared at '/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.srcs/sources_1/bd/BD/ipshared/14b0/hdl/NoC_3D_parallel_recv.vhd:7' bound to instance 'dir' of component 'NoC_3D_parallel_recv' [/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.srcs/sources_1/bd/BD/ipshared/14b0/hdl/NoC_3D_parallel_switch.vhd:124]
+INFO: [Synth 8-638] synthesizing module 'NoC_3D_Parallel_recv__parameterized14' [/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.srcs/sources_1/bd/BD/ipshared/14b0/hdl/NoC_3D_parallel_recv.vhd:21]
+	Parameter inbuffer bound to: 1 - type: integer 
+	Parameter Row bound to: 1 - type: integer 
+	Parameter Col bound to: 1 - type: integer 
+	Parameter Layer bound to: 0 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'NoC_3D_Parallel_recv__parameterized14' (3#1) [/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.srcs/sources_1/bd/BD/ipshared/14b0/hdl/NoC_3D_parallel_recv.vhd:21]
+	Parameter inbuffer bound to: 1 - type: integer 
+	Parameter Row bound to: 1 - type: integer 
+	Parameter Col bound to: 1 - type: integer 
+	Parameter Layer bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'NoC_3D_Parallel_recv' declared at '/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.srcs/sources_1/bd/BD/ipshared/14b0/hdl/NoC_3D_parallel_recv.vhd:7' bound to instance 'dir' of component 'NoC_3D_parallel_recv' [/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.srcs/sources_1/bd/BD/ipshared/14b0/hdl/NoC_3D_parallel_switch.vhd:124]
+INFO: [Synth 8-638] synthesizing module 'NoC_3D_Parallel_recv__parameterized15' [/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.srcs/sources_1/bd/BD/ipshared/14b0/hdl/NoC_3D_parallel_recv.vhd:21]
+	Parameter inbuffer bound to: 1 - type: integer 
+	Parameter Row bound to: 1 - type: integer 
+	Parameter Col bound to: 1 - type: integer 
+	Parameter Layer bound to: 0 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'NoC_3D_Parallel_recv__parameterized15' (3#1) [/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.srcs/sources_1/bd/BD/ipshared/14b0/hdl/NoC_3D_parallel_recv.vhd:21]
+	Parameter inbuffer bound to: 1 - type: integer 
+	Parameter Row bound to: 1 - type: integer 
+	Parameter Col bound to: 1 - type: integer 
+	Parameter Layer bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'NoC_3D_Parallel_recv' declared at '/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.srcs/sources_1/bd/BD/ipshared/14b0/hdl/NoC_3D_parallel_recv.vhd:7' bound to instance 'dir' of component 'NoC_3D_parallel_recv' [/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.srcs/sources_1/bd/BD/ipshared/14b0/hdl/NoC_3D_parallel_switch.vhd:124]
+INFO: [Synth 8-638] synthesizing module 'NoC_3D_Parallel_recv__parameterized16' [/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.srcs/sources_1/bd/BD/ipshared/14b0/hdl/NoC_3D_parallel_recv.vhd:21]
+	Parameter inbuffer bound to: 1 - type: integer 
+	Parameter Row bound to: 1 - type: integer 
+	Parameter Col bound to: 1 - type: integer 
+	Parameter Layer bound to: 0 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'NoC_3D_Parallel_recv__parameterized16' (3#1) [/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.srcs/sources_1/bd/BD/ipshared/14b0/hdl/NoC_3D_parallel_recv.vhd:21]
+	Parameter inbuffer bound to: 1 - type: integer 
+	Parameter Row bound to: 1 - type: integer 
+	Parameter Col bound to: 1 - type: integer 
+	Parameter Layer bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'NoC_3D_Parallel_recv' declared at '/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.srcs/sources_1/bd/BD/ipshared/14b0/hdl/NoC_3D_parallel_recv.vhd:7' bound to instance 'dir' of component 'NoC_3D_parallel_recv' [/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.srcs/sources_1/bd/BD/ipshared/14b0/hdl/NoC_3D_parallel_switch.vhd:124]
+INFO: [Synth 8-638] synthesizing module 'NoC_3D_Parallel_recv__parameterized17' [/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.srcs/sources_1/bd/BD/ipshared/14b0/hdl/NoC_3D_parallel_recv.vhd:21]
+	Parameter inbuffer bound to: 1 - type: integer 
+	Parameter Row bound to: 1 - type: integer 
+	Parameter Col bound to: 1 - type: integer 
+	Parameter Layer bound to: 0 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'NoC_3D_Parallel_recv__parameterized17' (3#1) [/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.srcs/sources_1/bd/BD/ipshared/14b0/hdl/NoC_3D_parallel_recv.vhd:21]
+	Parameter inbuffer bound to: 1 - type: integer 
+	Parameter Row bound to: 1 - type: integer 
+	Parameter Col bound to: 1 - type: integer 
+	Parameter Layer bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'NoC_3D_Parallel_recv' declared at '/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.srcs/sources_1/bd/BD/ipshared/14b0/hdl/NoC_3D_parallel_recv.vhd:7' bound to instance 'dir' of component 'NoC_3D_parallel_recv' [/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.srcs/sources_1/bd/BD/ipshared/14b0/hdl/NoC_3D_parallel_switch.vhd:124]
+INFO: [Synth 8-638] synthesizing module 'NoC_3D_Parallel_recv__parameterized18' [/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.srcs/sources_1/bd/BD/ipshared/14b0/hdl/NoC_3D_parallel_recv.vhd:21]
+	Parameter inbuffer bound to: 1 - type: integer 
+	Parameter Row bound to: 1 - type: integer 
+	Parameter Col bound to: 1 - type: integer 
+	Parameter Layer bound to: 0 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'NoC_3D_Parallel_recv__parameterized18' (3#1) [/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.srcs/sources_1/bd/BD/ipshared/14b0/hdl/NoC_3D_parallel_recv.vhd:21]
+	Parameter inbuffer bound to: 1 - type: integer 
+	Parameter Row bound to: 1 - type: integer 
+	Parameter Col bound to: 1 - type: integer 
+	Parameter Layer bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'NoC_3D_Parallel_recv' declared at '/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.srcs/sources_1/bd/BD/ipshared/14b0/hdl/NoC_3D_parallel_recv.vhd:7' bound to instance 'dir' of component 'NoC_3D_parallel_recv' [/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.srcs/sources_1/bd/BD/ipshared/14b0/hdl/NoC_3D_parallel_switch.vhd:124]
+INFO: [Synth 8-638] synthesizing module 'NoC_3D_Parallel_recv__parameterized19' [/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.srcs/sources_1/bd/BD/ipshared/14b0/hdl/NoC_3D_parallel_recv.vhd:21]
+	Parameter inbuffer bound to: 1 - type: integer 
+	Parameter Row bound to: 1 - type: integer 
+	Parameter Col bound to: 1 - type: integer 
+	Parameter Layer bound to: 0 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'NoC_3D_Parallel_recv__parameterized19' (3#1) [/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.srcs/sources_1/bd/BD/ipshared/14b0/hdl/NoC_3D_parallel_recv.vhd:21]
+	Parameter inbuffer bound to: 1 - type: integer 
+	Parameter Row bound to: 1 - type: integer 
+	Parameter Col bound to: 1 - type: integer 
+	Parameter Layer bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'NoC_3D_Parallel_recv' declared at '/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.srcs/sources_1/bd/BD/ipshared/14b0/hdl/NoC_3D_parallel_recv.vhd:7' bound to instance 'dir' of component 'NoC_3D_parallel_recv' [/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.srcs/sources_1/bd/BD/ipshared/14b0/hdl/NoC_3D_parallel_switch.vhd:124]
+INFO: [Synth 8-638] synthesizing module 'NoC_3D_Parallel_recv__parameterized20' [/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.srcs/sources_1/bd/BD/ipshared/14b0/hdl/NoC_3D_parallel_recv.vhd:21]
+	Parameter inbuffer bound to: 1 - type: integer 
+	Parameter Row bound to: 1 - type: integer 
+	Parameter Col bound to: 1 - type: integer 
+	Parameter Layer bound to: 0 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'NoC_3D_Parallel_recv__parameterized20' (3#1) [/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.srcs/sources_1/bd/BD/ipshared/14b0/hdl/NoC_3D_parallel_recv.vhd:21]
+INFO: [Synth 8-3491] module 'NoC_3D_Parallel_xmitter' declared at '/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.srcs/sources_1/bd/BD/ipshared/14b0/hdl/NoC_3D_parallel_xmitter.vhd:5' bound to instance 'dir' of component 'NoC_3D_parallel_xmitter' [/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.srcs/sources_1/bd/BD/ipshared/14b0/hdl/NoC_3D_parallel_switch.vhd:136]
+INFO: [Synth 8-3491] module 'NoC_3D_Parallel_xmitter' declared at '/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.srcs/sources_1/bd/BD/ipshared/14b0/hdl/NoC_3D_parallel_xmitter.vhd:5' bound to instance 'dir' of component 'NoC_3D_parallel_xmitter' [/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.srcs/sources_1/bd/BD/ipshared/14b0/hdl/NoC_3D_parallel_switch.vhd:136]
+INFO: [Synth 8-3491] module 'NoC_3D_Parallel_xmitter' declared at '/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.srcs/sources_1/bd/BD/ipshared/14b0/hdl/NoC_3D_parallel_xmitter.vhd:5' bound to instance 'dir' of component 'NoC_3D_parallel_xmitter' [/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.srcs/sources_1/bd/BD/ipshared/14b0/hdl/NoC_3D_parallel_switch.vhd:136]
+INFO: [Synth 8-3491] module 'NoC_3D_Parallel_xmitter' declared at '/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.srcs/sources_1/bd/BD/ipshared/14b0/hdl/NoC_3D_parallel_xmitter.vhd:5' bound to instance 'dir' of component 'NoC_3D_parallel_xmitter' [/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.srcs/sources_1/bd/BD/ipshared/14b0/hdl/NoC_3D_parallel_switch.vhd:136]
+INFO: [Synth 8-3491] module 'NoC_3D_Parallel_xmitter' declared at '/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.srcs/sources_1/bd/BD/ipshared/14b0/hdl/NoC_3D_parallel_xmitter.vhd:5' bound to instance 'dir' of component 'NoC_3D_parallel_xmitter' [/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.srcs/sources_1/bd/BD/ipshared/14b0/hdl/NoC_3D_parallel_switch.vhd:136]
+INFO: [Synth 8-3491] module 'NoC_3D_Parallel_xmitter' declared at '/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.srcs/sources_1/bd/BD/ipshared/14b0/hdl/NoC_3D_parallel_xmitter.vhd:5' bound to instance 'dir' of component 'NoC_3D_parallel_xmitter' [/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.srcs/sources_1/bd/BD/ipshared/14b0/hdl/NoC_3D_parallel_switch.vhd:136]
+INFO: [Synth 8-3491] module 'NoC_3D_Parallel_xmitter' declared at '/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.srcs/sources_1/bd/BD/ipshared/14b0/hdl/NoC_3D_parallel_xmitter.vhd:5' bound to instance 'dir' of component 'NoC_3D_parallel_xmitter' [/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.srcs/sources_1/bd/BD/ipshared/14b0/hdl/NoC_3D_parallel_switch.vhd:136]
+INFO: [Synth 8-226] default block is never used [/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.srcs/sources_1/bd/BD/ipshared/14b0/hdl/NoC_3D_parallel_switch.vhd:173]
+INFO: [Synth 8-256] done synthesizing module 'NoC_3D_Parallel_Switch__parameterized5' (3#1) [/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.srcs/sources_1/bd/BD/ipshared/14b0/hdl/NoC_3D_parallel_switch.vhd:41]
+INFO: [Synth 8-256] done synthesizing module 'NoC_2D_Parallel' (4#1) [/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.srcs/sources_1/bd/BD/ipshared/14b0/hdl/NoC_2D_Parallel.vhd:18]
+INFO: [Synth 8-256] done synthesizing module 'kth_2DNoC_2x2x1_c1_v1_0' (5#1) [/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.srcs/sources_1/bd/BD/ipshared/14b0/hdl/kth_2DNoC_2x2x1_v1_0.vhd:35]
+INFO: [Synth 8-256] done synthesizing module 'BD_kth_2DNoC_2x2x1_0_0' (6#1) [/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.srcs/sources_1/bd/BD/ip/BD_kth_2DNoC_2x2x1_0_0/synth/BD_kth_2DNoC_2x2x1_0_0.vhd:79]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 1280.137 ; gain = 360.910 ; free physical = 2146 ; free virtual = 124780
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 1280.137 ; gain = 360.910 ; free physical = 2201 ; free virtual = 124841
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.46 ; elapsed = 00:00:00.29 . Memory (MB): peak = 1646.738 ; gain = 10.000 ; free physical = 1401 ; free virtual = 124043
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:33 ; elapsed = 00:00:37 . Memory (MB): peak = 1646.738 ; gain = 727.512 ; free physical = 1565 ; free virtual = 124209
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:33 ; elapsed = 00:00:37 . Memory (MB): peak = 1646.738 ; gain = 727.512 ; free physical = 1565 ; free virtual = 124209
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:33 ; elapsed = 00:00:37 . Memory (MB): peak = 1646.738 ; gain = 727.512 ; free physical = 1565 ; free virtual = 124209
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5544] ROM "tmp_port_wants_to[3]" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tmp_port_wants_to[1]" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tmp_port_wants_to[2]" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tmp_port_wants_to[2]" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tmp_port_wants_to[2]" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tmp_port_wants_to[3]" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tmp_port_wants_to[3]" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tmp_port_wants_to[3]" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tmp_port_wants_to[3]" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tmp_port_wants_to[4]" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tmp_port_wants_to[4]" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tmp_port_wants_to[4]" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tmp_port_wants_to[5]" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tmp_port_wants_to[5]" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "recv_load_enable" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ret" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ret_matrix[0]3" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ret_matrix[0]5" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ret_matrix[0]7" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ret_matrix[0]9" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ret_matrix[0]11" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ret_matrix_reg[0]" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ret_matrix_reg[1]" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ret_matrix_reg[2]" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ret_matrix_reg[3]" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ret_matrix_reg[4]" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ret_matrix_reg[5]" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ret_matrix_reg[6]" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ret_matrix[0]3" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ret_matrix[0]5" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ret_matrix[0]7" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ret_matrix[0]9" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ret_matrix[0]11" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ret_matrix[0]12" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ret_matrix[0]3" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ret_matrix[0]5" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ret_matrix[0]7" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ret_matrix[0]9" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ret_matrix[0]11" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ret_matrix[0]12" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ret_matrix[0]3" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ret_matrix[0]5" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ret_matrix[0]7" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ret_matrix[0]9" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ret_matrix[0]11" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ret_matrix[0]12" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ret_matrix[0]3" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ret_matrix[0]5" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ret_matrix[0]7" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ret_matrix[0]9" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ret_matrix[0]11" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ret_matrix[0]12" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ret_matrix[0]3" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ret_matrix[0]5" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ret_matrix[0]7" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ret_matrix[0]9" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ret_matrix[0]11" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ret_matrix[0]12" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ret_matrix[0]3" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ret_matrix[0]5" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ret_matrix[0]7" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ret_matrix[0]9" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ret_matrix[0]11" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ret_matrix[0]12" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tmp_port_wants_to[3]" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tmp_port_wants_to[1]" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tmp_port_wants_to[2]" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tmp_port_wants_to[2]" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tmp_port_wants_to[2]" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tmp_port_wants_to[3]" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tmp_port_wants_to[3]" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tmp_port_wants_to[3]" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tmp_port_wants_to[3]" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tmp_port_wants_to[4]" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tmp_port_wants_to[4]" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tmp_port_wants_to[4]" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tmp_port_wants_to[5]" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tmp_port_wants_to[5]" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tmp_port_wants_to[3]" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tmp_port_wants_to[1]" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tmp_port_wants_to[2]" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tmp_port_wants_to[2]" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tmp_port_wants_to[2]" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tmp_port_wants_to[3]" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tmp_port_wants_to[3]" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tmp_port_wants_to[3]" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tmp_port_wants_to[3]" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tmp_port_wants_to[4]" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tmp_port_wants_to[4]" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tmp_port_wants_to[4]" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tmp_port_wants_to[5]" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tmp_port_wants_to[5]" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tmp_port_wants_to[3]" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tmp_port_wants_to[1]" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tmp_port_wants_to[2]" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tmp_port_wants_to[2]" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tmp_port_wants_to[2]" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tmp_port_wants_to[3]" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tmp_port_wants_to[3]" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tmp_port_wants_to[3]" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Common 17-14] Message 'Synth 8-5544' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:44 ; elapsed = 00:00:49 . Memory (MB): peak = 1646.738 ; gain = 727.512 ; free physical = 1219 ; free virtual = 123864
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+---------------------------------------+------------+----------+
+|      |RTL Partition                          |Replication |Instances |
++------+---------------------------------------+------------+----------+
+|1     |NoC_2D_Parallel__GB0                   |           1|     38541|
+|2     |NoC_3D_Parallel_Switch__parameterized3 |           1|     12777|
+|3     |kth_2DNoC_2x2x1_c1_v1_0__GC0           |           1|      1243|
++------+---------------------------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     31 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 4     
++---Registers : 
+	               56 Bit    Registers := 56    
+	                3 Bit    Registers := 56    
+	                2 Bit    Registers := 4     
+	                1 Bit    Registers := 9     
++---Muxes : 
+	   2 Input     31 Bit        Muxes := 1     
+	   8 Input      3 Bit        Muxes := 56    
+	   2 Input      3 Bit        Muxes := 6412  
+	   3 Input      3 Bit        Muxes := 168   
+	   4 Input      3 Bit        Muxes := 28    
+	   2 Input      2 Bit        Muxes := 312   
+	   3 Input      2 Bit        Muxes := 56    
+	   5 Input      2 Bit        Muxes := 28    
+	   4 Input      1 Bit        Muxes := 152   
+	   3 Input      1 Bit        Muxes := 24    
+	   2 Input      1 Bit        Muxes := 32    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module NoC_3D_Parallel_recv__parameterized7 
+Detailed RTL Component Info : 
++---Registers : 
+	               56 Bit    Registers := 1     
++---Muxes : 
+	   8 Input      3 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 43    
+	   3 Input      3 Bit        Muxes := 5     
+	   4 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 11    
+	   3 Input      2 Bit        Muxes := 2     
+	   5 Input      2 Bit        Muxes := 1     
+Module NoC_3D_Parallel_recv__parameterized8 
+Detailed RTL Component Info : 
++---Registers : 
+	               56 Bit    Registers := 1     
++---Muxes : 
+	   8 Input      3 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 43    
+	   3 Input      3 Bit        Muxes := 5     
+	   4 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 11    
+	   3 Input      2 Bit        Muxes := 2     
+	   5 Input      2 Bit        Muxes := 1     
+Module NoC_3D_Parallel_recv__parameterized9 
+Detailed RTL Component Info : 
++---Registers : 
+	               56 Bit    Registers := 1     
++---Muxes : 
+	   8 Input      3 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 43    
+	   3 Input      3 Bit        Muxes := 5     
+	   4 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 11    
+	   3 Input      2 Bit        Muxes := 2     
+	   5 Input      2 Bit        Muxes := 1     
+Module NoC_3D_Parallel_recv__parameterized10 
+Detailed RTL Component Info : 
++---Registers : 
+	               56 Bit    Registers := 1     
++---Muxes : 
+	   8 Input      3 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 43    
+	   3 Input      3 Bit        Muxes := 5     
+	   4 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 11    
+	   3 Input      2 Bit        Muxes := 2     
+	   5 Input      2 Bit        Muxes := 1     
+Module NoC_3D_Parallel_recv__parameterized11 
+Detailed RTL Component Info : 
++---Registers : 
+	               56 Bit    Registers := 1     
++---Muxes : 
+	   8 Input      3 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 43    
+	   3 Input      3 Bit        Muxes := 5     
+	   4 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 11    
+	   3 Input      2 Bit        Muxes := 2     
+	   5 Input      2 Bit        Muxes := 1     
+Module NoC_3D_Parallel_recv__parameterized12 
+Detailed RTL Component Info : 
++---Registers : 
+	               56 Bit    Registers := 1     
++---Muxes : 
+	   8 Input      3 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 43    
+	   3 Input      3 Bit        Muxes := 5     
+	   4 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 11    
+	   3 Input      2 Bit        Muxes := 2     
+	   5 Input      2 Bit        Muxes := 1     
+Module NoC_3D_Parallel_recv__parameterized13 
+Detailed RTL Component Info : 
++---Registers : 
+	               56 Bit    Registers := 1     
++---Muxes : 
+	   8 Input      3 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 43    
+	   3 Input      3 Bit        Muxes := 5     
+	   4 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 11    
+	   3 Input      2 Bit        Muxes := 2     
+	   5 Input      2 Bit        Muxes := 1     
+Module NoC_3D_Parallel_xmitter__22 
+Detailed RTL Component Info : 
++---Registers : 
+	               56 Bit    Registers := 1     
+Module NoC_3D_Parallel_xmitter__23 
+Detailed RTL Component Info : 
++---Registers : 
+	               56 Bit    Registers := 1     
+Module NoC_3D_Parallel_xmitter__24 
+Detailed RTL Component Info : 
++---Registers : 
+	               56 Bit    Registers := 1     
+Module NoC_3D_Parallel_xmitter__25 
+Detailed RTL Component Info : 
++---Registers : 
+	               56 Bit    Registers := 1     
+Module NoC_3D_Parallel_xmitter__26 
+Detailed RTL Component Info : 
++---Registers : 
+	               56 Bit    Registers := 1     
+Module NoC_3D_Parallel_xmitter__27 
+Detailed RTL Component Info : 
++---Registers : 
+	               56 Bit    Registers := 1     
+Module NoC_3D_Parallel_xmitter 
+Detailed RTL Component Info : 
++---Registers : 
+	               56 Bit    Registers := 1     
+Module NoC_3D_Parallel_Switch__parameterized3 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	                3 Bit    Registers := 14    
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   3 Input      3 Bit        Muxes := 7     
+	   2 Input      3 Bit        Muxes := 1302  
+	   2 Input      2 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 38    
+	   3 Input      1 Bit        Muxes := 6     
+	   2 Input      1 Bit        Muxes := 8     
+Module NoC_3D_Parallel_recv__1 
+Detailed RTL Component Info : 
++---Registers : 
+	               56 Bit    Registers := 1     
++---Muxes : 
+	   8 Input      3 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 43    
+	   3 Input      3 Bit        Muxes := 5     
+	   4 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 11    
+	   3 Input      2 Bit        Muxes := 2     
+	   5 Input      2 Bit        Muxes := 1     
+Module NoC_3D_Parallel_recv__2 
+Detailed RTL Component Info : 
++---Registers : 
+	               56 Bit    Registers := 1     
++---Muxes : 
+	   8 Input      3 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 43    
+	   3 Input      3 Bit        Muxes := 5     
+	   4 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 11    
+	   3 Input      2 Bit        Muxes := 2     
+	   5 Input      2 Bit        Muxes := 1     
+Module NoC_3D_Parallel_recv__3 
+Detailed RTL Component Info : 
++---Registers : 
+	               56 Bit    Registers := 1     
++---Muxes : 
+	   8 Input      3 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 43    
+	   3 Input      3 Bit        Muxes := 5     
+	   4 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 11    
+	   3 Input      2 Bit        Muxes := 2     
+	   5 Input      2 Bit        Muxes := 1     
+Module NoC_3D_Parallel_recv__4 
+Detailed RTL Component Info : 
++---Registers : 
+	               56 Bit    Registers := 1     
++---Muxes : 
+	   8 Input      3 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 43    
+	   3 Input      3 Bit        Muxes := 5     
+	   4 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 11    
+	   3 Input      2 Bit        Muxes := 2     
+	   5 Input      2 Bit        Muxes := 1     
+Module NoC_3D_Parallel_recv__5 
+Detailed RTL Component Info : 
++---Registers : 
+	               56 Bit    Registers := 1     
++---Muxes : 
+	   8 Input      3 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 43    
+	   3 Input      3 Bit        Muxes := 5     
+	   4 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 11    
+	   3 Input      2 Bit        Muxes := 2     
+	   5 Input      2 Bit        Muxes := 1     
+Module NoC_3D_Parallel_recv__6 
+Detailed RTL Component Info : 
++---Registers : 
+	               56 Bit    Registers := 1     
++---Muxes : 
+	   8 Input      3 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 43    
+	   3 Input      3 Bit        Muxes := 5     
+	   4 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 11    
+	   3 Input      2 Bit        Muxes := 2     
+	   5 Input      2 Bit        Muxes := 1     
+Module NoC_3D_Parallel_recv 
+Detailed RTL Component Info : 
++---Registers : 
+	               56 Bit    Registers := 1     
++---Muxes : 
+	   8 Input      3 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 43    
+	   3 Input      3 Bit        Muxes := 5     
+	   4 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 11    
+	   3 Input      2 Bit        Muxes := 2     
+	   5 Input      2 Bit        Muxes := 1     
+Module NoC_3D_Parallel_xmitter__15 
+Detailed RTL Component Info : 
++---Registers : 
+	               56 Bit    Registers := 1     
+Module NoC_3D_Parallel_xmitter__16 
+Detailed RTL Component Info : 
++---Registers : 
+	               56 Bit    Registers := 1     
+Module NoC_3D_Parallel_xmitter__17 
+Detailed RTL Component Info : 
++---Registers : 
+	               56 Bit    Registers := 1     
+Module NoC_3D_Parallel_xmitter__18 
+Detailed RTL Component Info : 
++---Registers : 
+	               56 Bit    Registers := 1     
+Module NoC_3D_Parallel_xmitter__19 
+Detailed RTL Component Info : 
++---Registers : 
+	               56 Bit    Registers := 1     
+Module NoC_3D_Parallel_xmitter__20 
+Detailed RTL Component Info : 
++---Registers : 
+	               56 Bit    Registers := 1     
+Module NoC_3D_Parallel_xmitter__21 
+Detailed RTL Component Info : 
++---Registers : 
+	               56 Bit    Registers := 1     
+Module NoC_3D_Parallel_Switch 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	                3 Bit    Registers := 14    
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   3 Input      3 Bit        Muxes := 7     
+	   2 Input      3 Bit        Muxes := 1302  
+	   2 Input      2 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 38    
+	   3 Input      1 Bit        Muxes := 6     
+	   2 Input      1 Bit        Muxes := 8     
+Module NoC_3D_Parallel_recv__parameterized0 
+Detailed RTL Component Info : 
++---Registers : 
+	               56 Bit    Registers := 1     
++---Muxes : 
+	   8 Input      3 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 43    
+	   3 Input      3 Bit        Muxes := 5     
+	   4 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 11    
+	   3 Input      2 Bit        Muxes := 2     
+	   5 Input      2 Bit        Muxes := 1     
+Module NoC_3D_Parallel_recv__parameterized1 
+Detailed RTL Component Info : 
++---Registers : 
+	               56 Bit    Registers := 1     
++---Muxes : 
+	   8 Input      3 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 43    
+	   3 Input      3 Bit        Muxes := 5     
+	   4 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 11    
+	   3 Input      2 Bit        Muxes := 2     
+	   5 Input      2 Bit        Muxes := 1     
+Module NoC_3D_Parallel_recv__parameterized2 
+Detailed RTL Component Info : 
++---Registers : 
+	               56 Bit    Registers := 1     
++---Muxes : 
+	   8 Input      3 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 43    
+	   3 Input      3 Bit        Muxes := 5     
+	   4 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 11    
+	   3 Input      2 Bit        Muxes := 2     
+	   5 Input      2 Bit        Muxes := 1     
+Module NoC_3D_Parallel_recv__parameterized3 
+Detailed RTL Component Info : 
++---Registers : 
+	               56 Bit    Registers := 1     
++---Muxes : 
+	   8 Input      3 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 43    
+	   3 Input      3 Bit        Muxes := 5     
+	   4 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 11    
+	   3 Input      2 Bit        Muxes := 2     
+	   5 Input      2 Bit        Muxes := 1     
+Module NoC_3D_Parallel_recv__parameterized4 
+Detailed RTL Component Info : 
++---Registers : 
+	               56 Bit    Registers := 1     
++---Muxes : 
+	   8 Input      3 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 43    
+	   3 Input      3 Bit        Muxes := 5     
+	   4 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 11    
+	   3 Input      2 Bit        Muxes := 2     
+	   5 Input      2 Bit        Muxes := 1     
+Module NoC_3D_Parallel_recv__parameterized5 
+Detailed RTL Component Info : 
++---Registers : 
+	               56 Bit    Registers := 1     
++---Muxes : 
+	   8 Input      3 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 43    
+	   3 Input      3 Bit        Muxes := 5     
+	   4 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 11    
+	   3 Input      2 Bit        Muxes := 2     
+	   5 Input      2 Bit        Muxes := 1     
+Module NoC_3D_Parallel_recv__parameterized6 
+Detailed RTL Component Info : 
++---Registers : 
+	               56 Bit    Registers := 1     
++---Muxes : 
+	   8 Input      3 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 43    
+	   3 Input      3 Bit        Muxes := 5     
+	   4 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 11    
+	   3 Input      2 Bit        Muxes := 2     
+	   5 Input      2 Bit        Muxes := 1     
+Module NoC_3D_Parallel_xmitter__8 
+Detailed RTL Component Info : 
++---Registers : 
+	               56 Bit    Registers := 1     
+Module NoC_3D_Parallel_xmitter__9 
+Detailed RTL Component Info : 
++---Registers : 
+	               56 Bit    Registers := 1     
+Module NoC_3D_Parallel_xmitter__10 
+Detailed RTL Component Info : 
++---Registers : 
+	               56 Bit    Registers := 1     
+Module NoC_3D_Parallel_xmitter__11 
+Detailed RTL Component Info : 
++---Registers : 
+	               56 Bit    Registers := 1     
+Module NoC_3D_Parallel_xmitter__12 
+Detailed RTL Component Info : 
++---Registers : 
+	               56 Bit    Registers := 1     
+Module NoC_3D_Parallel_xmitter__13 
+Detailed RTL Component Info : 
++---Registers : 
+	               56 Bit    Registers := 1     
+Module NoC_3D_Parallel_xmitter__14 
+Detailed RTL Component Info : 
++---Registers : 
+	               56 Bit    Registers := 1     
+Module NoC_3D_Parallel_Switch__parameterized1 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	                3 Bit    Registers := 14    
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   3 Input      3 Bit        Muxes := 7     
+	   2 Input      3 Bit        Muxes := 1302  
+	   2 Input      2 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 38    
+	   3 Input      1 Bit        Muxes := 6     
+	   2 Input      1 Bit        Muxes := 8     
+Module NoC_3D_Parallel_recv__parameterized14 
+Detailed RTL Component Info : 
++---Registers : 
+	               56 Bit    Registers := 1     
++---Muxes : 
+	   8 Input      3 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 43    
+	   3 Input      3 Bit        Muxes := 5     
+	   4 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 11    
+	   3 Input      2 Bit        Muxes := 2     
+	   5 Input      2 Bit        Muxes := 1     
+Module NoC_3D_Parallel_recv__parameterized15 
+Detailed RTL Component Info : 
++---Registers : 
+	               56 Bit    Registers := 1     
++---Muxes : 
+	   8 Input      3 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 43    
+	   3 Input      3 Bit        Muxes := 5     
+	   4 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 11    
+	   3 Input      2 Bit        Muxes := 2     
+	   5 Input      2 Bit        Muxes := 1     
+Module NoC_3D_Parallel_recv__parameterized16 
+Detailed RTL Component Info : 
++---Registers : 
+	               56 Bit    Registers := 1     
++---Muxes : 
+	   8 Input      3 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 43    
+	   3 Input      3 Bit        Muxes := 5     
+	   4 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 11    
+	   3 Input      2 Bit        Muxes := 2     
+	   5 Input      2 Bit        Muxes := 1     
+Module NoC_3D_Parallel_recv__parameterized17 
+Detailed RTL Component Info : 
++---Registers : 
+	               56 Bit    Registers := 1     
++---Muxes : 
+	   8 Input      3 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 43    
+	   3 Input      3 Bit        Muxes := 5     
+	   4 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 11    
+	   3 Input      2 Bit        Muxes := 2     
+	   5 Input      2 Bit        Muxes := 1     
+Module NoC_3D_Parallel_recv__parameterized18 
+Detailed RTL Component Info : 
++---Registers : 
+	               56 Bit    Registers := 1     
++---Muxes : 
+	   8 Input      3 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 43    
+	   3 Input      3 Bit        Muxes := 5     
+	   4 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 11    
+	   3 Input      2 Bit        Muxes := 2     
+	   5 Input      2 Bit        Muxes := 1     
+Module NoC_3D_Parallel_recv__parameterized19 
+Detailed RTL Component Info : 
++---Registers : 
+	               56 Bit    Registers := 1     
++---Muxes : 
+	   8 Input      3 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 43    
+	   3 Input      3 Bit        Muxes := 5     
+	   4 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 11    
+	   3 Input      2 Bit        Muxes := 2     
+	   5 Input      2 Bit        Muxes := 1     
+Module NoC_3D_Parallel_recv__parameterized20 
+Detailed RTL Component Info : 
++---Registers : 
+	               56 Bit    Registers := 1     
++---Muxes : 
+	   8 Input      3 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 43    
+	   3 Input      3 Bit        Muxes := 5     
+	   4 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 11    
+	   3 Input      2 Bit        Muxes := 2     
+	   5 Input      2 Bit        Muxes := 1     
+Module NoC_3D_Parallel_xmitter__1 
+Detailed RTL Component Info : 
++---Registers : 
+	               56 Bit    Registers := 1     
+Module NoC_3D_Parallel_xmitter__2 
+Detailed RTL Component Info : 
++---Registers : 
+	               56 Bit    Registers := 1     
+Module NoC_3D_Parallel_xmitter__3 
+Detailed RTL Component Info : 
++---Registers : 
+	               56 Bit    Registers := 1     
+Module NoC_3D_Parallel_xmitter__4 
+Detailed RTL Component Info : 
++---Registers : 
+	               56 Bit    Registers := 1     
+Module NoC_3D_Parallel_xmitter__5 
+Detailed RTL Component Info : 
++---Registers : 
+	               56 Bit    Registers := 1     
+Module NoC_3D_Parallel_xmitter__6 
+Detailed RTL Component Info : 
++---Registers : 
+	               56 Bit    Registers := 1     
+Module NoC_3D_Parallel_xmitter__7 
+Detailed RTL Component Info : 
++---Registers : 
+	               56 Bit    Registers := 1     
+Module NoC_3D_Parallel_Switch__parameterized5 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	                3 Bit    Registers := 14    
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   3 Input      3 Bit        Muxes := 7     
+	   2 Input      3 Bit        Muxes := 1302  
+	   2 Input      2 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 38    
+	   3 Input      1 Bit        Muxes := 6     
+	   2 Input      1 Bit        Muxes := 8     
+Module kth_2DNoC_2x2x1_c1_v1_0 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     31 Bit       Adders := 1     
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     31 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3886] merging instance 'NOCi_0/UX[1].UY[1].UZ[0].UD/recv[5].dir/G0.mem_reg[0]' (FDRE) to 'NOCi_0/UX[1].UY[1].UZ[0].UD/recv[5].dir/G0.mem_reg[55]'
+INFO: [Synth 8-3886] merging instance 'NOCi_0/UX[1].UY[1].UZ[0].UD/recv[4].dir/G0.mem_reg[0]' (FDRE) to 'NOCi_0/UX[1].UY[1].UZ[0].UD/recv[4].dir/G0.mem_reg[55]'
+INFO: [Synth 8-3886] merging instance 'NOCi_0/UX[1].UY[1].UZ[0].UD/recv[2].dir/G0.mem_reg[0]' (FDRE) to 'NOCi_0/UX[1].UY[1].UZ[0].UD/recv[2].dir/G0.mem_reg[55]'
+INFO: [Synth 8-3886] merging instance 'NOCi_0/UX[1].UY[1].UZ[0].UD/recv[0].dir/G0.mem_reg[0]' (FDRE) to 'NOCi_0/UX[1].UY[1].UZ[0].UD/recv[0].dir/G0.mem_reg[55]'
+INFO: [Synth 8-3886] merging instance 'NOCi_0/UX[1].UY[1].UZ[0].UD/recv[5].dir/G0.mem_reg[1]' (FDRE) to 'NOCi_0/UX[1].UY[1].UZ[0].UD/recv[5].dir/G0.mem_reg[55]'
+INFO: [Synth 8-3886] merging instance 'NOCi_0/UX[1].UY[1].UZ[0].UD/recv[4].dir/G0.mem_reg[1]' (FDRE) to 'NOCi_0/UX[1].UY[1].UZ[0].UD/recv[4].dir/G0.mem_reg[55]'
+INFO: [Synth 8-3886] merging instance 'NOCi_0/UX[1].UY[1].UZ[0].UD/recv[2].dir/G0.mem_reg[1]' (FDRE) to 'NOCi_0/UX[1].UY[1].UZ[0].UD/recv[2].dir/G0.mem_reg[55]'
+INFO: [Synth 8-3886] merging instance 'NOCi_0/UX[1].UY[1].UZ[0].UD/recv[0].dir/G0.mem_reg[1]' (FDRE) to 'NOCi_0/UX[1].UY[1].UZ[0].UD/recv[0].dir/G0.mem_reg[55]'
+INFO: [Synth 8-3886] merging instance 'NOCi_0/UX[1].UY[1].UZ[0].UD/recv[5].dir/G0.mem_reg[2]' (FDRE) to 'NOCi_0/UX[1].UY[1].UZ[0].UD/recv[5].dir/G0.mem_reg[55]'
+INFO: [Synth 8-3886] merging instance 'NOCi_0/UX[1].UY[1].UZ[0].UD/recv[4].dir/G0.mem_reg[2]' (FDRE) to 'NOCi_0/UX[1].UY[1].UZ[0].UD/recv[4].dir/G0.mem_reg[55]'
+INFO: [Synth 8-3886] merging instance 'NOCi_0/UX[1].UY[1].UZ[0].UD/recv[2].dir/G0.mem_reg[2]' (FDRE) to 'NOCi_0/UX[1].UY[1].UZ[0].UD/recv[2].dir/G0.mem_reg[55]'
+INFO: [Synth 8-3886] merging instance 'NOCi_0/UX[1].UY[1].UZ[0].UD/recv[0].dir/G0.mem_reg[2]' (FDRE) to 'NOCi_0/UX[1].UY[1].UZ[0].UD/recv[0].dir/G0.mem_reg[55]'
+INFO: [Synth 8-3886] merging instance 'NOCi_0/UX[1].UY[1].UZ[0].UD/recv[5].dir/G0.mem_reg[3]' (FDRE) to 'NOCi_0/UX[1].UY[1].UZ[0].UD/recv[5].dir/G0.mem_reg[55]'
+INFO: [Synth 8-3886] merging instance 'NOCi_0/UX[1].UY[1].UZ[0].UD/recv[4].dir/G0.mem_reg[3]' (FDRE) to 'NOCi_0/UX[1].UY[1].UZ[0].UD/recv[4].dir/G0.mem_reg[55]'
+INFO: [Synth 8-3886] merging instance 'NOCi_0/UX[1].UY[1].UZ[0].UD/recv[2].dir/G0.mem_reg[3]' (FDRE) to 'NOCi_0/UX[1].UY[1].UZ[0].UD/recv[2].dir/G0.mem_reg[55]'
+INFO: [Synth 8-3886] merging instance 'NOCi_0/UX[1].UY[1].UZ[0].UD/recv[0].dir/G0.mem_reg[3]' (FDRE) to 'NOCi_0/UX[1].UY[1].UZ[0].UD/recv[0].dir/G0.mem_reg[55]'
+INFO: [Synth 8-3886] merging instance 'NOCi_0/UX[1].UY[1].UZ[0].UD/recv[5].dir/G0.mem_reg[4]' (FDRE) to 'NOCi_0/UX[1].UY[1].UZ[0].UD/recv[5].dir/G0.mem_reg[55]'
+INFO: [Synth 8-3886] merging instance 'NOCi_0/UX[1].UY[1].UZ[0].UD/recv[4].dir/G0.mem_reg[4]' (FDRE) to 'NOCi_0/UX[1].UY[1].UZ[0].UD/recv[4].dir/G0.mem_reg[55]'
+INFO: [Synth 8-3886] merging instance 'NOCi_0/UX[1].UY[1].UZ[0].UD/recv[2].dir/G0.mem_reg[4]' (FDRE) to 'NOCi_0/UX[1].UY[1].UZ[0].UD/recv[2].dir/G0.mem_reg[55]'
+INFO: [Synth 8-3886] merging instance 'NOCi_0/UX[1].UY[1].UZ[0].UD/recv[0].dir/G0.mem_reg[4]' (FDRE) to 'NOCi_0/UX[1].UY[1].UZ[0].UD/recv[0].dir/G0.mem_reg[55]'
+INFO: [Synth 8-3886] merging instance 'NOCi_0/UX[1].UY[1].UZ[0].UD/recv[5].dir/G0.mem_reg[5]' (FDRE) to 'NOCi_0/UX[1].UY[1].UZ[0].UD/recv[5].dir/G0.mem_reg[55]'
+INFO: [Synth 8-3886] merging instance 'NOCi_0/UX[1].UY[1].UZ[0].UD/recv[4].dir/G0.mem_reg[5]' (FDRE) to 'NOCi_0/UX[1].UY[1].UZ[0].UD/recv[4].dir/G0.mem_reg[55]'
+INFO: [Synth 8-3886] merging instance 'NOCi_0/UX[1].UY[1].UZ[0].UD/recv[2].dir/G0.mem_reg[5]' (FDRE) to 'NOCi_0/UX[1].UY[1].UZ[0].UD/recv[2].dir/G0.mem_reg[55]'
+INFO: [Synth 8-3886] merging instance 'NOCi_0/UX[1].UY[1].UZ[0].UD/recv[0].dir/G0.mem_reg[5]' (FDRE) to 'NOCi_0/UX[1].UY[1].UZ[0].UD/recv[0].dir/G0.mem_reg[55]'
+INFO: [Synth 8-3886] merging instance 'NOCi_0/UX[1].UY[1].UZ[0].UD/recv[5].dir/G0.mem_reg[6]' (FDRE) to 'NOCi_0/UX[1].UY[1].UZ[0].UD/recv[5].dir/G0.mem_reg[55]'
+INFO: [Synth 8-3886] merging instance 'NOCi_0/UX[1].UY[1].UZ[0].UD/recv[4].dir/G0.mem_reg[6]' (FDRE) to 'NOCi_0/UX[1].UY[1].UZ[0].UD/recv[4].dir/G0.mem_reg[55]'
+INFO: [Synth 8-3886] merging instance 'NOCi_0/UX[1].UY[1].UZ[0].UD/recv[2].dir/G0.mem_reg[6]' (FDRE) to 'NOCi_0/UX[1].UY[1].UZ[0].UD/recv[2].dir/G0.mem_reg[55]'
+INFO: [Synth 8-3886] merging instance 'NOCi_0/UX[1].UY[1].UZ[0].UD/recv[0].dir/G0.mem_reg[6]' (FDRE) to 'NOCi_0/UX[1].UY[1].UZ[0].UD/recv[0].dir/G0.mem_reg[55]'
+INFO: [Synth 8-3886] merging instance 'NOCi_0/UX[1].UY[1].UZ[0].UD/recv[5].dir/G0.mem_reg[7]' (FDRE) to 'NOCi_0/UX[1].UY[1].UZ[0].UD/recv[5].dir/G0.mem_reg[55]'
+INFO: [Synth 8-3886] merging instance 'NOCi_0/UX[1].UY[1].UZ[0].UD/recv[4].dir/G0.mem_reg[7]' (FDRE) to 'NOCi_0/UX[1].UY[1].UZ[0].UD/recv[4].dir/G0.mem_reg[55]'
+INFO: [Synth 8-3886] merging instance 'NOCi_0/UX[1].UY[1].UZ[0].UD/recv[2].dir/G0.mem_reg[7]' (FDRE) to 'NOCi_0/UX[1].UY[1].UZ[0].UD/recv[2].dir/G0.mem_reg[55]'
+INFO: [Synth 8-3886] merging instance 'NOCi_0/UX[1].UY[1].UZ[0].UD/recv[0].dir/G0.mem_reg[7]' (FDRE) to 'NOCi_0/UX[1].UY[1].UZ[0].UD/recv[0].dir/G0.mem_reg[55]'
+INFO: [Synth 8-3886] merging instance 'NOCi_0/UX[1].UY[1].UZ[0].UD/recv[5].dir/G0.mem_reg[8]' (FDRE) to 'NOCi_0/UX[1].UY[1].UZ[0].UD/recv[5].dir/G0.mem_reg[55]'
+INFO: [Synth 8-3886] merging instance 'NOCi_0/UX[1].UY[1].UZ[0].UD/recv[4].dir/G0.mem_reg[8]' (FDRE) to 'NOCi_0/UX[1].UY[1].UZ[0].UD/recv[4].dir/G0.mem_reg[55]'
+INFO: [Synth 8-3886] merging instance 'NOCi_0/UX[1].UY[1].UZ[0].UD/recv[2].dir/G0.mem_reg[8]' (FDRE) to 'NOCi_0/UX[1].UY[1].UZ[0].UD/recv[2].dir/G0.mem_reg[55]'
+INFO: [Synth 8-3886] merging instance 'NOCi_0/UX[1].UY[1].UZ[0].UD/recv[0].dir/G0.mem_reg[8]' (FDRE) to 'NOCi_0/UX[1].UY[1].UZ[0].UD/recv[0].dir/G0.mem_reg[55]'
+INFO: [Synth 8-3886] merging instance 'NOCi_0/UX[1].UY[1].UZ[0].UD/recv[5].dir/G0.mem_reg[9]' (FDRE) to 'NOCi_0/UX[1].UY[1].UZ[0].UD/recv[5].dir/G0.mem_reg[55]'
+INFO: [Synth 8-3886] merging instance 'NOCi_0/UX[1].UY[1].UZ[0].UD/recv[4].dir/G0.mem_reg[9]' (FDRE) to 'NOCi_0/UX[1].UY[1].UZ[0].UD/recv[4].dir/G0.mem_reg[55]'
+INFO: [Synth 8-3886] merging instance 'NOCi_0/UX[1].UY[1].UZ[0].UD/recv[2].dir/G0.mem_reg[9]' (FDRE) to 'NOCi_0/UX[1].UY[1].UZ[0].UD/recv[2].dir/G0.mem_reg[55]'
+INFO: [Synth 8-3886] merging instance 'NOCi_0/UX[1].UY[1].UZ[0].UD/recv[0].dir/G0.mem_reg[9]' (FDRE) to 'NOCi_0/UX[1].UY[1].UZ[0].UD/recv[0].dir/G0.mem_reg[55]'
+INFO: [Synth 8-3886] merging instance 'NOCi_0/UX[1].UY[1].UZ[0].UD/recv[5].dir/G0.mem_reg[10]' (FDRE) to 'NOCi_0/UX[1].UY[1].UZ[0].UD/recv[5].dir/G0.mem_reg[55]'
+INFO: [Synth 8-3886] merging instance 'NOCi_0/UX[1].UY[1].UZ[0].UD/recv[4].dir/G0.mem_reg[10]' (FDRE) to 'NOCi_0/UX[1].UY[1].UZ[0].UD/recv[4].dir/G0.mem_reg[55]'
+INFO: [Synth 8-3886] merging instance 'NOCi_0/UX[1].UY[1].UZ[0].UD/recv[2].dir/G0.mem_reg[10]' (FDRE) to 'NOCi_0/UX[1].UY[1].UZ[0].UD/recv[2].dir/G0.mem_reg[55]'
+INFO: [Synth 8-3886] merging instance 'NOCi_0/UX[1].UY[1].UZ[0].UD/recv[0].dir/G0.mem_reg[10]' (FDRE) to 'NOCi_0/UX[1].UY[1].UZ[0].UD/recv[0].dir/G0.mem_reg[55]'
+INFO: [Synth 8-3886] merging instance 'NOCi_0/UX[1].UY[1].UZ[0].UD/recv[5].dir/G0.mem_reg[11]' (FDRE) to 'NOCi_0/UX[1].UY[1].UZ[0].UD/recv[5].dir/G0.mem_reg[55]'
+INFO: [Synth 8-3886] merging instance 'NOCi_0/UX[1].UY[1].UZ[0].UD/recv[4].dir/G0.mem_reg[11]' (FDRE) to 'NOCi_0/UX[1].UY[1].UZ[0].UD/recv[4].dir/G0.mem_reg[55]'
+INFO: [Synth 8-3886] merging instance 'NOCi_0/UX[1].UY[1].UZ[0].UD/recv[2].dir/G0.mem_reg[11]' (FDRE) to 'NOCi_0/UX[1].UY[1].UZ[0].UD/recv[2].dir/G0.mem_reg[55]'
+INFO: [Synth 8-3886] merging instance 'NOCi_0/UX[1].UY[1].UZ[0].UD/recv[0].dir/G0.mem_reg[11]' (FDRE) to 'NOCi_0/UX[1].UY[1].UZ[0].UD/recv[0].dir/G0.mem_reg[55]'
+INFO: [Synth 8-3886] merging instance 'NOCi_0/UX[1].UY[1].UZ[0].UD/recv[5].dir/G0.mem_reg[12]' (FDRE) to 'NOCi_0/UX[1].UY[1].UZ[0].UD/recv[5].dir/G0.mem_reg[55]'
+INFO: [Synth 8-3886] merging instance 'NOCi_0/UX[1].UY[1].UZ[0].UD/recv[4].dir/G0.mem_reg[12]' (FDRE) to 'NOCi_0/UX[1].UY[1].UZ[0].UD/recv[4].dir/G0.mem_reg[55]'
+INFO: [Synth 8-3886] merging instance 'NOCi_0/UX[1].UY[1].UZ[0].UD/recv[2].dir/G0.mem_reg[12]' (FDRE) to 'NOCi_0/UX[1].UY[1].UZ[0].UD/recv[2].dir/G0.mem_reg[55]'
+INFO: [Synth 8-3886] merging instance 'NOCi_0/UX[1].UY[1].UZ[0].UD/recv[0].dir/G0.mem_reg[12]' (FDRE) to 'NOCi_0/UX[1].UY[1].UZ[0].UD/recv[0].dir/G0.mem_reg[55]'
+INFO: [Synth 8-3886] merging instance 'NOCi_0/UX[1].UY[1].UZ[0].UD/recv[5].dir/G0.mem_reg[13]' (FDRE) to 'NOCi_0/UX[1].UY[1].UZ[0].UD/recv[5].dir/G0.mem_reg[55]'
+INFO: [Synth 8-3886] merging instance 'NOCi_0/UX[1].UY[1].UZ[0].UD/recv[4].dir/G0.mem_reg[13]' (FDRE) to 'NOCi_0/UX[1].UY[1].UZ[0].UD/recv[4].dir/G0.mem_reg[55]'
+INFO: [Synth 8-3886] merging instance 'NOCi_0/UX[1].UY[1].UZ[0].UD/recv[2].dir/G0.mem_reg[13]' (FDRE) to 'NOCi_0/UX[1].UY[1].UZ[0].UD/recv[2].dir/G0.mem_reg[55]'
+INFO: [Synth 8-3886] merging instance 'NOCi_0/UX[1].UY[1].UZ[0].UD/recv[0].dir/G0.mem_reg[13]' (FDRE) to 'NOCi_0/UX[1].UY[1].UZ[0].UD/recv[0].dir/G0.mem_reg[55]'
+INFO: [Synth 8-3886] merging instance 'NOCi_0/UX[1].UY[1].UZ[0].UD/recv[5].dir/G0.mem_reg[14]' (FDRE) to 'NOCi_0/UX[1].UY[1].UZ[0].UD/recv[5].dir/G0.mem_reg[55]'
+INFO: [Synth 8-3886] merging instance 'NOCi_0/UX[1].UY[1].UZ[0].UD/recv[4].dir/G0.mem_reg[14]' (FDRE) to 'NOCi_0/UX[1].UY[1].UZ[0].UD/recv[4].dir/G0.mem_reg[55]'
+INFO: [Synth 8-3886] merging instance 'NOCi_0/UX[1].UY[1].UZ[0].UD/recv[2].dir/G0.mem_reg[14]' (FDRE) to 'NOCi_0/UX[1].UY[1].UZ[0].UD/recv[2].dir/G0.mem_reg[55]'
+INFO: [Synth 8-3886] merging instance 'NOCi_0/UX[1].UY[1].UZ[0].UD/recv[0].dir/G0.mem_reg[14]' (FDRE) to 'NOCi_0/UX[1].UY[1].UZ[0].UD/recv[0].dir/G0.mem_reg[55]'
+INFO: [Synth 8-3886] merging instance 'NOCi_0/UX[1].UY[1].UZ[0].UD/recv[5].dir/G0.mem_reg[15]' (FDRE) to 'NOCi_0/UX[1].UY[1].UZ[0].UD/recv[5].dir/G0.mem_reg[55]'
+INFO: [Synth 8-3886] merging instance 'NOCi_0/UX[1].UY[1].UZ[0].UD/recv[4].dir/G0.mem_reg[15]' (FDRE) to 'NOCi_0/UX[1].UY[1].UZ[0].UD/recv[4].dir/G0.mem_reg[55]'
+INFO: [Synth 8-3886] merging instance 'NOCi_0/UX[1].UY[1].UZ[0].UD/recv[2].dir/G0.mem_reg[15]' (FDRE) to 'NOCi_0/UX[1].UY[1].UZ[0].UD/recv[2].dir/G0.mem_reg[55]'
+INFO: [Synth 8-3886] merging instance 'NOCi_0/UX[1].UY[1].UZ[0].UD/recv[0].dir/G0.mem_reg[15]' (FDRE) to 'NOCi_0/UX[1].UY[1].UZ[0].UD/recv[0].dir/G0.mem_reg[55]'
+INFO: [Synth 8-3886] merging instance 'NOCi_0/UX[1].UY[1].UZ[0].UD/recv[5].dir/G0.mem_reg[16]' (FDRE) to 'NOCi_0/UX[1].UY[1].UZ[0].UD/recv[5].dir/G0.mem_reg[55]'
+INFO: [Synth 8-3886] merging instance 'NOCi_0/UX[1].UY[1].UZ[0].UD/recv[4].dir/G0.mem_reg[16]' (FDRE) to 'NOCi_0/UX[1].UY[1].UZ[0].UD/recv[4].dir/G0.mem_reg[55]'
+INFO: [Synth 8-3886] merging instance 'NOCi_0/UX[1].UY[1].UZ[0].UD/recv[2].dir/G0.mem_reg[16]' (FDRE) to 'NOCi_0/UX[1].UY[1].UZ[0].UD/recv[2].dir/G0.mem_reg[55]'
+INFO: [Synth 8-3886] merging instance 'NOCi_0/UX[1].UY[1].UZ[0].UD/recv[0].dir/G0.mem_reg[16]' (FDRE) to 'NOCi_0/UX[1].UY[1].UZ[0].UD/recv[0].dir/G0.mem_reg[55]'
+INFO: [Synth 8-3886] merging instance 'NOCi_0/UX[1].UY[1].UZ[0].UD/recv[5].dir/G0.mem_reg[17]' (FDRE) to 'NOCi_0/UX[1].UY[1].UZ[0].UD/recv[5].dir/G0.mem_reg[55]'
+INFO: [Synth 8-3886] merging instance 'NOCi_0/UX[1].UY[1].UZ[0].UD/recv[4].dir/G0.mem_reg[17]' (FDRE) to 'NOCi_0/UX[1].UY[1].UZ[0].UD/recv[4].dir/G0.mem_reg[55]'
+INFO: [Synth 8-3886] merging instance 'NOCi_0/UX[1].UY[1].UZ[0].UD/recv[2].dir/G0.mem_reg[17]' (FDRE) to 'NOCi_0/UX[1].UY[1].UZ[0].UD/recv[2].dir/G0.mem_reg[55]'
+INFO: [Synth 8-3886] merging instance 'NOCi_0/UX[1].UY[1].UZ[0].UD/recv[0].dir/G0.mem_reg[17]' (FDRE) to 'NOCi_0/UX[1].UY[1].UZ[0].UD/recv[0].dir/G0.mem_reg[55]'
+INFO: [Synth 8-3886] merging instance 'NOCi_0/UX[1].UY[1].UZ[0].UD/recv[5].dir/G0.mem_reg[18]' (FDRE) to 'NOCi_0/UX[1].UY[1].UZ[0].UD/recv[5].dir/G0.mem_reg[55]'
+INFO: [Synth 8-3886] merging instance 'NOCi_0/UX[1].UY[1].UZ[0].UD/recv[4].dir/G0.mem_reg[18]' (FDRE) to 'NOCi_0/UX[1].UY[1].UZ[0].UD/recv[4].dir/G0.mem_reg[55]'
+INFO: [Synth 8-3886] merging instance 'NOCi_0/UX[1].UY[1].UZ[0].UD/recv[2].dir/G0.mem_reg[18]' (FDRE) to 'NOCi_0/UX[1].UY[1].UZ[0].UD/recv[2].dir/G0.mem_reg[55]'
+INFO: [Synth 8-3886] merging instance 'NOCi_0/UX[1].UY[1].UZ[0].UD/recv[0].dir/G0.mem_reg[18]' (FDRE) to 'NOCi_0/UX[1].UY[1].UZ[0].UD/recv[0].dir/G0.mem_reg[55]'
+INFO: [Synth 8-3886] merging instance 'NOCi_0/UX[1].UY[1].UZ[0].UD/recv[5].dir/G0.mem_reg[19]' (FDRE) to 'NOCi_0/UX[1].UY[1].UZ[0].UD/recv[5].dir/G0.mem_reg[55]'
+INFO: [Synth 8-3886] merging instance 'NOCi_0/UX[1].UY[1].UZ[0].UD/recv[4].dir/G0.mem_reg[19]' (FDRE) to 'NOCi_0/UX[1].UY[1].UZ[0].UD/recv[4].dir/G0.mem_reg[55]'
+INFO: [Synth 8-3886] merging instance 'NOCi_0/UX[1].UY[1].UZ[0].UD/recv[2].dir/G0.mem_reg[19]' (FDRE) to 'NOCi_0/UX[1].UY[1].UZ[0].UD/recv[2].dir/G0.mem_reg[55]'
+INFO: [Synth 8-3886] merging instance 'NOCi_0/UX[1].UY[1].UZ[0].UD/recv[0].dir/G0.mem_reg[19]' (FDRE) to 'NOCi_0/UX[1].UY[1].UZ[0].UD/recv[0].dir/G0.mem_reg[55]'
+INFO: [Synth 8-3886] merging instance 'NOCi_0/UX[1].UY[1].UZ[0].UD/recv[5].dir/G0.mem_reg[20]' (FDRE) to 'NOCi_0/UX[1].UY[1].UZ[0].UD/recv[5].dir/G0.mem_reg[55]'
+INFO: [Synth 8-3886] merging instance 'NOCi_0/UX[1].UY[1].UZ[0].UD/recv[4].dir/G0.mem_reg[20]' (FDRE) to 'NOCi_0/UX[1].UY[1].UZ[0].UD/recv[4].dir/G0.mem_reg[55]'
+INFO: [Synth 8-3886] merging instance 'NOCi_0/UX[1].UY[1].UZ[0].UD/recv[2].dir/G0.mem_reg[20]' (FDRE) to 'NOCi_0/UX[1].UY[1].UZ[0].UD/recv[2].dir/G0.mem_reg[55]'
+INFO: [Synth 8-3886] merging instance 'NOCi_0/UX[1].UY[1].UZ[0].UD/recv[0].dir/G0.mem_reg[20]' (FDRE) to 'NOCi_0/UX[1].UY[1].UZ[0].UD/recv[0].dir/G0.mem_reg[55]'
+INFO: [Synth 8-3886] merging instance 'NOCi_0/UX[1].UY[1].UZ[0].UD/recv[5].dir/G0.mem_reg[21]' (FDRE) to 'NOCi_0/UX[1].UY[1].UZ[0].UD/recv[5].dir/G0.mem_reg[55]'
+INFO: [Synth 8-3886] merging instance 'NOCi_0/UX[1].UY[1].UZ[0].UD/recv[4].dir/G0.mem_reg[21]' (FDRE) to 'NOCi_0/UX[1].UY[1].UZ[0].UD/recv[4].dir/G0.mem_reg[55]'
+INFO: [Synth 8-3886] merging instance 'NOCi_0/UX[1].UY[1].UZ[0].UD/recv[2].dir/G0.mem_reg[21]' (FDRE) to 'NOCi_0/UX[1].UY[1].UZ[0].UD/recv[2].dir/G0.mem_reg[55]'
+INFO: [Synth 8-3886] merging instance 'NOCi_0/UX[1].UY[1].UZ[0].UD/recv[0].dir/G0.mem_reg[21]' (FDRE) to 'NOCi_0/UX[1].UY[1].UZ[0].UD/recv[0].dir/G0.mem_reg[55]'
+INFO: [Synth 8-3886] merging instance 'NOCi_0/UX[1].UY[1].UZ[0].UD/recv[5].dir/G0.mem_reg[22]' (FDRE) to 'NOCi_0/UX[1].UY[1].UZ[0].UD/recv[5].dir/G0.mem_reg[55]'
+INFO: [Synth 8-3886] merging instance 'NOCi_0/UX[1].UY[1].UZ[0].UD/recv[4].dir/G0.mem_reg[22]' (FDRE) to 'NOCi_0/UX[1].UY[1].UZ[0].UD/recv[4].dir/G0.mem_reg[55]'
+INFO: [Synth 8-3886] merging instance 'NOCi_0/UX[1].UY[1].UZ[0].UD/recv[2].dir/G0.mem_reg[22]' (FDRE) to 'NOCi_0/UX[1].UY[1].UZ[0].UD/recv[2].dir/G0.mem_reg[55]'
+INFO: [Synth 8-3886] merging instance 'NOCi_0/UX[1].UY[1].UZ[0].UD/recv[0].dir/G0.mem_reg[22]' (FDRE) to 'NOCi_0/UX[1].UY[1].UZ[0].UD/recv[0].dir/G0.mem_reg[55]'
+INFO: [Synth 8-3886] merging instance 'NOCi_0/UX[1].UY[1].UZ[0].UD/recv[5].dir/G0.mem_reg[23]' (FDRE) to 'NOCi_0/UX[1].UY[1].UZ[0].UD/recv[5].dir/G0.mem_reg[55]'
+INFO: [Synth 8-3886] merging instance 'NOCi_0/UX[1].UY[1].UZ[0].UD/recv[4].dir/G0.mem_reg[23]' (FDRE) to 'NOCi_0/UX[1].UY[1].UZ[0].UD/recv[4].dir/G0.mem_reg[55]'
+INFO: [Synth 8-3886] merging instance 'NOCi_0/UX[1].UY[1].UZ[0].UD/recv[2].dir/G0.mem_reg[23]' (FDRE) to 'NOCi_0/UX[1].UY[1].UZ[0].UD/recv[2].dir/G0.mem_reg[55]'
+INFO: [Synth 8-3886] merging instance 'NOCi_0/UX[1].UY[1].UZ[0].UD/recv[0].dir/G0.mem_reg[23]' (FDRE) to 'NOCi_0/UX[1].UY[1].UZ[0].UD/recv[0].dir/G0.mem_reg[55]'
+INFO: [Synth 8-3886] merging instance 'NOCi_0/UX[1].UY[1].UZ[0].UD/recv[5].dir/G0.mem_reg[24]' (FDRE) to 'NOCi_0/UX[1].UY[1].UZ[0].UD/recv[5].dir/G0.mem_reg[55]'
+INFO: [Synth 8-3886] merging instance 'NOCi_0/UX[1].UY[1].UZ[0].UD/recv[4].dir/G0.mem_reg[24]' (FDRE) to 'NOCi_0/UX[1].UY[1].UZ[0].UD/recv[4].dir/G0.mem_reg[55]'
+INFO: [Synth 8-3886] merging instance 'NOCi_0/UX[1].UY[1].UZ[0].UD/recv[2].dir/G0.mem_reg[24]' (FDRE) to 'NOCi_0/UX[1].UY[1].UZ[0].UD/recv[2].dir/G0.mem_reg[55]'
+INFO: [Synth 8-3886] merging instance 'NOCi_0/UX[1].UY[1].UZ[0].UD/recv[0].dir/G0.mem_reg[24]' (FDRE) to 'NOCi_0/UX[1].UY[1].UZ[0].UD/recv[0].dir/G0.mem_reg[55]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (NOCi_0/\UX[1].UY[1].UZ[0].UD /\recv[5].dir /\G0.mem_reg[55] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (NOCi_0/\UX[1].UY[1].UZ[0].UD /\recv[4].dir /\G0.mem_reg[55] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (NOCi_0/\UX[1].UY[1].UZ[0].UD /\recv[2].dir /\G0.mem_reg[55] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (NOCi_0/\UX[1].UY[1].UZ[0].UD /\recv[0].dir /\G0.mem_reg[55] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (NOCi_0/\UX[0].UY[1].UZ[0].UD /\recv[5].dir /\G0.mem_reg[55] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (NOCi_0/\UX[0].UY[1].UZ[0].UD /\recv[4].dir /\G0.mem_reg[55] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (NOCi_0/\UX[0].UY[1].UZ[0].UD /\recv[3].dir /\G0.mem_reg[55] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (NOCi_0/\UX[0].UY[1].UZ[0].UD /\recv[0].dir /\G0.mem_reg[55] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (NOCi_0/\UX[0].UY[0].UZ[0].UD /\recv[5].dir /\G0.mem_reg[55] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (NOCi_0/\UX[0].UY[0].UZ[0].UD /\recv[4].dir /\G0.mem_reg[55] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (NOCi_0/\UX[0].UY[0].UZ[0].UD /\recv[3].dir /\G0.mem_reg[55] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (NOCi_0/\UX[0].UY[0].UZ[0].UD /\recv[1].dir /\G0.mem_reg[55] )
+WARNING: [Synth 8-3332] Sequential element (G0.mem_reg[55]) is unused and will be removed from module NoC_3D_Parallel_recv__2.
+WARNING: [Synth 8-3332] Sequential element (G0.mem_reg[55]) is unused and will be removed from module NoC_3D_Parallel_recv__4.
+WARNING: [Synth 8-3332] Sequential element (G0.mem_reg[55]) is unused and will be removed from module NoC_3D_Parallel_recv__5.
+WARNING: [Synth 8-3332] Sequential element (G0.mem_reg[55]) is unused and will be removed from module NoC_3D_Parallel_recv__6.
+WARNING: [Synth 8-3332] Sequential element (pres_switch_matrix_reg[1][2]) is unused and will be removed from module NoC_3D_Parallel_Switch.
+WARNING: [Synth 8-3332] Sequential element (pres_switch_matrix_reg[1][1]) is unused and will be removed from module NoC_3D_Parallel_Switch.
+WARNING: [Synth 8-3332] Sequential element (pres_switch_matrix_reg[1][0]) is unused and will be removed from module NoC_3D_Parallel_Switch.
+WARNING: [Synth 8-3332] Sequential element (xmit[1].dir/mem_reg[55]) is unused and will be removed from module NoC_3D_Parallel_Switch.
+WARNING: [Synth 8-3332] Sequential element (xmit[1].dir/mem_reg[54]) is unused and will be removed from module NoC_3D_Parallel_Switch.
+WARNING: [Synth 8-3332] Sequential element (xmit[1].dir/mem_reg[53]) is unused and will be removed from module NoC_3D_Parallel_Switch.
+WARNING: [Synth 8-3332] Sequential element (xmit[1].dir/mem_reg[52]) is unused and will be removed from module NoC_3D_Parallel_Switch.
+WARNING: [Synth 8-3332] Sequential element (xmit[1].dir/mem_reg[51]) is unused and will be removed from module NoC_3D_Parallel_Switch.
+WARNING: [Synth 8-3332] Sequential element (xmit[1].dir/mem_reg[50]) is unused and will be removed from module NoC_3D_Parallel_Switch.
+WARNING: [Synth 8-3332] Sequential element (xmit[1].dir/mem_reg[49]) is unused and will be removed from module NoC_3D_Parallel_Switch.
+WARNING: [Synth 8-3332] Sequential element (xmit[1].dir/mem_reg[48]) is unused and will be removed from module NoC_3D_Parallel_Switch.
+WARNING: [Synth 8-3332] Sequential element (xmit[1].dir/mem_reg[47]) is unused and will be removed from module NoC_3D_Parallel_Switch.
+WARNING: [Synth 8-3332] Sequential element (xmit[1].dir/mem_reg[46]) is unused and will be removed from module NoC_3D_Parallel_Switch.
+WARNING: [Synth 8-3332] Sequential element (xmit[1].dir/mem_reg[45]) is unused and will be removed from module NoC_3D_Parallel_Switch.
+WARNING: [Synth 8-3332] Sequential element (xmit[1].dir/mem_reg[44]) is unused and will be removed from module NoC_3D_Parallel_Switch.
+WARNING: [Synth 8-3332] Sequential element (xmit[1].dir/mem_reg[43]) is unused and will be removed from module NoC_3D_Parallel_Switch.
+WARNING: [Synth 8-3332] Sequential element (xmit[1].dir/mem_reg[42]) is unused and will be removed from module NoC_3D_Parallel_Switch.
+WARNING: [Synth 8-3332] Sequential element (xmit[1].dir/mem_reg[41]) is unused and will be removed from module NoC_3D_Parallel_Switch.
+WARNING: [Synth 8-3332] Sequential element (xmit[1].dir/mem_reg[40]) is unused and will be removed from module NoC_3D_Parallel_Switch.
+WARNING: [Synth 8-3332] Sequential element (xmit[1].dir/mem_reg[39]) is unused and will be removed from module NoC_3D_Parallel_Switch.
+WARNING: [Synth 8-3332] Sequential element (xmit[1].dir/mem_reg[38]) is unused and will be removed from module NoC_3D_Parallel_Switch.
+WARNING: [Synth 8-3332] Sequential element (xmit[1].dir/mem_reg[37]) is unused and will be removed from module NoC_3D_Parallel_Switch.
+WARNING: [Synth 8-3332] Sequential element (xmit[1].dir/mem_reg[36]) is unused and will be removed from module NoC_3D_Parallel_Switch.
+WARNING: [Synth 8-3332] Sequential element (xmit[1].dir/mem_reg[35]) is unused and will be removed from module NoC_3D_Parallel_Switch.
+WARNING: [Synth 8-3332] Sequential element (xmit[1].dir/mem_reg[34]) is unused and will be removed from module NoC_3D_Parallel_Switch.
+WARNING: [Synth 8-3332] Sequential element (xmit[1].dir/mem_reg[33]) is unused and will be removed from module NoC_3D_Parallel_Switch.
+WARNING: [Synth 8-3332] Sequential element (xmit[1].dir/mem_reg[32]) is unused and will be removed from module NoC_3D_Parallel_Switch.
+WARNING: [Synth 8-3332] Sequential element (xmit[1].dir/mem_reg[31]) is unused and will be removed from module NoC_3D_Parallel_Switch.
+WARNING: [Synth 8-3332] Sequential element (xmit[1].dir/mem_reg[30]) is unused and will be removed from module NoC_3D_Parallel_Switch.
+WARNING: [Synth 8-3332] Sequential element (xmit[1].dir/mem_reg[29]) is unused and will be removed from module NoC_3D_Parallel_Switch.
+WARNING: [Synth 8-3332] Sequential element (xmit[1].dir/mem_reg[28]) is unused and will be removed from module NoC_3D_Parallel_Switch.
+WARNING: [Synth 8-3332] Sequential element (xmit[1].dir/mem_reg[27]) is unused and will be removed from module NoC_3D_Parallel_Switch.
+WARNING: [Synth 8-3332] Sequential element (xmit[1].dir/mem_reg[26]) is unused and will be removed from module NoC_3D_Parallel_Switch.
+WARNING: [Synth 8-3332] Sequential element (xmit[1].dir/mem_reg[25]) is unused and will be removed from module NoC_3D_Parallel_Switch.
+WARNING: [Synth 8-3332] Sequential element (xmit[1].dir/mem_reg[24]) is unused and will be removed from module NoC_3D_Parallel_Switch.
+WARNING: [Synth 8-3332] Sequential element (xmit[1].dir/mem_reg[23]) is unused and will be removed from module NoC_3D_Parallel_Switch.
+WARNING: [Synth 8-3332] Sequential element (xmit[1].dir/mem_reg[22]) is unused and will be removed from module NoC_3D_Parallel_Switch.
+WARNING: [Synth 8-3332] Sequential element (xmit[1].dir/mem_reg[21]) is unused and will be removed from module NoC_3D_Parallel_Switch.
+WARNING: [Synth 8-3332] Sequential element (xmit[1].dir/mem_reg[20]) is unused and will be removed from module NoC_3D_Parallel_Switch.
+WARNING: [Synth 8-3332] Sequential element (xmit[1].dir/mem_reg[19]) is unused and will be removed from module NoC_3D_Parallel_Switch.
+WARNING: [Synth 8-3332] Sequential element (xmit[1].dir/mem_reg[18]) is unused and will be removed from module NoC_3D_Parallel_Switch.
+WARNING: [Synth 8-3332] Sequential element (xmit[1].dir/mem_reg[17]) is unused and will be removed from module NoC_3D_Parallel_Switch.
+WARNING: [Synth 8-3332] Sequential element (xmit[1].dir/mem_reg[16]) is unused and will be removed from module NoC_3D_Parallel_Switch.
+WARNING: [Synth 8-3332] Sequential element (xmit[1].dir/mem_reg[15]) is unused and will be removed from module NoC_3D_Parallel_Switch.
+WARNING: [Synth 8-3332] Sequential element (xmit[1].dir/mem_reg[14]) is unused and will be removed from module NoC_3D_Parallel_Switch.
+WARNING: [Synth 8-3332] Sequential element (xmit[1].dir/mem_reg[13]) is unused and will be removed from module NoC_3D_Parallel_Switch.
+WARNING: [Synth 8-3332] Sequential element (xmit[1].dir/mem_reg[12]) is unused and will be removed from module NoC_3D_Parallel_Switch.
+WARNING: [Synth 8-3332] Sequential element (xmit[1].dir/mem_reg[11]) is unused and will be removed from module NoC_3D_Parallel_Switch.
+WARNING: [Synth 8-3332] Sequential element (xmit[1].dir/mem_reg[10]) is unused and will be removed from module NoC_3D_Parallel_Switch.
+WARNING: [Synth 8-3332] Sequential element (xmit[1].dir/mem_reg[9]) is unused and will be removed from module NoC_3D_Parallel_Switch.
+WARNING: [Synth 8-3332] Sequential element (xmit[1].dir/mem_reg[8]) is unused and will be removed from module NoC_3D_Parallel_Switch.
+WARNING: [Synth 8-3332] Sequential element (xmit[1].dir/mem_reg[7]) is unused and will be removed from module NoC_3D_Parallel_Switch.
+WARNING: [Synth 8-3332] Sequential element (xmit[1].dir/mem_reg[6]) is unused and will be removed from module NoC_3D_Parallel_Switch.
+WARNING: [Synth 8-3332] Sequential element (xmit[1].dir/mem_reg[5]) is unused and will be removed from module NoC_3D_Parallel_Switch.
+WARNING: [Synth 8-3332] Sequential element (xmit[1].dir/mem_reg[4]) is unused and will be removed from module NoC_3D_Parallel_Switch.
+WARNING: [Synth 8-3332] Sequential element (xmit[1].dir/mem_reg[3]) is unused and will be removed from module NoC_3D_Parallel_Switch.
+WARNING: [Synth 8-3332] Sequential element (xmit[1].dir/mem_reg[2]) is unused and will be removed from module NoC_3D_Parallel_Switch.
+WARNING: [Synth 8-3332] Sequential element (xmit[1].dir/mem_reg[1]) is unused and will be removed from module NoC_3D_Parallel_Switch.
+WARNING: [Synth 8-3332] Sequential element (xmit[1].dir/mem_reg[0]) is unused and will be removed from module NoC_3D_Parallel_Switch.
+WARNING: [Synth 8-3332] Sequential element (pres_switch_matrix_reg[3][2]) is unused and will be removed from module NoC_3D_Parallel_Switch.
+WARNING: [Synth 8-3332] Sequential element (pres_switch_matrix_reg[3][1]) is unused and will be removed from module NoC_3D_Parallel_Switch.
+WARNING: [Synth 8-3332] Sequential element (pres_switch_matrix_reg[3][0]) is unused and will be removed from module NoC_3D_Parallel_Switch.
+WARNING: [Synth 8-3332] Sequential element (xmit[3].dir/mem_reg[55]) is unused and will be removed from module NoC_3D_Parallel_Switch.
+WARNING: [Synth 8-3332] Sequential element (xmit[3].dir/mem_reg[54]) is unused and will be removed from module NoC_3D_Parallel_Switch.
+WARNING: [Synth 8-3332] Sequential element (xmit[3].dir/mem_reg[53]) is unused and will be removed from module NoC_3D_Parallel_Switch.
+WARNING: [Synth 8-3332] Sequential element (xmit[3].dir/mem_reg[52]) is unused and will be removed from module NoC_3D_Parallel_Switch.
+WARNING: [Synth 8-3332] Sequential element (xmit[3].dir/mem_reg[51]) is unused and will be removed from module NoC_3D_Parallel_Switch.
+WARNING: [Synth 8-3332] Sequential element (xmit[3].dir/mem_reg[50]) is unused and will be removed from module NoC_3D_Parallel_Switch.
+WARNING: [Synth 8-3332] Sequential element (xmit[3].dir/mem_reg[49]) is unused and will be removed from module NoC_3D_Parallel_Switch.
+WARNING: [Synth 8-3332] Sequential element (xmit[3].dir/mem_reg[48]) is unused and will be removed from module NoC_3D_Parallel_Switch.
+WARNING: [Synth 8-3332] Sequential element (xmit[3].dir/mem_reg[47]) is unused and will be removed from module NoC_3D_Parallel_Switch.
+WARNING: [Synth 8-3332] Sequential element (xmit[3].dir/mem_reg[46]) is unused and will be removed from module NoC_3D_Parallel_Switch.
+WARNING: [Synth 8-3332] Sequential element (xmit[3].dir/mem_reg[45]) is unused and will be removed from module NoC_3D_Parallel_Switch.
+WARNING: [Synth 8-3332] Sequential element (xmit[3].dir/mem_reg[44]) is unused and will be removed from module NoC_3D_Parallel_Switch.
+WARNING: [Synth 8-3332] Sequential element (xmit[3].dir/mem_reg[43]) is unused and will be removed from module NoC_3D_Parallel_Switch.
+WARNING: [Synth 8-3332] Sequential element (xmit[3].dir/mem_reg[42]) is unused and will be removed from module NoC_3D_Parallel_Switch.
+WARNING: [Synth 8-3332] Sequential element (xmit[3].dir/mem_reg[41]) is unused and will be removed from module NoC_3D_Parallel_Switch.
+WARNING: [Synth 8-3332] Sequential element (xmit[3].dir/mem_reg[40]) is unused and will be removed from module NoC_3D_Parallel_Switch.
+WARNING: [Synth 8-3332] Sequential element (xmit[3].dir/mem_reg[39]) is unused and will be removed from module NoC_3D_Parallel_Switch.
+WARNING: [Synth 8-3332] Sequential element (xmit[3].dir/mem_reg[38]) is unused and will be removed from module NoC_3D_Parallel_Switch.
+WARNING: [Synth 8-3332] Sequential element (xmit[3].dir/mem_reg[37]) is unused and will be removed from module NoC_3D_Parallel_Switch.
+WARNING: [Synth 8-3332] Sequential element (xmit[3].dir/mem_reg[36]) is unused and will be removed from module NoC_3D_Parallel_Switch.
+WARNING: [Synth 8-3332] Sequential element (xmit[3].dir/mem_reg[35]) is unused and will be removed from module NoC_3D_Parallel_Switch.
+WARNING: [Synth 8-3332] Sequential element (xmit[3].dir/mem_reg[34]) is unused and will be removed from module NoC_3D_Parallel_Switch.
+WARNING: [Synth 8-3332] Sequential element (xmit[3].dir/mem_reg[33]) is unused and will be removed from module NoC_3D_Parallel_Switch.
+WARNING: [Synth 8-3332] Sequential element (xmit[3].dir/mem_reg[32]) is unused and will be removed from module NoC_3D_Parallel_Switch.
+WARNING: [Synth 8-3332] Sequential element (xmit[3].dir/mem_reg[31]) is unused and will be removed from module NoC_3D_Parallel_Switch.
+WARNING: [Synth 8-3332] Sequential element (xmit[3].dir/mem_reg[30]) is unused and will be removed from module NoC_3D_Parallel_Switch.
+WARNING: [Synth 8-3332] Sequential element (xmit[3].dir/mem_reg[29]) is unused and will be removed from module NoC_3D_Parallel_Switch.
+WARNING: [Synth 8-3332] Sequential element (xmit[3].dir/mem_reg[28]) is unused and will be removed from module NoC_3D_Parallel_Switch.
+WARNING: [Synth 8-3332] Sequential element (xmit[3].dir/mem_reg[27]) is unused and will be removed from module NoC_3D_Parallel_Switch.
+WARNING: [Synth 8-3332] Sequential element (xmit[3].dir/mem_reg[26]) is unused and will be removed from module NoC_3D_Parallel_Switch.
+WARNING: [Synth 8-3332] Sequential element (xmit[3].dir/mem_reg[25]) is unused and will be removed from module NoC_3D_Parallel_Switch.
+WARNING: [Synth 8-3332] Sequential element (xmit[3].dir/mem_reg[24]) is unused and will be removed from module NoC_3D_Parallel_Switch.
+WARNING: [Synth 8-3332] Sequential element (xmit[3].dir/mem_reg[23]) is unused and will be removed from module NoC_3D_Parallel_Switch.
+WARNING: [Synth 8-3332] Sequential element (xmit[3].dir/mem_reg[22]) is unused and will be removed from module NoC_3D_Parallel_Switch.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/NOC/UX[1].UY[0].UZ[0].UD /\recv[5].dir /\G0.mem_reg[55] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/NOC/UX[1].UY[0].UZ[0].UD /\recv[4].dir /\G0.mem_reg[55] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/NOC/UX[1].UY[0].UZ[0].UD /\recv[2].dir /\G0.mem_reg[55] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/NOC/UX[1].UY[0].UZ[0].UD /\recv[1].dir /\G0.mem_reg[55] )
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:04 ; elapsed = 00:01:12 . Memory (MB): peak = 1646.738 ; gain = 727.512 ; free physical = 1132 ; free virtual = 123783
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+---------------------------------------+------------+----------+
+|      |RTL Partition                          |Replication |Instances |
++------+---------------------------------------+------------+----------+
+|1     |NoC_2D_Parallel__GB0                   |           1|      5580|
+|2     |NoC_3D_Parallel_Switch__parameterized3 |           1|      1688|
+|3     |kth_2DNoC_2x2x1_c1_v1_0__GC0           |           1|       151|
++------+---------------------------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:14 ; elapsed = 00:01:24 . Memory (MB): peak = 1646.738 ; gain = 727.512 ; free physical = 2315 ; free virtual = 124980
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:14 ; elapsed = 00:01:24 . Memory (MB): peak = 1646.738 ; gain = 727.512 ; free physical = 2310 ; free virtual = 124975
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+---------------------------------------+------------+----------+
+|      |RTL Partition                          |Replication |Instances |
++------+---------------------------------------+------------+----------+
+|1     |NoC_2D_Parallel__GB0                   |           1|      5580|
+|2     |NoC_3D_Parallel_Switch__parameterized3 |           1|      1688|
+|3     |kth_2DNoC_2x2x1_c1_v1_0__GC0           |           1|       151|
++------+---------------------------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\U0/NOC/UX[1].UY[1].UZ[0].UD/next_switch_matrix_reg[4][1] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\U0/NOC/UX[0].UY[1].UZ[0].UD/next_switch_matrix_reg[3][1] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\U0/NOC/UX[1].UY[0].UZ[0].UD/next_switch_matrix_reg[4][1] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\U0/NOC/UX[0].UY[0].UZ[0].UD/next_switch_matrix_reg[3][1] )
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:15 ; elapsed = 00:01:26 . Memory (MB): peak = 1646.738 ; gain = 727.512 ; free physical = 2204 ; free virtual = 124858
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:16 ; elapsed = 00:01:26 . Memory (MB): peak = 1646.738 ; gain = 727.512 ; free physical = 2199 ; free virtual = 124853
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:16 ; elapsed = 00:01:26 . Memory (MB): peak = 1646.738 ; gain = 727.512 ; free physical = 2199 ; free virtual = 124853
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:16 ; elapsed = 00:01:26 . Memory (MB): peak = 1646.738 ; gain = 727.512 ; free physical = 2198 ; free virtual = 124851
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:16 ; elapsed = 00:01:26 . Memory (MB): peak = 1646.738 ; gain = 727.512 ; free physical = 2198 ; free virtual = 124851
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:17 ; elapsed = 00:01:27 . Memory (MB): peak = 1646.738 ; gain = 727.512 ; free physical = 2197 ; free virtual = 124851
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:17 ; elapsed = 00:01:27 . Memory (MB): peak = 1646.738 ; gain = 727.512 ; free physical = 2197 ; free virtual = 124850
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |CARRY4 |    16|
+|2     |LUT1   |    51|
+|3     |LUT2   |    52|
+|4     |LUT3   |    67|
+|5     |LUT4   |    75|
+|6     |LUT5   |   121|
+|7     |LUT6   |   950|
+|8     |MUXF7  |     1|
+|9     |FDRE   |  1392|
+|10    |FDSE   |   104|
++------+-------+------+
+
+Report Instance Areas: 
++------+-----------------------------+---------------------------------------+------+
+|      |Instance                     |Module                                 |Cells |
++------+-----------------------------+---------------------------------------+------+
+|1     |top                          |                                       |  2829|
+|2     |  U0                         |kth_2DNoC_2x2x1_c1_v1_0                |  2829|
+|3     |    NOC                      |NoC_2D_Parallel                        |  2708|
+|4     |      \UX[0].UY[0].UZ[0].UD  |NoC_3D_Parallel_Switch                 |   620|
+|5     |        \recv[0].dir         |NoC_3D_Parallel_recv                   |   120|
+|6     |        \recv[2].dir         |NoC_3D_Parallel_recv_8                 |    94|
+|7     |        \recv[6].dir         |NoC_3D_Parallel_recv_9                 |   198|
+|8     |        \xmit[0].dir         |NoC_3D_Parallel_xmitter_10             |    56|
+|9     |        \xmit[2].dir         |NoC_3D_Parallel_xmitter_11             |    56|
+|10    |        \xmit[6].dir         |NoC_3D_Parallel_xmitter_12             |    57|
+|11    |      \UX[0].UY[1].UZ[0].UD  |NoC_3D_Parallel_Switch__parameterized1 |   778|
+|12    |        \recv[1].dir         |NoC_3D_Parallel_recv__parameterized1   |   120|
+|13    |        \recv[2].dir         |NoC_3D_Parallel_recv__parameterized2   |   197|
+|14    |        \recv[6].dir         |NoC_3D_Parallel_recv__parameterized6   |   253|
+|15    |        \xmit[1].dir         |NoC_3D_Parallel_xmitter_5              |    56|
+|16    |        \xmit[2].dir         |NoC_3D_Parallel_xmitter_6              |    56|
+|17    |        \xmit[6].dir         |NoC_3D_Parallel_xmitter_7              |    57|
+|18    |      \UX[1].UY[0].UZ[0].UD  |NoC_3D_Parallel_Switch__parameterized3 |   627|
+|19    |        \recv[0].dir         |NoC_3D_Parallel_recv__parameterized7   |    57|
+|20    |        \recv[3].dir         |NoC_3D_Parallel_recv__parameterized10  |    72|
+|21    |        \recv[6].dir         |NoC_3D_Parallel_recv__parameterized13  |    79|
+|22    |        \xmit[0].dir         |NoC_3D_Parallel_xmitter_2              |    56|
+|23    |        \xmit[3].dir         |NoC_3D_Parallel_xmitter_3              |    56|
+|24    |        \xmit[6].dir         |NoC_3D_Parallel_xmitter_4              |    56|
+|25    |      \UX[1].UY[1].UZ[0].UD  |NoC_3D_Parallel_Switch__parameterized5 |   683|
+|26    |        \recv[1].dir         |NoC_3D_Parallel_recv__parameterized15  |   120|
+|27    |        \recv[3].dir         |NoC_3D_Parallel_recv__parameterized17  |   115|
+|28    |        \recv[6].dir         |NoC_3D_Parallel_recv__parameterized20  |   240|
+|29    |        \xmit[1].dir         |NoC_3D_Parallel_xmitter                |    56|
+|30    |        \xmit[3].dir         |NoC_3D_Parallel_xmitter_0              |    56|
+|31    |        \xmit[6].dir         |NoC_3D_Parallel_xmitter_1              |    57|
++------+-----------------------------+---------------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:17 ; elapsed = 00:01:27 . Memory (MB): peak = 1646.738 ; gain = 727.512 ; free physical = 2196 ; free virtual = 124850
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 960 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:04 ; elapsed = 00:01:12 . Memory (MB): peak = 1646.738 ; gain = 242.605 ; free physical = 2196 ; free virtual = 124850
+Synthesis Optimization Complete : Time (s): cpu = 00:01:17 ; elapsed = 00:01:27 . Memory (MB): peak = 1646.738 ; gain = 727.512 ; free physical = 2196 ; free virtual = 124850
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 16 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+360 Infos, 100 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:15 ; elapsed = 00:01:24 . Memory (MB): peak = 1646.738 ; gain = 621.793 ; free physical = 2253 ; free virtual = 124906
+INFO: [Common 17-1381] The checkpoint '/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.runs/BD_kth_2DNoC_2x2x1_0_0_synth_1/BD_kth_2DNoC_2x2x1_0_0.dcp' has been generated.
+INFO: [Coretcl 2-1174] Renamed 30 cell refs.
+INFO: [Common 17-1381] The checkpoint '/home/tage/DegreeProject/zc702/NoC2xD/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage/NoC2x2_1MHz_ZeroReleaseSiegenDemo_Tage.runs/BD_kth_2DNoC_2x2x1_0_0_synth_1/BD_kth_2DNoC_2x2x1_0_0.dcp' has been generated.
+report_utilization: Time (s): cpu = 00:00:00.10 ; elapsed = 00:00:00.19 . Memory (MB): peak = 1670.750 ; gain = 0.000 ; free physical = 2400 ; free virtual = 125055
+INFO: [Common 17-206] Exiting Vivado at Mon Oct 31 17:12:51 2016...
